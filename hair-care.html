@@ -1,0 +1,168 @@
+---
+layout: default
+title: "Hair Care"
+permalink: /hair-care/
+---
+
+<nav class="breadcrumbs">
+  <a href="/">Home</a> &gt;
+  <span class="current">Hair Care</span>
+</nav>
+
+<br/><br/>
+
+<div class="cat-header">
+  
+  <figure>
+  <img src="/assets/images/hair-care-category.webp" alt="Hair Care Category" style="width: 350px; height: 250px;" />
+  <figcaption>Image on Freepik</figcaption>
+  </figure>
+  
+  <div class="cat-desc">
+    <h1 class="cat-title">Hair Care</h1>
+    <span>Explore our selection of articles, carefully chosen to offer insights into all things hair care.</span>
+  </div>
+</div>
+
+<style>
+  @media only screen and (min-width: 820px) and (max-width: 1920px) {
+    .cat-header {
+      display: flex;
+      align-items: center; /* Align items vertically */
+      gap: 70px; /* Space between image and text */
+      padding: 20px;
+      background: #f5eaed;
+      width: 1025px;
+      margin-top: -75px;
+    }
+    
+    .cat-desc {
+      font-size: 1.2em;
+      line-height: 1.5;
+      max-width: 600px; /* Optional: limits width of text */
+    }
+
+    .breadcrumbs {
+      margin-top: -45px;
+    } 
+
+    .cat-title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+  }  /* End Desktop */
+
+  @media only screen and (max-width: 780px) {
+     .cat-header {
+      display: block;
+      align-items: center; 
+      padding: 20px;
+      background: #f5eaed;
+      margin-top: -15px;
+    }
+    
+    .cat-desc {
+      font-size: 1.2em;
+      line-height: 1.5;
+      max-width: 380px; 
+      text-align: center;
+    }
+
+    .wrapper-masthead {
+      margin-bottom: 0px;
+    }
+
+    .breadcrumbs {
+      margin-top: -120px;
+      background: #edd3da;
+    } 
+
+    .cat-title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+
+  } /* End Mobile */
+</style>
+
+
+<h2 class="post-title" style="font-size: 40px; line-height: 20px; text-align: center;">Showing posts for:</h2>
+<h2 class="post-label" style="font-size: 35px; line-height: 10px; text-align: center;">Hair Care</h2>
+
+<div id="related-posts-cat">
+  {% assign software_posts = site.posts | where_exp: "post", "post.categories contains 'Hair Care'" %}
+  {% for post in software_posts %}
+    <a href="{{ post.url | relative_url }}" style="text-decoration:  underline; text-align: center;">
+     <img class="related-img" src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+      <div style="color: #000; font-size: 18px; font-weight: bold;">{{ post.title }}</div>
+    </a>
+  {% endfor %}
+</div>
+
+<style>
+#related-posts-cat {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+  width: 1025px;
+  font-weight: 900;
+  flex-wrap: wrap;	
+  margin-left: 30px;
+}
+  .related-img {
+  width: 250px;
+  height: 200px;
+  border-radius: 5px;
+} 
+
+@media only screen and (max-width: 780px) {
+  #related-posts-cat {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(1, 1fr); /* 1 equal-width columns */
+  width: 325px;
+  font-weight: 900;
+  flex-wrap: wrap; 
+} 
+
+ .related-img {
+    width: 320px;
+    height: 200px;
+    margin-top: 30px;
+  }  
+  
+} /* End Mobile */
+
+
+  @media only screen and (min-width: 820px) and (max-width: 2000px) {
+  /* Change Page Size */
+  body {
+    width: 1400px; /* makes body full width */
+    margin-left: 100px;   /* centers the content if max-width is limited */
+    margin-right: 100px; 	
+  }
+  
+  .container, .wrapper, .content {
+    width: 1025px; /* or whatever width you want */
+    margin-left: 25px;   /* centers the content if max-width is limited */
+    margin-right: 25px; 	
+  }
+
+     .post-title {
+    margin-left: 350px;
+  } 
+  .post-label {
+    margin-left: 350px;
+  }   
+
+  .site-name {
+    margin-top:-10px;
+   }  
+  
+  } / * End Desktop */	
+
+
+  
+</style>

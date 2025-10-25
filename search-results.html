@@ -1,0 +1,110 @@
+---
+layout: page
+title: 
+permalink: /search-results/
+---
+
+<nav class="breadcrumbs">
+  <a href="/">Home</a> &gt;
+  <span class="current">Search Results</span>
+</nav>
+
+<br/><br/>
+
+<div id="search-results-wrapper">
+  
+  <h2 id="search-query-title"></h2>
+  <div id="search-results" class="search-grid"></div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get("q");
+
+  if (!query) return;
+
+  // Set the heading before loading posts
+  const queryTitle = document.getElementById("search-query-title");
+  if (queryTitle) {
+    queryTitle.textContent = `Search Results for: "${query}"`;
+  }
+
+  fetch("/search.json")
+    .then(response => {
+      if (!response.ok) throw new Error("Failed to load search.json");
+      return response.json();
+    })
+    .then(data => {
+      const resultsContainer = document.getElementById("search-results");
+      const lowerQuery = query.toLowerCase();
+
+      const results = data.filter(post =>
+        post.title?.toLowerCase().includes(lowerQuery) ||
+        post.content?.toLowerCase().includes(lowerQuery) ||
+        (post.tags && post.tags.join(" ").toLowerCase().includes(lowerQuery)) ||
+        (post.categories && post.categories.join(" ").toLowerCase().includes(lowerQuery))
+      );
+
+      if (!resultsContainer) return;
+
+      if (results.length === 0) {
+        resultsContainer.innerHTML = "<p>No results found.</p>";
+        return;
+      }
+
+      resultsContainer.innerHTML = results.map(post => `
+        <div class="post-card">
+          <a href="${post.url}">
+            <img src="${post.image}" alt="${post.title}" />
+            <h3>${post.title}</h3>
+          </a>
+        </div>
+      `).join("");
+    })
+    .catch(error => {
+      console.error("Search failed:", error);
+      const resultsContainer = document.getElementById("search-results");
+      if (resultsContainer) {
+        resultsContainer.innerHTML = "<p>There was an error loading results.</p>";
+      }
+    });
+});
+</script>
+
+<style>
+  .site-name {
+   margin-top:-10px;
+  } 
+   
+  .breadcrumbs {
+   margin-top: -50px;
+  } 
+
+  @media only screen and (max-width: 780px) {
+    .wrapper-masthead {
+     margin-bottom: -15px;
+    } 
+    h1 {
+      margin-Bottom: 0px;
+    }  
+    .site-description {
+    display: none; 
+      
+    }
+   #search-query-title  
+     margin-top: -15px;
+   }  
+   #search-results {
+     margin-top: -15px;
+   } 
+  .container {
+    margin-top: -40px;
+  }
+  .site-avatar {
+    margin-top: 20px;
+  }
+  
+  } /*End Mobile*/
+</style>
+
