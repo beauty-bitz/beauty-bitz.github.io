@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Bath and Shower"
+category: "Bath and Shower"
+---
+
+[
+  {
+    "title": "How To Find the Best Bubble Bath for Dry Skin",
+    "url": "/_posts/2025-06-02-foundation-dry-skin.md",
+    "thumb": "/assets/images/Bath/bubble-bath-dry-skin.webp",
+    "label": "Bath and Shower"
+  },
+  {
+    "title": "How to Find the Best Bubble Bath for Sensitive Skin",
+    "url": "/_posts/2025-06-05-bubble-bath-sensitive-skin.md",
+    "thumb": "/assets/images/Bath/bubble-bath-sensitive-skin.webp",
+    "label": "Bath and Shower"
+  }
+]

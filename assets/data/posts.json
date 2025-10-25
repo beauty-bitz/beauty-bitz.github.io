@@ -1,0 +1,32 @@
+---
+layout: default
+title: Skin Care
+category: Skin Care
+---
+
+[
+  {
+    "title": "How To Find The Best Moisturizer for Dry Skin",
+    "url": "/_posts/2025-05-31-moisturizer-dry-skin.md",
+    "thumb": "/assets/images/moisturizer-dry-skin.webp",
+    "label": "Skin Care"
+  },
+  {
+    "title": "Best Face Cream for Oily Skin",
+    "url": "/_posts/2025-06-05-creams-oily-skin.md",
+    "thumb": "/assets/images/Skin/cream-for-oily-skin.webp",
+    "label": "Skin Care"
+  },
+  {
+    "title": "How to Find the Best Moisturizer for Acne-Prone Skin",
+    "url": "/_posts/2025-06-11-how-to-find-the-best-moisturizer-for-acne-prone-skin.md",
+    "thumb": "/assets/images/Skin/Cream-for-acne-skin.webp",
+    "label": "Skin Care"
+  },
+  {
+    "title": "Natural Retinol vs. Synthetic Retinol: How To Know What Is Best",
+    "url": "/_posts/2025-06-19-Natural-Retinol-vs-Synthetic-Retinol-How-To-Know-What-Is-Best.md",
+    "thumb": "/assets/images/Skin/natural-synthetic-retinol.webp",
+    "label": "Skin Care"
+  }
+]

@@ -1,0 +1,20 @@
+---
+layout: default
+title: Cosmetics
+category: Cosmetics
+---
+
+[
+  {
+    "title": "Foundation for Dry Skin Know How To Find the Best One",
+    "url": "/_posts/2025-06-02-foundation-dry-skin.md",
+    "thumb": "/assets/images/foundation-dry-skin.webp",
+    "label": "Cosmetics"
+  },
+  {
+    "title": "How to Find the Best Blush for Sensitive Skin",
+    "url": /_posts/2025-06-28-How-to-Find-the-Best-Blush-for-Sensitive-Skin.md",
+    "thumb": "/assets/images/Cosmetics/blush.webp",
+    "label": "Cosmetics"
+  }
+]

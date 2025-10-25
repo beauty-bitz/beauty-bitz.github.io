@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+   <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9800QR8LEP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-9800QR8LEP');
+    </script>
+
+     <script defer src="https://cloud.umami.is/script.js" data-website-id="f20ab95e-7405-4bba-969b-b0afe06eb11d"></script>
+   
+    
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    <!-- ✅ ADD FONT AWESOME HERE -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+  >
+    
+  <!-- VIEWPORT META TAG --> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+  <!--Umami Cloud! ANALYTICS -->  
+   <script defer src="https://cloud.umami.is/script.js" data-website-id="eb2e6d3b-7570-48bf-9274-47d9a7db25c2"></script>
+    
+  </head>
+
+  <body>
+
+    <!-- HAMBURGER NENU HTML -->
+    <!-- Hamburger Icon (only visible when menu is closed) -->
+      <div id="hamburgerIcon" class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+      
+      <!-- Fullscreen hamburger Mobile Menu -->
+      <div id="mobileMenu" class="mobile-menu hidden">
+        <div class="menu-header">
+          <span class="close-icon" onclick="toggleMenu()">&#10006;</span>
+        </div>
+        <ul>
+          <li><a href="{{ '/takeonbeauty/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/takeonbeauty/skin-care' | relative_url }}">Skin Care</a></li>
+          <li><a href="{{ '/takeonbeauty/bath-and-shower' | relative_url }}">Bath and Shower</a></li>
+          <li><a href="{{ '/takeonbeauty/cosmetics' | relative_url }}">Cosmetics</a></li>
+          <li><a href="{{ '/takeonbeauty/hair-care' | relative_url }}">Hair Care</a></li>
+          <!-- Add more links as needed -->
+        </ul>
+      </div>   
+    <!-- HAMBURGER NENU HTML - END -->
+    
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          
+         <div class="mobile-header-nav">
+          <div class="mobile-search" style="position: relative; display: inline-block;">
+            <!-- Magnifying Glass Icon -->
+            <button id="mobile-search-toggle" aria-label="Search" style="font-size: 24px; background: none; border: none; cursor: pointer;">
+              🔍
+            </button>
+        
+            <!-- Search Form Container -->
+            <div id="mobile-search-form" style="display: none; flex-direction: row; align-items: flex-start; gap: 5px;">
+              <button id="mobile-search-close" aria-label="Close Search" style="font-size: 18px; background: none; border: none; color: red; cursor: pointer; align-self: flex-end;">❌</button>
+        
+              <form id="mobile-search-form-element" style="display: inline;">
+                <input type="text" id="mobile-search-input" placeholder="Search..." />
+                <button type="submit" id="mobile-submit-btn" style="font-size: 19px; background: none; border: none; cursor: pointer;">🔍</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+          
+          <div class="header-top">
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.title }} avatar" /></a>
+        
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
+          </div>
+
+         <div class="desktop-header-nav">
+          <nav id="header-nav" style="display: flex; align-items: center; gap: 15px; padding: 15px;">
+            
+            <!-- Menu Links -->
+            <a href="/takeonbeauty/" class="head-home">Home</a>
+            <a href="./skin-care" class="head-test">Skin Care</a>
+            <a href="/takeonbeauty/bath-and-shower" class="head-types">Bath and Shower</a>
+            <a href="/takeonbeauty/cosmetics" class="head-auto">Cosmetics</a>
+            <a href="/takeonbeauty/hair-care" class="head-devops">Hair Care</a>
+        
+            <!-- Search Container -->
+            <div class="desktop-search" style="display: flex; align-items: center; gap: 5px; position: relative;">
+              
+              <!-- Search Form (hidden by default) -->
+              <div id="desktop-search-form" style="display: none; align-items: center; gap: 5px;">
+                <form id="desktop-search-form-element" style="display: flex; gap: 5px;">
+                  <input type="text" id="desktop-search-input" style="padding: 4px 6px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; width: 200px;" placeholder="Search..." />
+                  <button type="submit" id="desktop-submit-btn" style="font-size: 18px; background: none; border: none; cursor: pointer;">🔍</button>
+                </form>
+                <button id="desktop-search-close" aria-label="Close Search" style="font-size: 18px; background: none; border: none; color: red; cursor: pointer;">❌</button>
+              </div>
+        
+              <!-- Search Toggle Button -->
+              <button id="desktop-search-toggle" aria-label="Search" style="font-size: 18px; background: none; border: none; cursor: pointer;">
+                🔍
+              </button>
+            </div>
+        
+          </nav>
+        </div>
+                  
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+
+      <!--Category Grid Home Page-->
+      {% if page.url == "/" %}
+
+       <!--Welcome Message on Home Page-->
+      <h2 class="welcome-heding">Welcome to Take on Beauty</h2>
+      <p class="welcome-text">Welcome to my blog where I share advice, tips, and reviews on skin care, bath, and cosmetic products.</p>
+       
+      <style>
+        .welcome-heding {
+            text-align: center;
+            margin-left: 150px;  
+            width: 700px;
+            font-size: 36px;
+        }
+       .welcome-text {
+         text-align: center;
+         margin-left: 150px; 
+         width: 700px;
+       } 
+
+        .wrapper-masthead {
+          display: flex;
+          flex-direction: column;
+        }
+
+       @media only screen and (min-width: 820px) and (max-width: 2000px) {
+          .header-top {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            margin-bottom: 15px;
+          }
+        
+          .site-avatar img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-left: 250px;
+          }
+        
+          .site-info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 250px;
+          }
+
+          /* Center the nav across the whole page */
+          .masthead {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* centers everything horizontally */
+          }
+
+        /* Optional: Prevent flicker before JS */
+        body.js-enabled #desktop-search-form {
+          display: none;
+        } 
+
+       } /* End Desktop */  
+
+       @media only screen and (max-width: 767px) {
+          
+          .mobile-header-nav {
+            display: block;
+          }  
+          .welcome-heding {
+            text-align: center;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 30px;
+            width: 350px;
+            }
+           .welcome-text {
+             text-align: center;
+             margin-left: 15px;
+             margin-right: 15px;
+             width: 350px;
+           } 
+        } /* End Mobile*/
+
+         
+      </style>   
+      
+  <div class="CategoryContainer">
+    <style>
+      .widget.title { font-size: 40px; font-weight: 700; }
+      .TestCat img { border: 2px solid; border-color: #000000;}
+      .TypesCat img { border: 2px solid; border-color: #000000;}
+      .AutoCat img { border: 2px solid; border-color: #000000;}
+      .DevOpsCat img { border: 2px solid; border-color: #000000;}
+    </style>
+
+    <div class="TestCat">
+      <a href="/takeonBeauty/skin-care/">
+        <img src="/takeonBeauty/assets/images/skin-care-category.webp" alt="Skin Care Category" />
+      </a>
+      <a class="text1" href="/takeonBeauty/skin-care/">Skin Care</a>
+      
+    </div>
+
+    <div class="TypesCat">
+      <a href="/takeonBeauty/bath-and-shower">
+        <img src="/takeonBeauty/assets/images/bath-shower-category.webp" alt="Bath and Shower Category" />
+      </a>
+      <a class="text1" href="/takeonBeauty/bath-and-shower">Bath and Shower</a>
+      
+    </div>
+
+    <div class="AutoCat">
+      <a href="/takeonBeauty/cosmetics">
+        <img src="/takeonbeauty/assets/images/cosmetics-category.webp" alt="Cosmetics Category" />
+      </a>
+      <a class="text1" href="/takeonBeauty/cosmetics">Cosmetics</a>
+     
+    </div>
+
+    <div class="DevOpsCat">
+      <a href="/takeonBeauty/hair-care">
+        <img src="/takeonBeauty/assets/images/hair-care-category.webp" alt="Hair Care Category" />
+      </a>
+      <a class="text1" href="/takeonBeauty/hair-care">Hair Care</a>
+     
+    </div>
+
+    
+  </div>
+
+
+  <!--Recent Posts-->    
+  <h2 class="recent-posts-heading">Recent Posts</h2>    
+  <div class="recent-post-grid">
+  {% for post in site.posts limit:4 %}
+    <div class="recent-post-card">
+      <a href="{{ post.url | relative_url }}">
+        <div class="recent-thumbnail">
+          <img src="{{ post.image | default: '/assets/default-thumbnail.jpg' }}" alt="{{ post.title }}">
+        </div>
+        <h3 class="recent-post-title">{{ post.title }}</h3>
+      </a>
+    </div>
+
+    <style>
+      @media only screen and (min-width: 820px) and (max-width: 2000px) {
+        .recent-posts-heading {
+          margin-left: 275px;
+        }  
+      }  /* End Desktop */
+    </style>
+
+    
+  {% endfor %}
+</div>
+      
+{% endif %}
+
+      
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+          <!-- Add this menu INSIDE the existing footer structure -->
+          <div class="footer-menu">
+            <nav>
+             <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/disclaimer">Disclaimer</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+    {% include head.html %}
+    {% include footer.html %}
+
+<style>
+      @media only screen and (min-width: 820px) and (max-width: 2000px) {
+      /* Change Page Size */
+      body {
+        width: 1290px; /* makes body full width */
+        margin-left: 200px;   /* centers the content if max-width is limited */
+        margin-right: 200px; 	
+      }
+      
+      .container, .wrapper, .content {
+        width: 1025px; /* or whatever width you want */
+        margin-left: 25px;   /* centers the content if max-width is limited */
+        margin-right: 100px; 	
+      }
+      
+      } / * End Desktop */	    
+
+</style>    
+
+<!--HAMBURGER JAVASCRIPT FOR MOBILE-->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const hamburger = document.getElementById("hamburgerIcon");
+    const searchBox = document.getElementById("mobile-search-toggle");
+    const hamIcon = document.getElementById("hamburgerIcon");
+    const closeIcon = document.getElementById("close-icon");
+
+    menu.classList.toggle("hidden");
+    hamburger.classList.toggle("hidden");
+
+    if (searchBox) {
+      searchBox.style.display = menu.classList.contains("hidden") ? "block" : "none";
+    } else {
+      hamIcon.style.background = "white";
+      closeIcon.style.background = "white";
+    }
+  }
+</script>    
+<!--HAMBURGER JAVASCRIPT FOR MOBILE-END-->       
+
+<!-- SEARCH RESULTS JAVA - MOBILE -->
+<!-- Mobile Search Toggle UI -->
+    
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileToggleBtn = document.getElementById("mobile-search-toggle");
+  const mobileFormContainer = document.getElementById("mobile-search-form");
+  const mobileCloseBtn = document.getElementById("mobile-search-close");
+  const mobileInput = document.getElementById("mobile-search-input");
+  const mobileForm = document.getElementById("mobile-search-form-element");
+
+  // Show the search form
+  mobileToggleBtn.addEventListener("click", function () {
+    mobileFormContainer.style.display = "flex";
+    mobileToggleBtn.style.display = "none";
+    mobileInput.focus();
+  });
+
+  // Handle close (X) button
+  mobileCloseBtn.addEventListener("click", function () {
+    hideSearchForm();
+  });
+
+  // Handle form submission
+  mobileForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const query = mobileInput.value.trim();
+    if (!query) return;
+
+    // Hide form elements before redirection
+    hideSearchForm();
+
+    // Redirect to results page
+    window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
+  });
+
+  // Function to hide everything
+  function hideSearchForm() {
+    mobileFormContainer.style.display = "none";
+    mobileToggleBtn.style.display = "inline-block";
+    mobileInput.value = "";
+  }
+});
+ 
+</script>
+  
+<!-- SEARCH RESULTS JAVA - MOBILE-END -->
+    
+<!-- SEARCH RESULTS JAVA - DESKTOP -->  
+  <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("desktop-search-toggle");
+    const formContainer = document.getElementById("desktop-search-form");
+    const closeBtn = document.getElementById("desktop-search-close");
+    const input = document.getElementById("desktop-search-input");
+    const form = document.getElementById("desktop-search-form-element");
+
+  // Show search UI
+  toggleBtn.addEventListener("click", function () {
+    formContainer.style.display = "flex";
+    toggleBtn.style.display = "none";
+    input.focus();
+  });
+
+  // Close (X) button
+  closeBtn.addEventListener("click", function () {
+    hideSearchForm();
+  });
+
+  // Submit handler
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const query = input.value.trim();
+    if (!query) return;
+
+    // Hide everything before redirect
+    hideSearchForm();
+
+    // Redirect to search results page
+    window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
+  });
+
+  function hideSearchForm() {
+    formContainer.style.display = "none";         // Hide form container
+    toggleBtn.style.display = "inline-block";     // Show main icon
+    input.value = "";                             // Clear text
+  }
+});
+</script>  
+  
+<!-- SEARCH RESULTS JAVA - DESKTOP-END --> 
+
+<!-- 100% privacy-first analytics -->
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+    
+    
+  </body>
+</html>
