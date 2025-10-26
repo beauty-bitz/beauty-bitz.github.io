@@ -36,9 +36,6 @@ No, we don't sell any beauty, bath or home care products. We exclusively share b
 
 Thank you for taking the time to reach out to us. We appreciate your feedback and will do our best to address your inquiry promptly. Your support is invaluable to us, and we look forward to assisting you.
 
-## Contact Information
-
-For general inquiries, you can contact us at the following email address: takeonbeauty@outlook.com.
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
