@@ -130,6 +130,21 @@
     <div id="main" role="main" class="container">
       {{ content }}
 
+      <!-- Posts Home page start-->
+      <div class="posts">
+        {% for post in site.posts %}
+          <article class="post">
+            <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+            <div class="entry">
+              {{ post.excerpt }}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+      <! Posts Home page end -->
+      
+      
+
       <!--Category Grid Home Page-->
       {% if page.url == "/" %}
 
