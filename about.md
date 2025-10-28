@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-## 💖 About Beauty Bitz
 <h2>💖 About <span class="sitehead">Beauty~Bitz</span></h2>
 Welcome to Beauty Bitz — your go-to destination for smart, honest, and beautifully curated beauty care advice.
 
@@ -51,6 +50,6 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
   } /* End Mobile */  
 
   .sitehead {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script';
   }
 </style>
