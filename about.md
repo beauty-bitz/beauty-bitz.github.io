@@ -10,13 +10,13 @@ Welcome to Beauty Bitz — your go-to destination for smart, honest, and beautif
 Whether you're refreshing your skincare routine, exploring new hair care rituals, or hunting for the perfect cosmetic pick-me-up, Beauty Bitz offers bite-sized recommendations and deeper dives to help you glow with confidence. Every post is crafted with care, blending practical tips, product insights, and a touch of indulgence.
 
 ## ✨ What You'll Find Here
-*Skin Care:* From hydration hacks to ingredient breakdowns, we help you build routines that work for your skin type and lifestyle.
+**Skin Care:** From hydration hacks to ingredient breakdowns, we help you build routines that work for your skin type and lifestyle.
 
-*Bath and Shower:* Elevate your daily rituals with soothing soaks, invigorating scrubs, and shower essentials that turn self-care into a spa moment.
+**Bath and Shower:** Elevate your daily rituals with soothing soaks, invigorating scrubs, and shower essentials that turn self-care into a spa moment.
 
-*Cosmetics:* Discover makeup that enhances your natural beauty — with tutorials, trend breakdowns, and product spotlights for every mood and occasion.
+**Cosmetics:** Discover makeup that enhances your natural beauty — with tutorials, trend breakdowns, and product spotlights for every mood and occasion.
 
-*Hair Care:* Whether you're taming frizz, boosting volume, or embracing your natural texture, our hair care tips are tailored to real-life needs.
+**Hair Care:** Whether you're taming frizz, boosting volume, or embracing your natural texture, our hair care tips are tailored to real-life needs.
 
 ## 🌸 Why Beauty Bitz?
 Beauty Bitz is more than a blog — it's a curated space for beauty lovers who value clarity, quality, and a touch of fun. We believe beauty care should feel empowering, not overwhelming. That’s why every post is designed to be easy to follow, evidence-informed, and refreshingly real.
