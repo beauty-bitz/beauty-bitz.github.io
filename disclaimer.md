@@ -22,7 +22,9 @@ As a “Visitor” / “Customer,” it is your responsibility to consult with y
 
 The content of our articles is not meant as a substitute for individualized guidance from a qualified healthcare provider and should not be construed as medical advice. We strongly encourage readers to conduct their own research and consult with their own health care professionals to determine if the information contained on the Site is suitable for their specific needs and purposes.
 
+## Contact Information
 
+For general inquiries, you can contact us at the following email address: beauty-bitz@outlook.com.
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
