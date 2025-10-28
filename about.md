@@ -50,6 +50,6 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
   } /* End Mobile */  
 
   .sitehead {
-    font-family: 'Dancing Script';
+    font-family: 'helveticaNeue';
   }
 </style>
