@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <h2>💖 About <span class="sitehead">Beauty~Bitz</span></h2>
-Welcome to Beauty Bitz — your go-to destination for smart, honest, and beautifully curated beauty care advice.
+Welcome to <p><span class="sitehead">Beauty~Bitz</span></p> — your go-to destination for smart, honest, and beautifully curated beauty care advice.
 
 Whether you're refreshing your skincare routine, exploring new hair care rituals, or hunting for the perfect cosmetic pick-me-up, Beauty Bitz offers bite-sized recommendations and deeper dives to help you glow with confidence. Every post is crafted with care, blending practical tips, product insights, and a touch of indulgence.
 
@@ -18,11 +18,11 @@ Whether you're refreshing your skincare routine, exploring new hair care rituals
 
 **Hair Care:** Whether you're taming frizz, boosting volume, or embracing your natural texture, our hair care tips are tailored to real-life needs.
 
-## 🌸 Why Beauty Bitz?
-Beauty Bitz is more than a blog — it's a curated space for beauty lovers who value clarity, quality, and a touch of fun. We believe beauty care should feel empowering, not overwhelming. That’s why every post is designed to be easy to follow, evidence-informed, and refreshingly real.
+<h2>🌸 Why <span class="sitehead">Beauty~Bitz</span> ?</h2>
+<p><span class="sitehead">Beauty~Bitz</span></p> is more than a blog — it's a curated space for beauty lovers who value clarity, quality, and a touch of fun. We believe beauty care should feel empowering, not overwhelming. That’s why every post is designed to be easy to follow, evidence-informed, and refreshingly real.
 
 ## 💬 A Note from the Creator
-Hi, I'm Margaret — the voice behind Beauty Bitz. I started this blog to share my love for beauty care in a way that’s approachable, practical, and empowering. Over the years, I’ve tested routines, decoded ingredient lists, and curated product picks that actually make a difference. Beauty Bitz is my way of passing along what works — not just what’s trending.
+Hi, I'm Margaret — the voice behind <p><span class="sitehead">Beauty~Bitz</span></p>. I started this blog to share my love for beauty care in a way that’s approachable, practical, and empowering. Over the years, I’ve tested routines, decoded ingredient lists, and curated product picks that actually make a difference. <p><span class="sitehead">Beauty~Bitz</span></p> is my way of passing along what works — not just what’s trending.
 
 I believe beauty care should feel like self-care, not a chore. Whether you're a minimalist or a product junkie, there's space here for your style, your questions, and your glow-up journey. Thanks for stopping by — I’m so glad you’re here.
 
