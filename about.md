@@ -5,6 +5,8 @@ permalink: /about/
 ---
 
 ## 💖 About Beauty Bitz
+<h2>About<span style="font-weight: bold; font-family: $helveticaNeue;">Beauty~Bitz</span></h2>
+
 Welcome to Beauty Bitz — your go-to destination for smart, honest, and beautifully curated beauty care advice.
 
 Whether you're refreshing your skincare routine, exploring new hair care rituals, or hunting for the perfect cosmetic pick-me-up, Beauty Bitz offers bite-sized recommendations and deeper dives to help you glow with confidence. Every post is crafted with care, blending practical tips, product insights, and a touch of indulgence.
