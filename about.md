@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 ## 💖 About Beauty Bitz
-<h2>About <span style="font-weight: bold; font-family: helveticaNeue;">Beauty~Bitz</span></h2>
+<h2>About <span style="font-weight: bold; font-family: 'Dancing Script', 'Brush Script MT', cursive;">Beauty~Bitz</span></h2>
 
 Welcome to Beauty Bitz — your go-to destination for smart, honest, and beautifully curated beauty care advice.
 
