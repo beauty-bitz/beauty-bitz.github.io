@@ -236,6 +236,10 @@ Our Privacy Policy may undergo updates periodically. We will inform you of any c
 
 We recommend reviewing this Privacy Policy periodically for any alterations. Changes to this Privacy Policy take effect when they are posted on this page.
 
+## Contact Information
+
+For general inquiries, you can contact us at the following email address: beauty-bitz@outlook.com.
+
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
