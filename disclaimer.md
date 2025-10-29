@@ -6,7 +6,7 @@ permalink: /disclaimer/
 
 ## Last Updated: 2025-05-19
 
-Beauty Bitz / [https://beautyblips.com/](https://beautyblips.com) (the “Site”), a personal blog I manage serves as an informational platform.
+Beauty Blips / [https://beautyblips.com/](https://beautyblips.com) (the “Site”), a personal blog I manage serves as an informational platform.
 
 The content on the Site (referred to as the “Services”) is provided for general informational purposes only. The Site does not accept responsibility for any errors or omissions in the content of the Services.
 
