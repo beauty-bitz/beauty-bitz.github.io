@@ -6,13 +6,13 @@ permalink: /privacy/
 
 ## Last Updated: 2025-05-19
 
-Welcome to Beauty Bitz, located at [https://beauty-bitz.github.io/](https://beauty-bitz.github.io/) (the “Site”). We acknowledge the significance of online privacy to users of our website.
+Welcome to Beauty Blips, located at [https://beautyblips.com](https://beautyblips.com/) (the “Site”). We acknowledge the significance of online privacy to users of our website.
 
 This privacy policy governs all content available on the Site and its associated properties.
 
 This statement also governs our privacy policies with respect to those users of the Site (“Visitors”) who visit or subscribe/register and make use of the Services offered (collectively, “Services”) by the Site.
 
-References to "us," "our," "we", or "I" in this document pertain to  Beauty Bitz / [https://beauty-bitz.github.io/](https://beauty-bitz.github.io/).
+References to "us," "our," "we", or "I" in this document pertain to  Beauty Bitz / [https://beautyblips.com](https://beautyblips.com).
 
 This page informs “Visitors” of our policies regarding the collection, use and disclosure of personally identifiable information ("Personal Information") when using our Services.
 
@@ -20,7 +20,7 @@ In this Privacy Policy, when we mention Personal Information, we are referring t
 
 Please familiarize yourself with this Privacy Policy before engaging with this Site or any of its Services. By utilizing this Site and its offerings, you affirm your acceptance of this Privacy Policy. If you disagree with its terms and policies, kindly refrain from utilizing the Site or its Services.
 
-Before proceeding to any page on this site, kindly review the privacy policy. Your continued use of our Services at Beauty Bitz / [https://beauty-bitz.github.io/](https://beauty-bitz.github.io/) implies your acceptance of these policies.
+Before proceeding to any page on this site, kindly review the privacy policy. Your continued use of our Services at Beauty Bitz / [https://beautyblips.com](https://beautyblips.com) implies your acceptance of these policies.
 
 ## Information Collection
 
@@ -238,7 +238,7 @@ We recommend reviewing this Privacy Policy periodically for any alterations. Cha
 
 ## Contact Information
 
-For general inquiries, you can contact us at the following email address: beauty-bitz@outlook.com.
+For general inquiries, you can contact us at the following email address: beautyblips@outlook.com.
 
 
 <style>
