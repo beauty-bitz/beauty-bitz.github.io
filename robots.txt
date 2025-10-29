@@ -3,4 +3,4 @@ User-agent: *
 Disallow: /feed.xml
 
 # Sitemap for better indexing
-Sitemap: https://beauty-bitz.github.io/sitemap.xml
+Sitemap: https://beautyblips.com/sitemap.xml
