@@ -38,7 +38,7 @@ Thank you for taking the time to reach out to us. We appreciate your feedback an
 
 ## Contact Information
 
-For general inquiries, you can contact us at the following email address: beauty-bitz@outlook.com.
+For general inquiries, you can contact us at the following email address: beautyblips@outlook.com.
 
 
 
