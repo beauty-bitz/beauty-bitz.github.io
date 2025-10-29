@@ -1373,6 +1373,12 @@ figcaption {
           display: none;
         } 
 
+		.sitehead2 {
+		    font-family: 'Dancing Script', cursive;
+			font-size: 34px;
+			margin-left: 345px;  
+		  }   
+
        } /* End Desktop */  
 
        @media only screen and (max-width: 767px) {
@@ -1476,6 +1482,12 @@ figcaption {
 	  margin-top: -50px;	
 	}	
 
+    .sitehead2 {
+    font-family: 'Dancing Script', cursive;
+	font-size: 34px;
+	margin-left: 30px;  
+  }		   
+
 } /* End Mobile */
 	
       
@@ -1488,17 +1500,12 @@ figcaption {
 	font-size: 30px; 
   }
 
-  .sitehead2 {
-    font-family: 'Dancing Script', cursive;
-	font-size: 34px;
-	margin-left: 345px;  
-  }
-
   .sitepara {
     font-family: 'Dancing Script', cursive;
 	font-size: 24px; 
 	font-weight: 600px;  
   }
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
