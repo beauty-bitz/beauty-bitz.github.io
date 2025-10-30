@@ -1,6 +1,4 @@
-# Allow all crawlers to access the site, except for the feed file
 User-agent: *
-Disallow: /feed.xml
+Allow: /
 
-# Sitemap for better indexing
 Sitemap: https://beautyblips.com/sitemap.xml
