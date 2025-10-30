@@ -1,3 +1,4 @@
+# Allow all crawlers to access the site.
 User-agent: *
 Allow: /
 
