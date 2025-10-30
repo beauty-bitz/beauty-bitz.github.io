@@ -8,7 +8,13 @@
     
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <link rel="canonical" href="https://beautyblips.com{{ page.url }}" />   
+    <link rel="canonical" href="https://beautyblips.com{{ page.url }}" />  
+
+    <script>
+      if (window.location.hostname.includes("github.io")) {
+        window.location.replace("https://beautyblips.com" + window.location.pathname);
+      }
+    </script>
 
     {% include meta.html %}
 
