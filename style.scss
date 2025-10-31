@@ -1505,12 +1505,10 @@ figcaption {
 	font-weight: 600px;  
   }
 
-  .cookieyes-button img {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  }  
-
+  img {
+    border: 2px solid;
+    border-color: #dea8b8;
+   }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
