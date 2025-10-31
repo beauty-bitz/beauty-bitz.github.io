@@ -1495,34 +1495,31 @@ figcaption {
     background-color: #edd3da; /* Replace with your desired color */
   }
 
+ /* Site header on home page */
  .sitehead {
     font-family: 'Dancing Script', cursive;
 	font-size: 30px; 
   }
-
   .sitepara {
 	font-size: 24px; 
 	font-weight: 600px;  
   }
 
+  /* Consent banner */
   .cky-btn-revisit-wrapper img {
     border: 2px solid;
     border-color: #dea8b8;
 	border: none;  
    }
-
    .cky-show-desc-btn {
 	   color: black;
     } 
-
     .cky-always-active {
 		color: black;
 	}
-
     button.cky-show-desc-btn {
 	  color: #000000 !important; /* Replace with your preferred pink */
 	}
-
 	span.cky-always-active {
 	  color: #000000 !important; /* Replace with your preferred pink */
 	}
