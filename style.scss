@@ -1505,9 +1505,10 @@ figcaption {
 	font-weight: 600px;  
   }
 
-  .cky-btn-revisit-wrapper .cky-btn-revisit img {
+  .cky-btn-revisit-wrapper img {
     border: 2px solid;
     border-color: #dea8b8;
+	border: none;  
    }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
