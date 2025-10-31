@@ -1522,9 +1522,17 @@ figcaption {
     .cky-preference-content-wrapper .cky-show-desc-btn {
 	  font-size: 14px;
 	  font-family: inherit;
-	  color: #000;
+	  color: black;
 	  text-decoration: none;
 	 }
+
+     .cky-accordion-header .cky-always-active {
+		  color: black;
+		  font-weight: 600;
+		  line-height: 24px;
+		  font-size: 14px;
+		  color: #000;
+		}
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
