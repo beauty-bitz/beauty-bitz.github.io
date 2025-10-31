@@ -1519,6 +1519,14 @@ figcaption {
 		color: black;
 	}
 
+    .cky-preference-content-wrapper .cky-show-desc-btn {
+	  font-size: 14px;
+	  font-family: inherit;
+	  color: #000;
+	  text-decoration: none;
+	 }
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
