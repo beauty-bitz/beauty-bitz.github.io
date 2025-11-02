@@ -24,7 +24,7 @@ The content of our articles is not meant as a substitute for individualized guid
 
 ## Contact Information
 
-For general inquiries, you can contact us at the following email address: beautyblips@outlook.com.
+For general inquiries, you can contact us at the following email address: contact@beautyblips.com.
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
