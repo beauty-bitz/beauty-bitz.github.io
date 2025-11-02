@@ -238,7 +238,7 @@ We recommend reviewing this Privacy Policy periodically for any alterations. Cha
 
 ## Contact Information
 
-For general inquiries, you can contact us at the following email address: beautyblips@outlook.com.
+For general inquiries, you can contact us at the following email address: contact@beautyblips.com.
 
 
 <style>
