@@ -25,13 +25,18 @@
     <!-- Link to style sheet -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   
-
+     <!-- canonical tag -->
      <link rel="canonical" href="{{ page.url | absolute_url | append: '/' }}" />
 
 
-
+     <!-- redirects -->
     <script>
       if (window.location.hostname.includes("github.io")) {
+        window.location.replace("https://beautyblips.com" + window.location.pathname);
+      }
+    </script>
+    <script>
+      if (window.location.hostname === "www.beautyblips.com") {
         window.location.replace("https://beautyblips.com" + window.location.pathname);
       }
     </script>
