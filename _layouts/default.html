@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   
 
-    <link rel="canonical" href="https://beautyblips.com{{ page.url }}" />  
+     <!-- <link rel="canonical" href="https://beautyblips.com{{ page.url }}" /> -->
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
 
     <script>
       if (window.location.hostname.includes("github.io")) {
