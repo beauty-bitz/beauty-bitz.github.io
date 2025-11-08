@@ -3,6 +3,8 @@ layout: post
 title: "Natural Retinol vs. Synthetic Retinol: How To Know What Is Best"
 categories: ["Skin Care"]
 image: "/assets/images/Skin/natural-synthetic-retinol.webp"
+tags: [retinol, moisturizer, cream, face cream]
+description: "A guide to natural retinol vs. synthetic retinol and how to know which is best."
 ---
 
 <figure>
