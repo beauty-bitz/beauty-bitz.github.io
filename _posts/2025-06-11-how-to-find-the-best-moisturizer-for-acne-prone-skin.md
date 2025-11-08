@@ -3,6 +3,8 @@ layout: post
 title: "How to Find the Best Moisturizer for Acne-Prone Skin"
 categories: ["Skin Care"]
 image: "/assets/images/Skin/Cream-for-acne-skin.webp"
+tags: [moisturizer, acne, acne-prone skin, cream, face cream]
+description: "A guide on how to find the best moisturizer for acne-prone skin."
 ---
 
 <figure>
