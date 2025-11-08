@@ -3,6 +3,8 @@ layout: post
 title: "How to Find the Best Blush for Sensitive Skin"
 categories: ["Cosmetics"]
 image: "/assets/images/Cosmetics/blush.webp"
+tags: [blush, sensitive skin, cosmetics, makeup]
+description: "A guide on how to find the best blush for sensitive skin."
 ---
 
 <figure>
