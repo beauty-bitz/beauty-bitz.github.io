@@ -3,6 +3,8 @@ layout: post
 title: "Repair Your Hair With Coconut Oil: Best How To's"
 categories: ["Hair Care"]
 image: "/assets/images/Hair/hair-conditioner-coconut-oil.webp"
+tags: [hair, hair care, coconut, coconut oil]
+description: "A guide on hair care products to repair your hair with coconut oil."
 ---
 
 <figure>
