@@ -3,6 +3,8 @@ layout: post
 title: "Best Face Cream for Oily Skin"
 categories: ["Skin Care"]
 image: "/assets/images/Skin/cream-for-oily-skin.webp"
+tags: [moisturizer, oily skin, cream, face cream]
+description: "A guide on how to find the best face cream for oily skin."
 ---
 
 <figure>
