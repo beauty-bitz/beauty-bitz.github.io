@@ -3,6 +3,8 @@ layout: post
 title: "How To Find the Best Bubble Bath for Dry Skin"
 categories: ["Bath and Shower"]
 image: "/assets/images/Bath/bubble-bath-dry-skin.webp"
+tags: [bubble batch, dry skin, bath, bath products]
+description: "A guide on how to find the best bubble bath for dry skin."
 ---
 
 <figure>
