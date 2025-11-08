@@ -3,6 +3,8 @@ layout: post
 title: "Foundation for Dry Skin Know How To Find the Best One"
 categories: ["Cosmetics"]
 image: "/assets/images/Cosmetics/foundation-dry-skin.webp"
+tags: [foundation, dry skin, cosmetics, makeup]
+description: "A guide on how to find the best foundation for dry skin."
 ---
 
 <figure>
