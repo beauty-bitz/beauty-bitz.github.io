@@ -26,11 +26,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   
      <!-- canonical tag -->
-      {% if page.url == "/" %}
-        <link rel="canonical" href="https://beautyblips.com/" />
-      {% else %}
-        <link rel="canonical" href="{{ page.url | absolute_url | append: '/' }}" />
-      {% endif %}
+      <link rel="canonical" href="{{ page.url | absolute_url }}">
 
     {% include meta.html %}
 
