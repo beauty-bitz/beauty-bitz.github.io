@@ -1,5 +1,6 @@
 # Allow all crawlers to access the site.
-User-agent: *
-Allow: /
 
-Sitemap: https://beautyblips.com/sitemap.xml
+user-agent: *
+allow: /
+
+sitemap: https://beautyblips.com/sitemap.xml
