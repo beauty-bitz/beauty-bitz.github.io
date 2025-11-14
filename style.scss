@@ -1527,17 +1527,12 @@ figcaption {
 /* --- Center Jekyll Now content on desktop only --- */
 @media screen and (min-width: 1024px) {
   /* Center the main container */
-  .site-content {
+  body {
       max-width: 1000px;       /* Set your desired desktop width */
       margin-left: 400px;        /* Horizontally center */
       margin-right: 400px;
       padding-left: 15px;       /* Small padding so content doesn't touch edges */
       padding-right: 15px;
-  }
-
-  /* Keep text inside container left-aligned */
-  .site-content {
-      text-align: left;
   }
 }
 
