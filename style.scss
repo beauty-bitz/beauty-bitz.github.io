@@ -785,7 +785,7 @@ img {
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
   .social-share {
    justify-content: left;	 
-   margin-left: 475px; 
+   margin-left: 525px; 
   }
   
 } /* End Desktop */
@@ -796,6 +796,7 @@ img {
   margin-top: 2em;
   margin-bottom: 1em;
   text-align: center;
+  margin-left: 200px;	
   color: #000000;
 }
  .recent-post-grid {
@@ -1377,6 +1378,7 @@ figcaption {
 		    font-family: 'Dancing Script', cursive;
 			font-size: 50px;
 			margin-left: 275px;  
+			text-align: center;
 		  }   
 
        } /* End Desktop */  
