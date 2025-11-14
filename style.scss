@@ -1524,6 +1524,24 @@ figcaption {
 	  color: #000000 !important; /* Replace with your preferred pink */
 	}
 
+/* --- Center Jekyll Now content on desktop only --- */
+@media screen and (min-width: 1024px) {
+  /* Center the main container */
+  .container, .site-content {
+      max-width: 1000px;       /* Set your desired desktop width */
+      margin-left: auto;        /* Horizontally center */
+      margin-right: auto;
+      padding-left: 15px;       /* Small padding so content doesn't touch edges */
+      padding-right: 15px;
+  }
+
+  /* Keep text inside container left-aligned */
+  .site-content {
+      text-align: left;
+  }
+}
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
