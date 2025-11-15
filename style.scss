@@ -235,14 +235,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $black;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: #e26a8e;
     }
   }
 }
@@ -824,7 +824,7 @@ img {
 
 .recent-post-card a {
   text-decoration: none;
-  color: inherit;
+  color: $black;
   display: block;
 }
 
