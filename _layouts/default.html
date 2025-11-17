@@ -32,17 +32,20 @@
     <link rel="canonical" href="{{ page.url | absolute_url | append: '/' }}">
   {% endif %}
 
-  <!-- Redirect GitHub → Domain -->
-  <script>
-    const host = window.location.hostname;
-    const path = window.location.pathname;
-    if (host.includes("github.io") || host === "www.beautyblips.com") {
-      window.location.replace("https://beautyblips.com" + path);
-    }
-  </script>
+  
 
   <!-- Meta include -->
   {% include meta.html %}
+
+  <!-- Add logo as site logo in browser searches  - start --> 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://beautyblips.com/",
+      "logo": "https://beautyblips.com/images/cream-logo-128.png"
+    }
+    </script>
 
   <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
