@@ -3,7 +3,7 @@ layout: post
 title: "How To Find The Best Moisturizer for Dry Skin"
 categories: ["Skin Care"]
 image: "/assets/images/Skin/moisturizer-dry-skin.webp"
-tags: [moisturizer, dry skin, cream, face cream, zcream]
+tags: [moisturizer, dry skin, cream, face cream, best cream for dry skin, best moisturizer for dry skin]
 description: "A guide on how to find the best moisturizer for dry skin."
 ---
 
