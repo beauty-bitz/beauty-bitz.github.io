@@ -46,13 +46,24 @@ layout: default
   </div>
   {% endif %}
 
+  {% if page.tags %}
+  <div class="post-tags">
+    <strong>Keywords:</strong>
+    {{ page.tags | join: ", " }}
+  </div>
+  {% endif %}
+
   <style>
      @media only screen and (min-width: 820px) and (max-width: 2000px) {
     .post-tags {
       margin-top: 20px;
-      margin-left: 140px;
+      margin-left: 155px;
     }
-     }    
+     .post-tags {
+      margin-top: 20px;
+     }  
+       
+   }    
   </style>  
   
 
