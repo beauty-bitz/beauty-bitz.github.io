@@ -39,11 +39,6 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
-
-
- {% if page.tags %}
-  <meta name="keywords" content="{{ page.tags | join: ', ' }}">
- {% endif %}
   
 
   {% include disqus.html %}
