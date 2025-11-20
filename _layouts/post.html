@@ -39,6 +39,34 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+
+   {% if page.tags %}
+  <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+  {% endif %}
+
+   {% if page.tags %}
+  <div class="post-tags">
+    <strong>Tags:</strong><br>
+    {{ page.tags | join: ", " }}
+  </div>
+  {% endif %}
+
+    <style>
+     @media only screen and (min-width: 820px) and (max-width: 2000px) {
+    .post-tags {
+      margin-top: 20px;
+      margin-left: 150px;
+    }
+     }  
+     @media only screen and (max-width: 780px) {   
+     .post-tags {
+      margin-top: 20px;
+     } 
+     }   
+       
+     
+  </style>  
+
   
 
   {% include disqus.html %}
