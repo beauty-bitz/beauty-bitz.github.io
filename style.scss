@@ -1549,11 +1549,11 @@ figcaption {
 
 
    /* Hide desktop nav on small screens */
-   @media screen and (max-width: 768px) {
+   @media only screen and (max-width: 768px) {
     .desktop-header-nav {
-      display: none !important;
+        display: none !important;
+    }
    }
- }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
