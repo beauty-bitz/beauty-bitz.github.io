@@ -1495,9 +1495,7 @@ figcaption {
         .head-devops {
           display: none;
         } 
-        .desktop-header-nav {
-          display: none
-        }   
+     
 
 	.wrapper-masthead {
          margin-bottom: 15px;
@@ -1549,7 +1547,11 @@ figcaption {
 	}
 
 
-
+   /* Hide desktop nav on small screens */
+   @media screen and (max-width: 768px) {
+    .desktop-header-nav {
+      display: none !important;
+   }
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
