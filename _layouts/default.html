@@ -37,7 +37,21 @@
   <!-- Meta include -->
   {% include meta.html %}
 
-  <!-- Add logo as site logo in browser searches  - start --> 
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Tags -->
+   {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+   {% endif %}
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Simple Analytics -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+     <!-- Add logo as site logo in browser searches  - start --> 
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -56,30 +70,6 @@
           }
         }
   
-    </script>
-
-  <!-- Viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <!-- Tags -->
-   {% if page.tags %}
-    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
-   {% endif %}
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
-  <!-- Simple Analytics -->
-  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-
-   <!-- Add logo as site logo in browser searches  - start --> 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://beautyblips.com/",
-      "logo": "https://beautyblips.com/images/cream-logo-128.png"
-    }
     </script>
 
     <!-- Favicon -->
