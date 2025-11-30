@@ -12,13 +12,7 @@ description: "A guide on the best essential oils for amazing hair."
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
-## Introduction
-Absolutely — here is a **fully rewritten, original version** of your entire article, formatted as a clean and professional **GitHub Pages Markdown (.md)** blog post.
-All content has been rewritten from scratch to avoid plagiarism while keeping the same informational purpose.
-
-# **💧 The Complete Guide to Using Essential Oils for Healthier Hair**
-
-*Last updated: {{ site.time }}*
+# **💧 Introduction**
 
 Essential oils have become a popular addition to many hair-care routines, and for good reason. These concentrated plant extracts contain naturally occurring compounds that can help support scalp comfort, add shine, and make hair feel smoother and more manageable. Whether you’re dealing with dryness, slow growth, frizz, or general scalp irritation, essential oils can be a gentle, plant-based option to explore.
 
@@ -60,8 +54,6 @@ Rosemary oil is frequently chosen for its invigorating, herbaceous aroma. It’s
 ## **Peppermint Oil**
 
 Peppermint oil creates a cooling sensation that many people find refreshing. This “tingle” occurs because peppermint contains menthol, which can temporarily enhance the feeling of circulation on the scalp. This effect makes it a popular option for people looking to maintain a lively, energized scalp environment.
-
----
 
 # **💧 Oils That Nourish and Moisturize**
 
