@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Repair Your Hair With Coconut Oil: Best How To's"
+title: "The Best Essential Oils for Amazing Hair"
 categories: ["Hair Care"]
-image: "/assets/images/Hair/hair-conditioner-coconut-oil.webp"
-tags: [hair, hair care, coconut, coconut oil]
-description: "A guide on hair care products to repair your hair with coconut oil."
+image: "/assets/images/Hair/essential-oils-for-hair-care.webp"
+tags: [hair, hair care, essential oils]
+description: "A guide on the best essential oils for amazing hair."
 ---
 
 <figure>
-  <img src="/assets/images/Hair/hair-conditioner-coconut-oil.webp" altB="Bubble bath for dry skin" />
+  <img src="/assets/images/Hair/essential-oils-for-hair-care.webp" altB="best essential oils for hair care" />
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
