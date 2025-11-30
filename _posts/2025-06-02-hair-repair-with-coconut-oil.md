@@ -8,7 +8,7 @@ description: "A guide on hair care products to repair your hair with coconut oil
 ---
 
 <figure>
-  <img src="/assets/images/Hair/hair-conditioner-coconut-oil.webp" altB="Bubble bath for dry skin" />
+  <img src="/assets/images/Hair/hair-conditioner-coconut-oil.webp" altB="Coconut oil to repair hair" />
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
