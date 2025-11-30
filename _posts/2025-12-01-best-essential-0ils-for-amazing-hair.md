@@ -43,7 +43,7 @@ Pumpkin seed oil is an all-natural remedy that is becoming increasingly popular 
 
 Also, pumpkin seeds are an excellent source of vitamin E and fatty acids, which are essential for maintaining a healthy scalp. By keeping your scalp well-nourished, pumpkin seed oil can help prevent hair from thinning and promote the growth of new, healthy strands. So if you’re experiencing hair loss or thinning, try incorporating this natural oil into your hair care routine to help get your locks back to their lustrous best.
 
-## Rosemary Oil: Increases Circulation to the Scalp
+### Rosemary Oil: Increases Circulation to the Scalp
 
 Rosemary oil has long been considered a wonderful natural remedy for hair and scalp care. It is a powerful botanical extract that can promote blood circulation which can stimulate hair growth and strengthen hair, leaving you with healthy, thick, and luscious locks. The benefits of using rosemary oil on your hair and scalp are numerous – it can help stop hair breakage, soothe a dry and itchy scalp, and even help prevent hair loss.
 
