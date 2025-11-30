@@ -1,15 +1,16 @@
+---
+layout: post
+title: "Repair Your Hair With Coconut Oil: Best How To's"
+categories: ["Hair Care"]
+image: "/assets/images/Hair/hair-conditioner-coconut-oil.webp"
+tags: [hair, hair care, coconut, coconut oil]
+description: "A guide on hair care products to repair your hair with coconut oil."
+---
 
-
-
-
-
-
-
-
-
-
-
-
+<figure>
+  <img src="/assets/images/Hair/hair-conditioner-coconut-oil.webp" altB="Bubble bath for dry skin" />
+  <figcaption>Image on Freepik</figcaption>
+</figure>
 
 ## Introduction
 Essential oils have numerous benefits for promoting healthy hair and scalp. These concentrated plant extracts are packed with vitamins, minerals, and antioxidants that can nourish, strengthen, and revitalize your hair. Whether you are struggling with hair growth issues, dryness, frizz, or scalp conditions, essential oils offer a natural and effective solution.
