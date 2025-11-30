@@ -37,11 +37,11 @@ Different oils offer different properties. In general, essential oils may help:
 * Support a comfortable, balanced scalp
 * Make hair feel softer and more hydrated
 * Add shine and reduce the appearance of frizz
-* Help hair appear fuller and healthier
-* Ease occasional dryness or itchiness
+* Help hair look fuller and healthier
+* Prevent occasional dryness or itchiness
 * Provide a pleasant, spa-like scent
 
-While results vary from person to person, many people find that essential oils add an enjoyable, nourishing step to their routine.
+While results vary from person to person, many people find that essential oils add an enjoyable, nourishing step to their hair care routine.
 
 # **🌱 Essential Oils That Support Healthy Hair Growth**
 
@@ -189,7 +189,7 @@ Some essential oils—such as rosemary, peppermint, and lavender—are believed 
 
 ### **2. Are essential oils safe to apply to the scalp?**
 
-Yes, when diluted properly and patch-tested first. Essential oils should *never* be applied undiluted.
+Yes, when diluted properly and patch-tested first. Essential oils should *never* be applied undiluted. If you take medications or have diagnosed skin conditions, ask a healthcare professional whether essential oils are appropriate for you.
 
 ### **3. How do I add essential oils to my hair-care routine?**
 
