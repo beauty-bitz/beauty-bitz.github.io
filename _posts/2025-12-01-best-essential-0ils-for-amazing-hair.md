@@ -12,7 +12,7 @@ description: "A guide on the best essential oils for amazing hair."
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
-# **💧 Introduction**
+# **🔰 Introduction**
 
 Essential oils have become a popular addition to many hair-care routines, and for good reason. These concentrated plant extracts contain naturally occurring compounds that can help support scalp comfort, add shine, and make hair feel smoother and more manageable. Whether you’re dealing with dryness, slow growth, frizz, or general scalp irritation, essential oils can be a gentle, plant-based option to explore.
 
