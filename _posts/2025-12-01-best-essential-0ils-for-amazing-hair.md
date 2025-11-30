@@ -103,7 +103,8 @@ Clary sage oil is the secret weapon for glossy and healthy-looking hair. Infused
 Rose oil is the fairy godmother your hair has been waiting for. It restores vitality and radiance to your locks, giving them a new lease on life. With rose oil in your hair care routine, you’ll be feeling like the protagonist of your own fairytale, with hair that’s as captivating as your personality.
 
 ## Incorporating Essential Oils Into Your Hair Care Routine
-When it comes to applying essential oils, you have options. Whether you prefer massaging them into your scalp, rinsing them through your hair, or even leaving them in as a treatment, find the method that works best for you and your hair goals.
+
+Essential oils can fit into your hair care routine in several simple, effective ways. The key is choosing a method that matches your hair goals—whether you want to support scalp comfort, add shine, or help your hair feel smoother and more manageable. You can massage diluted essential oils into your scalp to nourish the roots, add them to a warm rinse for lightweight conditioning, or blend them into a leave-in treatment for deeper hydration. Start with one method, pay attention to how your hair responds, and adjust until you find a routine that feels right for you.
 
 ## Considerations When Using Essential Oils for Hair Care
 When using essential oils for hair treatment, it's essential to acknowledge both the advantages and the potential drawbacks. Here are some drawbacks linked to using essential oils on hair:
