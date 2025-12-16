@@ -8,6 +8,6 @@ description: "A guide on how to find the best moisturizer for dry skin."
 ---
 
 <figure>
-  <img src="/assets/images/Skin/moisturizer-dry-skin.webp" alt="Moisturizer for dry skin" />
+  <img src="/assets/images/Skin/bakuchiol flower700.webp" alt="Moisturizer for dry skin" />
   <figcaption></figcaption>
 </figure>
