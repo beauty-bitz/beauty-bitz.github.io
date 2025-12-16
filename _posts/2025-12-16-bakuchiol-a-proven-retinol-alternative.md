@@ -106,7 +106,7 @@ While Bakuchiol is often touted as a natural alternative to retinol, it may not 
 
 Always dilute Bakuchiol oil before applying it to the skin. You can do this by blending a few drops of Bakuchiol with a carrier oil, such as jojoba oil or argan oil. Massage the diluted mixture gently onto the face or other desired areas.
 
-- The recommended usage level in skincare products is approximately 1-3%.
+- The recommended usage level in skincare products is approximately 1-3%
 
 ## Patch Testing for Sensitivity
 Before incorporating Bakuchiol into your skincare routine, it’s important to perform a patch test to check for any potential sensitivities or allergic reactions. Apply a small amount of the diluted Bakuchiol oil to a discreet area of skin, such as the inner forearm, and wait 24 hours to observe any adverse reactions.
