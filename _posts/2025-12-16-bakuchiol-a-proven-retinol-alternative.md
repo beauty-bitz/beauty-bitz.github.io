@@ -28,7 +28,7 @@ Bakuchiol has stirred the beauty industry as a natural substitute for retinol. M
 
 Studies have proven that it provides comparable advantages to retinol without the possible side effects retinol is known for. But what exactly is bakuchiol, and 
 
-## why is it becoming so popular?
+## Why is it becoming so popular?
 
 ### Growing Popularity
 In the last few years, a trend towards using clean and natural beauty products has emerged. Consumers are looking for alternative skincare ingredients that can replace retinol, given its potential to irritate some skin types. Here, bakuchiol comes into play. 
