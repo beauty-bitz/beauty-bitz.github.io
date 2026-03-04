@@ -6,11 +6,11 @@ permalink: /disclaimer/
 
 ## Last Updated: 2025-05-19
 
-Beauty Blips / [https://beautyblips.com/](https://beautyblips.com) (the “Site”), a personal blog I manage serves as an informational platform.
+Beauty Blurbs / [https://beautyblurbs.com/](https://beautyblurbs.com) (the “Site”), a personal blog I manage serves as an informational platform.
 
 The content on the Site (referred to as the “Services”) is provided for general informational purposes only. The Site does not accept responsibility for any errors or omissions in the content of the Services.
 
-This statement governs our privacy policies concerning those users of the Site (“Visitors” / “Authorized Customers”) who visit or subscribe/register and make use of the various Services offered by the Site. References to “us,” “our,” “we”, and “I” in this document pertain to Beauty Blips / [https://beautyblips.com](https://beautyblips.com).
+This statement governs our privacy policies concerning those users of the Site (“Visitors” / “Authorized Customers”) who visit or subscribe/register and make use of the various Services offered by the Site. References to “us,” “our,” “we”, and “I” in this document pertain to Beauty Blurbs / [https://beautyblurbs.com](https://beautyblurbs.com).
 
 Under no circumstances shall the Site be held liable for any special, direct, indirect, consequential, or incidental damages arising from the use of the Services or its contents, whether in contract, negligence, or other tort actions. The Site reserves the right to update, modify, or delete the content of the Services without prior notice.
 
@@ -24,7 +24,7 @@ The content of our articles is not meant as a substitute for individualized guid
 
 ## Contact Information
 
-For general inquiries, you can contact us at the following email address: contact@beautyblips.com.
+For general inquiries, you can contact us at the following email address: contact@beautyblurbs.com.
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
