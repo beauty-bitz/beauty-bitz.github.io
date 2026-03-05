@@ -1,10 +1,10 @@
 ---
 layout: default
-title: About
-permalink: /about/
+title: "About"
+permalink: /About/
 ---
 
-<nav class="breadcrumbs-about">
+<nav class="breadcrumbs">
   <a href="/">🏠</a> &gt;
   <span class="current">About</span>
 </nav>
