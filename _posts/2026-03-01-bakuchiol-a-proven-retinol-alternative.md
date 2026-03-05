@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Bakuchiol: A Proven Retinol Alternative"
+title: "Bakuchiol: A Retinol Alternative"
 categories: ["Skin Care"]
 image: "/assets/images/Skin/bakuchiol flower700.webp"
 tags: [moisturizer, dry skin, bakuchiol, face oil, retinol alternative, bakuchiol retinol alternative]
-description: "A guide on bakuchiol, the Proven retinol alternative."
+description: "A guide on bakuchiol, the retinol alternative."
 ---
 
 <figure>
