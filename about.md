@@ -4,6 +4,13 @@ title: About
 permalink: /about/
 ---
 
+<nav class="breadcrumbs">
+  <a href="/">🏠</a> &gt;
+  <span class="current">About</span>
+</nav>
+
+<br /><br />
+
 <h2>💖 About <span>Beauty Blurbs</span></h2>
 Welcome to <span>Beauty Blurbs</span> — your go-to destination for smart, honest, and beautifully curated beauty care advice.
 
