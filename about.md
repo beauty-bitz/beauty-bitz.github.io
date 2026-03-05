@@ -54,11 +54,11 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
 
    @media only screen and (max-width: 780px) { 
     .page {
-    margin-left: 15px;
-    margin-right: 20px;
+      margin-left: 15px;
+      margin-right: 20px;
     }
     .breadcrumbs-about {
-    margin-left: 0px !important;
+     margin-left: 0px !important;
     }  
 
   } /* End Mobile */  
