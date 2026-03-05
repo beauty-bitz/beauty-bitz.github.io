@@ -40,9 +40,6 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
     margin-top: -10px;
   }  
 
-  .breadcrumbs-about {
-    margin-left: -30px !important;
-  } 
 
  .page {
     width: 800px;
@@ -57,9 +54,7 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
       margin-left: 15px;
       margin-right: 20px;
     }
-    .breadcrumbs-about {
-     margin-left: -5px !important;
-    }  
+   
 
   } /* End Mobile */  
 
