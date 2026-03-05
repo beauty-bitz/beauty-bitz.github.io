@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: default
 title: Contact
 permalink: /contact/
 ---
 
-<nav class="breadcrumbs">
+<nav class="breadcrumbs-contact">
   <a href="/">🏠</a> &gt;
   <span class="current">Contact</span>
 </nav>
