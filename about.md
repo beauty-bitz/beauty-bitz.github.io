@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<nav class="breadcrumbs">
+<nav class="breadcrumbs-about">
   <a href="/">🏠</a> &gt;
   <span class="current">About</span>
 </nav>
@@ -40,7 +40,7 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
     margin-top: -10px;
   }  
 
-  .breadcrumbs {
+  .breadcrumbs-about {
     margin-left: -30px !important;
   } 
 
@@ -57,6 +57,9 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
     margin-left: 15px;
     margin-right: 20px;
     }
+    .breadcrumbs-about {
+    margin-left: 0px !important;
+    }  
 
   } /* End Mobile */  
 
