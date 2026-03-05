@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<nav class="breadcrumbs" style="margin-left: 10px;">
+<nav class="breadcrumbs" style="margin-left: -30px;">
   <a href="/">🏠</a> &gt;
   <span class="current">About</span>
 </nav>
