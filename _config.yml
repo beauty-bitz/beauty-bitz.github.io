@@ -6,7 +6,7 @@
 name: Beauty Blurbs
 
 # Short bio or description (displayed in the header)
-description: Discover Beauty Blurbs. Your daily dose of beauty blips. Tiny tips with big beauty impact. You can look forward to beauty tips, honest product reviews, and a fresh take on self-care. Whether you're here to explore trends or embrace your natural glow, Beauty~Bitz is your companion on the journey to feeling your best
+description: Discover Beauty Blurbs. Your daily dose of beauty blurbs. Tiny tips with big beauty impact. You can look forward to beauty tips, honest product reviews, and a fresh take on self-care. Whether you're here to explore trends or embrace your natural glow, Beauty~Bitz is your companion on the journey to feeling your best
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: "/images/flower.webp"
@@ -43,7 +43,7 @@ google_fonts: 'Pacifico'
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: "https://beautyblips.com"
+url: "https://beautyblurbs.com"
 
 
 # Plugins
