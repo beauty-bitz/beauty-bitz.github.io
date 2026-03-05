@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "About"
-permalink: /About/
+title: About
+permalink: /about/
 ---
 
 <nav class="breadcrumbs">
@@ -10,6 +10,8 @@ permalink: /About/
 </nav>
 
 <br /><br />
+
+<h1>About</h1>
 
 Welcome to <span>Beauty Blurbs</span> — your go-to destination for smart, honest, and beautifully curated beauty care advice.
 
