@@ -4,6 +4,13 @@ title: Disclaimer
 permalink: /disclaimer/
 ---
 
+<nav class="breadcrumbs">
+  <a href="/">🏠</a> &gt;
+  <span class="current">Disclaimer</span>
+</nav>
+
+<br /><br />
+
 ## Last Updated: 2025-05-19
 
 Beauty Blurbs / [https://beautyblurbs.com/](https://beautyblurbs.com) (the “Site”), a personal blog I manage serves as an informational platform.
