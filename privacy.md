@@ -4,7 +4,7 @@ title: "Privacy Policy"
 permalink: /privacy/
 ---
 
-<nav class="breadcrumbs-priv">
+<nav class="breadcrumbs">
   <a href="/">🏠</a> &gt;
   <span class="current">Privacy</span>
 </nav>
@@ -253,9 +253,6 @@ For general inquiries, you can contact us at the following email address: contac
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */  
-  .site-name {
-    margin-top: -10px;
-  }
   
 
  h1 {
