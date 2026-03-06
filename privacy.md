@@ -4,7 +4,7 @@ title: "Privacy Policy"
 permalink: /privacy/
 ---
 
-<nav class="breadcrumbs">
+<nav class="breadcrumbs-privacy">
   <a href="/">🏠</a> &gt;
   <span class="current">Privacy</span>
 </nav>
@@ -261,7 +261,10 @@ For general inquiries, you can contact us at the following email address: contac
     width: 800px;
     margin-left: 100px;
     margin-right: 50px;
-  }    
+  }  
+  .breadcrumbs-privacy {
+    margin-left: -30px;
+  } 
 
   } /*End Desktop */
 
