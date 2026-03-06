@@ -288,7 +288,7 @@ For general inquiries, you can contact us at the following email address: contac
   gap: 20px; /* spacing between items */
   list-style: none; /* remove bullets if needed */
   padding: 0;
-  margin-left: 250px;  
+  margin-left: 275px;  
 }
 .footer-menu li {
   display: inline; /* or inline-block */
@@ -303,6 +303,18 @@ For general inquiries, you can contact us at the following email address: contac
     margin-left: 15px;
     margin-right: 20px;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+    margin-left: 15px;
+    
+  }
+  p {
+    margin-left: 15px;
+  }
+  ol, ul {
+    margin-left: 15px;
+  }  
+    
   } /* End Mobile */
 </style>
 
