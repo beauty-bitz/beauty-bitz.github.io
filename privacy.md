@@ -257,8 +257,8 @@ For general inquiries, you can contact us at the following email address: contac
 
  .page {
     width: 800px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 0px;
   }  
 
   } /*End Desktop */
