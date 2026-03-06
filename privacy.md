@@ -11,7 +11,7 @@ permalink: /privacy/
 
 <h1>Privacy Policy</h1>
 
-#### Last Updated: 2025-05-19
+<h4>Last Updated: 2025-05-19</h4>
 
 Welcome to Beauty Blurbs, located at [https://beautyblurbs.com](https://beautyblurbs.com/) (the “Site”). We acknowledge the significance of online privacy to users of our website.
 
@@ -257,13 +257,18 @@ For general inquiries, you can contact us at the following email address: contac
 
  h1 {
     width: 800px;
-    margin-left: 400px;
-    margin-right: 0px;
-  } 
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+ h4 {
+    width: 800px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }   
   p {
     width: 800px;
-    margin-left: 400px;
-    margin-right: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
   }   
 
   } /*End Desktop */
