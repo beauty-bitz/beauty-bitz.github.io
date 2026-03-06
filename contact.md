@@ -52,15 +52,35 @@ For general inquiries, you can contact us at the following email address: contac
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */  
-  .site-name {
+   .site-name {
     margin-top: -10px;
   }  
+  .site-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 520px;
+  }
 
- .page {
+ h1, h2, h3, h4, h5, h6 {
     width: 800px;
     margin-left: 100px;
-    margin-right: 50px;
+    
   }
+ h4 {
+    width: 800px;
+    margin-left: 100px;
+   
+  }   
+  p {
+    width: 800px;
+    margin-left: 100px;
+  }
+  li {
+    width: 800px;
+    margin-left: 100px;
+  }
+
 
   } /*End Desktop */
 
