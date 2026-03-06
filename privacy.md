@@ -306,13 +306,15 @@ For general inquiries, you can contact us at the following email address: contac
 
     h1, h2, h3, h4, h5, h6 {
     margin-left: 15px;
-    
+    margin-right: 10px;     
   }
   p {
     margin-left: 15px;
+    margin-right: 10px; 
   }
   ol, ul {
     margin-left: 15px;
+    margin-right: 10px; 
   }  
     
   } /* End Mobile */
