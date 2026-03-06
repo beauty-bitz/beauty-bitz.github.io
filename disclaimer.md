@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Contact
-permalink: /contact/
+title: Disclaimer
+permalink: /disclaimer/
 ---
 
 <nav class="breadcrumbs">
   <a href="/">🏠</a> &gt;
-  <span class="current">Contact</span>
+  <span class="current">Disclaimer</span>
 </nav>
 
 <br /><br />
 
-<h1>Contact</h1>
+<h1>Disclaimer</h1>
 
 #### Last Updated: 2025-05-19
 
