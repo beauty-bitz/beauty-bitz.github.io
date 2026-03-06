@@ -258,10 +258,6 @@ For general inquiries, you can contact us at the following email address: contac
     margin-right: 50px;
   }  
 
-  .breadcrumbs-privacy {
-    margin-left: 0px;
-  } 
-
   } /*End Desktop */
 
   @media only screen and (max-width: 780px) { 
