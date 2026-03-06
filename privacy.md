@@ -289,6 +289,9 @@ For general inquiries, you can contact us at the following email address: contac
   list-style: none; /* remove bullets if needed */
   padding: 0;
 }
+.footer-menu li {
+  display: inline; /* or inline-block */
+}
 
    
 
