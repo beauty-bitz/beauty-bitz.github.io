@@ -253,7 +253,9 @@ For general inquiries, you can contact us at the following email address: contac
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */  
-  
+   .site-name {
+    margin-top: -10px;
+  }  
   .site-avatar img {
     width: 60px;
     height: 60px;
