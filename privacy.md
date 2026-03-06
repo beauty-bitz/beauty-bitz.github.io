@@ -277,7 +277,7 @@ For general inquiries, you can contact us at the following email address: contac
     width: 800px;
     margin-left: 100px;
   }
-  .container li {
+  ol, ul {
     width: 800px;
     margin-left: 100px;
   }
