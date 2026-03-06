@@ -1,17 +1,19 @@
 ---
 layout: default
-title: Disclaimer
-permalink: /disclaimer/
+title: Contact
+permalink: /contact/
 ---
 
 <nav class="breadcrumbs">
   <a href="/">🏠</a> &gt;
-  <span class="current">Disclaimer</span>
+  <span class="current">Contact</span>
 </nav>
 
 <br /><br />
 
-## Last Updated: 2025-05-19
+<h1>Contact</h1>
+
+#### Last Updated: 2025-05-19
 
 Beauty Blurbs / [https://beautyblurbs.com/](https://beautyblurbs.com) (the “Site”), a personal blog I manage serves as an informational platform.
 
