@@ -1,17 +1,19 @@
 ---
 layout: default
-title: Privacy Policy
+title: "Privacy Policy"
 permalink: /privacy/
 ---
 
 <nav class="breadcrumbs">
   <a href="/">🏠</a> &gt;
-  <span class="current">Privacy Policy</span>
+  <span class="current">Privacy</span>
 </nav>
 
 <br /><br />
 
-## Last Updated: 2025-05-19
+<h1>Privacy Policy</h1>
+
+#### Last Updated: 2025-05-19
 
 Welcome to Beauty Blurbs, located at [https://beautyblurbs.com](https://beautyblurbs.com/) (the “Site”). We acknowledge the significance of online privacy to users of our website.
 
