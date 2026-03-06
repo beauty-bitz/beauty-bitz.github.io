@@ -255,11 +255,16 @@ For general inquiries, you can contact us at the following email address: contac
     margin-top: -10px;
   }  
 
- .page {
+ h1 {
     width: 800px;
     margin-left: 400px;
     margin-right: 0px;
-  }  
+  } 
+  p {
+    width: 800px;
+    margin-left: 400px;
+    margin-right: 0px;
+  }   
 
   } /*End Desktop */
 
