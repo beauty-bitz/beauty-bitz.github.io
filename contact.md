@@ -4,12 +4,14 @@ title: Contact
 permalink: /contact/
 ---
 
-<nav class="breadcrumbs-contact">
+<nav class="breadcrumbs">
   <a href="/">🏠</a> &gt;
   <span class="current">Contact</span>
 </nav>
 
 <br /><br />
+
+<h1>Contact</h1>
 
 #### Last Updated: 2025-05-19
 
