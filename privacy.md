@@ -263,7 +263,7 @@ For general inquiries, you can contact us at the following email address: contac
     margin-right: 50px;
   }  
   .breadcrumbs-privacy {
-    margin-left: -30px;
+    margin-left: -15px;
   } 
 
   } /*End Desktop */
