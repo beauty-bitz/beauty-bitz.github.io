@@ -61,7 +61,7 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
     width: 800px;
     margin-left: 100px;
   }
-   .container {li {
+   .container li {
     width: 800px;
     margin-left: 100px;
   }
