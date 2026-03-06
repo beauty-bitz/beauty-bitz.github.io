@@ -9,6 +9,8 @@ permalink: /privacy/
   <span class="current">Privacy</span>
 </nav>
 
+<br /><br />
+
 <h1>Privacy Policy</h1>
 
 <h4>Last Updated: 2025-05-19</h4>
@@ -253,7 +255,8 @@ For general inquiries, you can contact us at the following email address: contac
   /* Indent Content  */  
   .site-name {
     margin-top: -10px;
-  }  
+  }
+  
 
  h1 {
     width: 800px;
