@@ -4,7 +4,7 @@ title: "Privacy Policy"
 permalink: /privacy/
 ---
 
-<nav class="breadcrumbs-privacy">
+<nav class="breadcrumbs">
   <a href="/">🏠</a> &gt;
   <span class="current">Privacy</span>
 </nav>
