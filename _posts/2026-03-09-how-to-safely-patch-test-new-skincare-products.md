@@ -3,8 +3,8 @@ layout: post
 title: "How to Patch Test New Skincare Products Safely"
 categories: ["Skin Care"]
 image: "/assets/images/Skin/bakuchiol flower700.webp"
-tags: [moisturizer, dry skin, bakuchiol, face oil, retinol alternative, bakuchiol retinol alternative]
-description: "A guide on bakuchiol, the retinol alternative."
+tags: [patch testing, skincare patch test, how to patch test, patch test instructions, skincare irritation test, allergy patch test skincare, testing new skincare products, sensitive skin patch testing]
+description: "A guide on how to patch test new skincare products safely."
 ---
 
 <figure>
