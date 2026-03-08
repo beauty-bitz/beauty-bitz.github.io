@@ -11,7 +11,7 @@ permalink: /disclaimer/
 
 <br /><br />
 
-<h1>Website Disclaimer</h1>
+## Website Disclaimer
   
 #### Last updated: February 16, 2026
 
