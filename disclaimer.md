@@ -11,29 +11,76 @@ permalink: /disclaimer/
 
 <br /><br />
 
-<h1>Disclaimer</h1>
+<h1>Website Disclaimer<h1/>
+_Last updated: February 16, 2026_
 
-#### Last Updated: 2025-05-19
+Welcome to **BeautyBlurbs.com**. We are passionate about skincare, ingredient education, and DIY beauty. Please read this Disclaimer carefully before using this website.
 
-Beauty Blurbs / [https://beautyblurbs.com/](https://beautyblurbs.com) (the “Site”), a personal blog I manage serves as an informational platform.
 
-The content on the Site (referred to as the “Services”) is provided for general informational purposes only. The Site does not accept responsibility for any errors or omissions in the content of the Services.
+## 1. Educational & Informational Purposes Only
+All content on this website — including blog posts, DIY recipes, ingredient discussions, product recommendations, and comments — is provided for educational and informational purposes only. Nothing on this website constitutes, or is intended to constitute, medical advice, diagnosis, or treatment.
 
-This statement governs our privacy policies concerning those users of the Site (“Visitors” / “Authorized Customers”) who visit or subscribe/register and make use of the various Services offered by the Site. References to “us,” “our,” “we”, and “I” in this document pertain to Beauty Blurbs / [https://beautyblurbs.com](https://beautyblurbs.com).
+This article provides generic information only and should not be treated as a substitute for qualified medical opinion. Always consult a licensed physician, dermatologist, or other healthcare professional before beginning any new skincare routine, especially if you are pregnant, nursing, have a medical condition, take medications, or have known allergies or sensitivities.
 
-Under no circumstances shall the Site be held liable for any special, direct, indirect, consequential, or incidental damages arising from the use of the Services or its contents, whether in contract, negligence, or other tort actions. The Site reserves the right to update, modify, or delete the content of the Services without prior notice.
+---
 
-The Site does not guarantee that the Services are free from viruses or other harmful components. All materials presented on this blog are intended for informational purposes only and should not be construed as professional advice.
+## 2. Author Opinions
+The views and opinions expressed on BeautyBlurbs.com are solely those of the author, based on personal experience, independent research, and general educational information. They are not intended to replace professional medical advice.
 
-The information and recommendations provided are based on personal experience and research, the Site does not guarantee their accuracy. We are not liable for any errors or omissions in information contained on this Site.
+No professional‑client relationship is created by your use of this website. Your reliance on any information provided is solely at your own risk. Individual results may vary.
 
-As a “Visitor” / “Customer,” it is your responsibility to consult with your own professionals regarding any matters discussed within the content of the Site. We, the authors or the Site cannot accept responsibility for the actions or resulting consequences of any actions taken by any “Visitor” / “Customer.”
 
-The content of our articles is not meant as a substitute for individualized guidance from a qualified healthcare provider and should not be construed as medical advice. We strongly encourage readers to conduct their own research and consult with their own health care professionals to determine if the information contained on the Site is suitable for their specific needs and purposes.
+## 3. Personal Responsibility & Assumption of Risk
+By using this website, you acknowledge that you are voluntarily choosing to use any information, recipes, or recommendations provided and assume full personal responsibility for your choices and outcomes.
 
-## Contact Information
+Skincare products — including DIY formulations, essential oils, botanical extracts, active ingredients, and over‑the‑counter products — may cause irritation, allergic reactions, sensitization, burns, infection, or other adverse effects. You accept full responsibility for any outcomes resulting from the use or misuse of information provided on this website.
 
-For general inquiries, you can contact us at the following email address: contact@beautyblurbs.com.
+
+## 4. Safety Reminder
+- Always perform a patch test before using any new skincare product or DIY formulation.  
+- Essential oils must be properly diluted, and active ingredients (such as retinoids or exfoliating acids) may increase sun sensitivity — daily sunscreen use is strongly recommended.  
+- Use only skin‑safe ingredients at appropriate concentrations. Natural ingredients can still cause irritation or allergic reactions.  
+- If you are pregnant, nursing, have medical conditions, take medications, or have sensitive skin, consult a qualified healthcare professional before use.  
+- Discontinue use immediately if irritation or adverse reactions occur.  
+- All content is for educational purposes only.
+
+
+## 5. DIY Formulations & Ingredient Safety
+DIY beauty products require proper formulation, accurate measurements, appropriate dilution, sanitary preparation, and proper preservation. Improper preparation, storage, or use may result in contamination, instability, product failure, or skin injury.
+
+BeautyBlurbs.com makes no warranties or representations regarding the safety, effectiveness, or suitability of any DIY formulation or ingredient for your individual needs. DIY recipes are followed at your own risk.
+
+
+## 6. Allergic Reactions & Skin Sensitivity
+Even ingredients described as “natural,” “gentle,” or “non‑toxic” may cause irritation or allergic reactions. Always perform a patch test before use.
+
+Discontinue use immediately if irritation, redness, swelling, blistering, hives, or other adverse reactions occur. Seek medical attention if necessary.
+
+
+## 7. No Guarantees
+We make no guarantees regarding specific results from the use of any products, routines, or DIY recipes discussed on this website. Skincare outcomes vary based on individual skin type, sensitivities, health conditions, and other factors beyond our control.
+
+
+## 8. Limitation of Liability
+To the fullest extent permitted by applicable law in the United States, United Kingdom, Canada, and other jurisdictions, BeautyBlurbs.com, its owner(s), contributors, affiliates, partners, and representatives shall not be liable for any direct, indirect, incidental, consequential, special, exemplary, or punitive damages arising out of or relating to your use of this website or reliance on any information provided.
+
+This includes, but is not limited to, personal injury, allergic reactions, skin irritation, product misuse, formulation errors, lost profits, or any other loss or damages.
+
+
+## 9. External Links
+This website may contain links to third‑party websites for convenience or reference. We are not responsible for the content, safety, accuracy, or practices of any external websites.
+
+
+## 10. Affiliate Disclosure
+Some links on this website may be affiliate links, meaning we may earn a commission if you purchase through those links at no additional cost to you. We only share products we believe may be valuable to our readers.
+
+
+## 11. Acceptance of Terms
+By using this website, you acknowledge that you have read, understood, and agree to be bound by this Disclaimer. If you do not agree with any part of this Disclaimer, please discontinue use of this website immediately.
+
+
+## Contact
+For inquiries, please contact **Beauty Blurbs** at:📧 **contact@beautyblurbs.com**
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
