@@ -1557,9 +1557,10 @@ figcaption {
    }
 
 a {
-	color: #b76e79; 
-	text-decoration: underline;
- }
+    text-decoration: underline !important;
+    color: #b76e79 !important;
+    font-weight: 600px !important;
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
