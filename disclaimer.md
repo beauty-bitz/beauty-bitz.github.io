@@ -15,7 +15,7 @@ permalink: /disclaimer/
   
 #### Last updated: February 16, 2026
 
-Welcome to **BeautyBlurbs.com**. We are passionate about skincare, ingredient education, and DIY beauty. Please read this Disclaimer carefully before using this website.
+Welcome to [https://beautyblurbs.com](https://beautyblurbs.com/). We are passionate about skincare, ingredient education, and DIY beauty. Please read this Disclaimer carefully before using this website.
 
 
 ## 1. Educational & Informational Purposes Only
