@@ -3,7 +3,7 @@ layout: post
 title: "5 Simple Rules To Dilute Essential Oils"
 categories: ["Skin Care"]
 image: "/assets/images/Skin/Dilute-Essential-Oil-700 (1).webp"
-tags: [moisturizer, skin care, skincare, dilute essential oils] 
+tags: [skin care, skincare, essential oils, dilute essential oils] 
 description: "A guide on bakuchiol, the retinol alternative."
 ---
 
