@@ -23,7 +23,6 @@ All content on this website — including blog posts, DIY recipes, ingredient di
 
 This article provides generic information only and should not be treated as a substitute for qualified medical opinion. Always consult a licensed physician, dermatologist, or other healthcare professional before beginning any new skincare routine, especially if you are pregnant, nursing, have a medical condition, take medications, or have known allergies or sensitivities.
 
----
 
 ## 2. Author Opinions
 The views and opinions expressed on BeautyBlurbs.com are solely those of the author, based on personal experience, independent research, and general educational information. They are not intended to replace professional medical advice.
