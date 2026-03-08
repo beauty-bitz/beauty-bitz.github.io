@@ -1,10 +1,22 @@
+---
+layout: post
+title: "How to Patch Test New Skincare Products Safely"
+categories: ["Skin Care"]
+image: "/assets/images/Skin/bakuchiol flower700.webp"
+tags: [moisturizer, dry skin, bakuchiol, face oil, retinol alternative, bakuchiol retinol alternative]
+description: "A guide on bakuchiol, the retinol alternative."
+---
+
+<figure>
+  <img src="/assets/images/Skin/bakuchiol flower700.webp" alt="Moisturizer for dry skin" />
+  <figcaption></figcaption>
+</figure>
 
 
 
 
 
-
-# How to Patch Test New Skincare Products Safely
+# 
 
 Trying a new skincare product can be exciting — but it can also come with risks. Even products labeled *“gentle,” “natural,”* or *“for sensitive skin”* can cause irritation or allergic reactions.
 
