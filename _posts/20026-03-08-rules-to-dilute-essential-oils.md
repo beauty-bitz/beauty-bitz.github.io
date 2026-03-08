@@ -8,7 +8,7 @@ description: "A guide on bakuchiol, the retinol alternative."
 ---
 
 <figure>
-  <img src="/assets/images/Skin/" alt="Dilute Essential Oils" />
+  <img src="/assets/images/Skin/Dilute-Essential-Oil-700 (1).webp" alt="Dilute Essential Oils" />
   <figcaption></figcaption>
 </figure>
 
