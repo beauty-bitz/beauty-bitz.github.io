@@ -31,9 +31,9 @@ Below is a general dilution chart to help you understand safe essential oil dilu
 <table>
   <thead>
     <tr>
-      <th style="text-align:center; font-weight: 900; background-color: white;">Dilution %</th>
-      <th style="text-align:center; font-weight: 900; background-color: white;">Drops per 1 oz (30 ml) Carrier Oil</th>
-      <th style="text-align:center; font-weight: 900; background-color: white;">Best For</th>
+      <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Dilution %</th>
+      <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Drops per 1 oz (30 ml) Carrier Oil</th>
+      <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Best For</th>
     </tr>
   </thead>
   <tbody>
