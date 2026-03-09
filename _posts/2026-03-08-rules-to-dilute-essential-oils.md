@@ -28,10 +28,18 @@ Another major benefit of dilution is customization. By adjusting the dilution ra
 
 Below is a general dilution chart to help you understand safe essential oil dilution ratios:
 
-Below is a general dilution chart to help you understand safe essential oil dilution ratios:
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Dilution %</th>
+      <th style="text-align:center;">Drops per 1 oz (30 ml) Carrier Oil</th>
+      <th style="text-align:center;">Best For</th>
+    </tr>
+  </thead>
+</table>
 
-| **Dilution %** | **Drops per 1 oz (30 ml) Carrier Oil** | **Best For** |
-|:-------------:|:---------------------------------------:|:------------:|
+| Dilution % | Drops per 1 oz (30 ml) Carrier Oil | Best For |
+|-----------|------------------------------------|----------|
 | **0.25%** | 1–2 drops | Ultra-sensitive skin (with professional guidance) |
 | **0.5%**  | 3 drops   | Facial skincare, elderly, sensitive skin |
 | **1%**    | 6 drops   | Daily facial use, light body oils |
@@ -39,6 +47,7 @@ Below is a general dilution chart to help you understand safe essential oil dilu
 | **3%**    | 18 drops  | Short-term targeted use |
 | **5%**    | 30 drops  | Spot treatments only |
 | **10%+**  | 60+ drops | Professional supervision required |
+
 
 
 
