@@ -126,7 +126,7 @@ It supports collagen production, provides antioxidant protection, and may improv
 - Patch test first  
 - Consult a dermatologist if pregnant, nursing, or managing skin conditions  
 
-Refer to the post **How to Patch Test New Skincare Products Safely** for detailed instructions.
+Refer to the post How to [Patch Test New Skincare Products Safely](https://beautyblurbs.com/how-to-safely-patch-test-new-skincare-products/) for detailed instructions.
 
 
 ## Frequently Asked Questions (FAQ)
