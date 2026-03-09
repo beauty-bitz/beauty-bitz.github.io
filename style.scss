@@ -1561,6 +1561,11 @@ a {
     font-weight: 900px !important;
 }
 
+p a {
+  text-decoration: underline;
+  color: #0066cc;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
