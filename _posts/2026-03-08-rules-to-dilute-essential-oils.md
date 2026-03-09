@@ -36,18 +36,16 @@ Below is a general dilution chart to help you understand safe essential oil dilu
       <th style="text-align:center;">Best For</th>
     </tr>
   </thead>
+  <tbody>
+    <tr><td><strong>0.25%</strong></td><td>1–2 drops</td><td>Ultra-sensitive skin (with professional guidance)</td></tr>
+    <tr><td><strong>0.5%</strong></td><td>3 drops</td><td>Facial skincare, elderly, sensitive skin</td></tr>
+    <tr><td><strong>1%</strong></td><td>6 drops</td><td>Daily facial use, light body oils</td></tr>
+    <tr><td><strong>2%</strong></td><td>12 drops</td><td>General adult use, massage oils</td></tr>
+    <tr><td><strong>3%</strong></td><td>18 drops</td><td>Short-term targeted use</td></tr>
+    <tr><td><strong>5%</strong></td><td>30 drops</td><td>Spot treatments only</td></tr>
+    <tr><td><strong>10%+</strong></td><td>60+ drops</td><td>Professional supervision required</td></tr>
+  </tbody>
 </table>
-
-| Dilution % | Drops per 1 oz (30 ml) Carrier Oil | Best For |
-|-----------|------------------------------------|----------|
-| **0.25%** | 1–2 drops | Ultra-sensitive skin (with professional guidance) |
-| **0.5%**  | 3 drops   | Facial skincare, elderly, sensitive skin |
-| **1%**    | 6 drops   | Daily facial use, light body oils |
-| **2%**    | 12 drops  | General adult use, massage oils |
-| **3%**    | 18 drops  | Short-term targeted use |
-| **5%**    | 30 drops  | Spot treatments only |
-| **10%+**  | 60+ drops | Professional supervision required |
-
 
 
 
