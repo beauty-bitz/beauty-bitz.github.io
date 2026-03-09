@@ -75,11 +75,33 @@ This suggests bakuchiol may offer comparable visible results — with better tol
 
 ## Bakuchiol vs Retinol: Key Differences
 
-| Feature | Retinol | Bakuchiol |
-|--------|---------|-----------|
-| **Irritation Risk** | Common during adjustment period | Generally lower |
-| **Sun Sensitivity** | Increases photosensitivity | No strong evidence of increased photosensitivity |
-| **Research History** | Extensive (decades) | Emerging |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Feature</th>
+      <th style="text-align:center;">Retinol</th>
+      <th style="text-align:center;">Bakuchiol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Irritation Risk</strong></td>
+      <td>Common during adjustment period</td>
+      <td>Generally lower</td>
+    </tr>
+    <tr>
+      <td><strong>Sun Sensitivity</strong></td>
+      <td>Increases photosensitivity</td>
+      <td>No strong evidence of increased photosensitivity</td>
+    </tr>
+    <tr>
+      <td><strong>Research History</strong></td>
+      <td>Extensive (decades)</td>
+      <td>Emerging</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 ## Is Bakuchiol Good for Sensitive Skin?
