@@ -78,9 +78,9 @@ This suggests bakuchiol may offer comparable visible results — with better tol
 <table>
   <thead>
     <tr>
-      <th style="text-align:center; background-color: #dea8b8;">Feature</th>
-      <th style="text-align:center; background-color: #dea8b8;">Retinol</th>
-      <th style="text-align:center; background-color: #dea8b8;">Bakuchiol</th>
+      <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Feature</th>
+      <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Retinol</th>
+      <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Bakuchiol</th>
     </tr>
   </thead>
   <tbody>
