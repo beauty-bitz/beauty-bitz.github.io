@@ -75,7 +75,7 @@ This suggests bakuchiol may offer comparable visible results — with better tol
 
 ## Bakuchiol vs Retinol: Key Differences
 
-To help clarify how these two popular skincare ingredients compare in real‑world use, the table below highlights the key differences between retinol and bakuchiol across irritation potential, sun sensitivity, and the depth of available research.
+The following table shows how these two popular skincare ingredients compare in real‑world use. The table below highlights the key differences between retinol and bakuchiol across irritation potential, sun sensitivity, and the depth of available research.
 
 <table>
   <thead>
