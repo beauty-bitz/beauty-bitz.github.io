@@ -672,13 +672,12 @@ img {
   gap: 3px;
   grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
   margin-top: 1.5em;
+  width: 700px;	
 }
 .related-post {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
+  border-radius: 5px;
   background: #edd3da;
-  width: 185px;
+  width: 170px;
   	
 }
 .related-post img {
