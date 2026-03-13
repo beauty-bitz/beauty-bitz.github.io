@@ -1,10 +1,16 @@
-
-
 ---
 layout: post
-title: "How to Choose the Best Bubble Bath for Dry Skin"
+title: "How to Choose the Best Bubble Bath for Dry Skin or Sensitive Skin"
+categories: ["Bath and Shower"]
+image: "/assets/images/Bath/body wash-dry-skin-700.webp"
+tags: [bubble batch, dry skin, sensitive skin, bath, bath products]
 description: "A detailed guide to selecting gentle and moisturizing bubble baths that support hydration and protect dry or sensitive skin."
 ---
+
+<figure>
+  <img src="/assets/images/Bath/bubble-bath-dry-skin.webp" altB="Bubble bath for dry skin or Sensitive Skin" />
+  <figcaption>Image on Freepik</figcaption>
+</figure>
 
 # Introduction
 
