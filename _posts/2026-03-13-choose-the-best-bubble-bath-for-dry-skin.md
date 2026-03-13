@@ -2,7 +2,7 @@
 layout: post
 title: "How to Choose the Best Bubble Bath for Dry Skin"
 categories: ["Bath and Shower"]
-image: "/assets/images/Bath/body wash-dry-skin-700.webp"
+image: "/assets/images/Bath/bubble-bath-dry-skin.webp"
 tags: [bubble batch, dry skin, bath, bath products]
 description: "A detailed guide to selecting gentle and moisturizing bubble baths that support hydration and protect."
 ---
