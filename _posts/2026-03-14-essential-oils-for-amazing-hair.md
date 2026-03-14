@@ -12,7 +12,7 @@ description: "A guide on the best essential oils for amazing hair."
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
-# **🔰 Introduction**
+## **🔰 Introduction**
 
 Essential oils have become a popular addition to many hair-care routines, and for good reason. These concentrated plant extracts contain naturally occurring compounds that can help support scalp comfort, add shine, and make hair feel smoother and more manageable. Whether you’re dealing with dryness, slow growth, frizz, or general scalp irritation, essential oils can be a gentle, plant-based option to explore.
 
@@ -37,79 +37,79 @@ Different oils offer different properties. In general, essential oils may help:
 
 While results vary from person to person, many people find that essential oils add an enjoyable, nourishing step to their hair care routine.
 
-# **🌱 Essential Oils That Support Healthy Hair Growth**
+## **🌱 Essential Oils That Support Healthy Hair Growth**
 
-## **Lavender Oil**
+### **Lavender Oil**
 
 Lavender oil is often used for its calming scent, but it may also help keep the scalp feeling clean and balanced. Its naturally soothing properties can create a more comfortable environment for healthy-looking hair. Some early research suggests it may help support fuller-looking hair over time.
 
-## **Pumpkin Seed Oil**
+### **Pumpkin Seed Oil**
 
 Pumpkin seed oil contains naturally occurring nutrients such as vitamin E and plant-based fatty acids. These components may help keep the scalp moisturized and comfortable. Some studies suggest it may support the appearance of thicker hair, making it a popular choice for those looking to maintain volume.
 
-## **Rosemary Oil**
+### **Rosemary Oil**
 
 Rosemary oil is frequently chosen for its invigorating, herbaceous aroma. It’s believed to help encourage a refreshed, energized feeling in the scalp. Some small studies suggest it may support the look of thicker, healthier hair when used consistently.
 
-## **Peppermint Oil**
+### **Peppermint Oil**
 
 Peppermint oil creates a cooling sensation that many people find refreshing. This “tingle” occurs because peppermint contains menthol, which can temporarily enhance the feeling of circulation on the scalp. This effect makes it a popular option for people looking to maintain a lively, energized scalp environment.
 
-# **💧 Oils That Nourish and Moisturize**
+## **💧 Oils That Nourish and Moisturize**
 
-## **Coconut Oil**
+### **Coconut Oil**
 
 Coconut oil is widely used for its rich, creamy texture. It helps soften hair and may reduce the feeling of dryness. Because it can seep into the hair strand more easily than many other oils, it’s often used as a deep-conditioning treatment.
 
-## **Argan Oil**
+### **Argan Oil**
 
 Often called “liquid gold,” argan oil is lightweight and great for smoothing out frizz. It gives dull hair a softer shine and can help protect strands from dryness caused by heat styling or environmental exposure.
 
-## **Jojoba Oil**
+### **Jojoba Oil**
 
 Jojoba oil closely resembles the natural oils produced by the scalp. For this reason, it can help balance the scalp’s moisture levels without leaving a heavy or greasy residue. It’s a flexible choice for both dry and oily hair types.
 
-# **🌿 Essential Oils for Scalp Comfort**
+## **🌿 Essential Oils for Scalp Comfort**
 
-## **Tea Tree Oil**
+### **Tea Tree Oil**
 
 Tea tree oil is known for its clarifying, refreshing qualities. It’s commonly used in shampoos and scalp treatments aimed at reducing buildup. Many people use it to help maintain a clean-feeling scalp and reduce flakiness.
 
-## **Chamomile Oil**
+### **Chamomile Oil**
 
 Chamomile oil is naturally soothing. If your scalp feels dry or irritated, chamomile may help calm the discomfort. It can also give lighter hair tones a soft golden brightness when used consistently.
 
-## **Cedarwood Oil**
+### **Cedarwood Oil**
 
 Cedarwood oil has a warm, grounding scent and is often used to help encourage a comfortable, balanced scalp. Some early research suggests it may support the appearance of stronger, fuller hair when used with other oils.
 
-# **💪 Oils That Support Stronger, More Resilient Hair**
+## **💪 Oils That Support Stronger, More Resilient Hair**
 
-## **Ylang Ylang Oil**
+### **Ylang Ylang Oil**
 
 Ylang ylang oil is popular for adding softness to dry, brittle hair. It may help hair feel more flexible and less prone to breakage.
 
-## **Geranium Oil**
+### **Geranium Oil**
 
 Geranium oil is often added to hair routines to help improve smoothness and reduce the look of split ends. It can contribute to a shinier, more manageable appearance.
 
-## **Sandalwood Oil**
+### **Sandalwood Oil**
 
 Sandalwood oil creates a silky, conditioning effect on the hair surface. It may help shield hair from dryness caused by sun exposure or pollution.
 
-## **Lemon Oil**
+### **Lemon Oil**
 
 Lemon oil brings a fresh, bright scent and can help enhance natural shine. People with oily scalps sometimes use it to help hair feel cleaner and more refreshed between washes.
 
-## **Clary Sage Oil**
+### **Clary Sage Oil**
 
 Clary sage oil is used for its gentle, balancing properties. It may help hair appear glossier and smoother over time.
 
-## **Rose Oil**
+### **Rose Oil**
 
 Rose oil adds a luxurious floral scent to your routine. It’s often used to help hair appear more vibrant and revitalized.
 
-# **🧴 How to Add Essential Oils to Your Routine**
+## **🧴 How to Add Essential Oils to Your Routine**
 
 You can introduce essential oils into your hair care in several ways:
 
@@ -129,7 +129,7 @@ Blend essential oils with conditioning ingredients like coconut oil, aloe, or ho
 
 A small amount can be added to your existing products, though start with 1–2 drops to avoid irritation.
 
-# **⚠️ Important Considerations Before Use**
+## **⚠️ Important Considerations Before Use**
 
 ### **Scalp Sensitivity**
 
@@ -167,13 +167,13 @@ Before using any new essential oil, apply a diluted drop to a small patch of ski
 
 If you’re pregnant, nursing, have allergies, or have existing skin/scalp conditions, a dermatologist or healthcare provider can help you choose oils safely.
 
-# **🌟 Conclusion**
+## **🌟 Conclusion**
 
 Essential oils can be a helpful addition to a thoughtful hair-care routine. Whether your goal is softer hair, a calmer scalp, or a natural way to enhance shine, these botanical extracts offer a wide range of options. By using them responsibly—diluting properly, performing patch tests, and choosing oils that fit your needs—you can create a nourishing routine that supports the look and feel of your hair over time.
 
 Nature provides plenty of tools; essential oils are simply one more way to explore what works best for your hair.
 
-# **💬 FAQ**
+## **💬 FAQ**
 
 ### **1. Can essential oils support hair growth?**
 
