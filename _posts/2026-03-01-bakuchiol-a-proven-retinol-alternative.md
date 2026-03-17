@@ -81,7 +81,7 @@ If you’re wondering whether you should stick with retinol or try the bakuchiol
   <thead>
     <tr>
       <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Feature</th>
-      <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Retinol</th>
+      <th class="th-retinol" style="text-align:center; font-weight: 900; background-color: #dea8b8;">Retinol</th>
       <th class="th-bakuchiol" style="text-align:center; font-weight: 900; background-color: #dea8b8; width: 100px;">Bakuchiol</th>
     </tr>
   </thead>
@@ -105,10 +105,22 @@ If you’re wondering whether you should stick with retinol or try the bakuchiol
 </table>
 
 <style>
-  @media (max-width: 768px) {
+ @media (max-width: 1000px) {
+   .th-retinol {
+     width: 120px;
+   } 
+   .th-bakuchiol {
+     width: 200px;
+   } 
+ } 
+ @media (max-width: 768px) {
+   .th-retinol {
+     width: 80px;
+   } 
    .th-bakuchiol {
      width: 100px;
-   }    
+   } 
+ }
 </style>
 
 
