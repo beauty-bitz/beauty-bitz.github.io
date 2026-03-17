@@ -77,6 +77,7 @@ This suggests bakuchiol may offer comparable visible results — with better tol
 
 If you’re wondering whether you should stick with retinol or try the bakuchiol, this quick comparison lays out the basics. Think of it as a cheat sheet for irritation levels, sun sensitivity, and how much research each ingredient actually has behind it.
 
+<div class="table-scroll">
 <table>
   <thead>
     <tr>
@@ -103,6 +104,7 @@ If you’re wondering whether you should stick with retinol or try the bakuchiol
     </tr>
   </tbody>
 </table>
+</div>
 
 {% raw %}
 <style>
