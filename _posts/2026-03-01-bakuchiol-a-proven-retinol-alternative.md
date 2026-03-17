@@ -115,8 +115,7 @@ If you’re wondering whether you should stick with retinol or try the bakuchiol
    .th-bakuchiol { width: 100px; }
  }
 </style>
-{% endraw %}}
-</style>
+{% endraw %}
 
 
 
