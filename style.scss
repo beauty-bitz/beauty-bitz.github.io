@@ -1571,4 +1571,25 @@ p a {
 @import "highlights";
 @import "svg-icons";
 
+/* Enable scroll bar on tables */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.table-scroll table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+ table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+} 
+
+
 
