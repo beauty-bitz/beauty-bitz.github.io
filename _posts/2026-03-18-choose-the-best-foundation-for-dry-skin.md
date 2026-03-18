@@ -72,13 +72,4 @@ Choosing the best foundation for dry skin comes down to understanding what your 
 
 Don’t be afraid to experiment—sometimes the perfect match is a combination of the right prep, the right formula, and the right application technique. With the right foundation, dry skin can look fresh, luminous, and beautifully healthy.
 
----
 
-If you'd like, I can also:
-
-- Add product recommendations  
-- Create a comparison table  
-- Write a shorter or more SEO‑optimized version  
-- Add front‑matter images or internal links to other posts on your site  
-
-Just let me know!
