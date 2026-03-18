@@ -8,8 +8,8 @@ description: "A clear, science‑backed guide to choosing hydrating, comfortable
 ---
 
 <figure>
-  <img src="/assets/images/Cosmetics/best-foundation-for-sensitive-skin.webp" alt="Best Foundation for Dry Skin" />
-  <figcaption>Image on Freepik</figcaption>
+  <img src="/assets/images/best-foundation-for-dry-skin-700.webp" alt="Best Foundation for Dry Skin" />
+  <figcaption></figcaption>
 </figure>
 
 ## Introduction
