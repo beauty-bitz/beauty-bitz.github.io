@@ -2,13 +2,13 @@
 layout: post
 title: "How to Choose the Best Foundation for Dry Skin"
 categories: ["Cosmetics"]
-image: "/assets/images/Cosmetics/best-foundation-for-sensitive-skin.webp"
+image: "/assets/images/Cosmetics/best-foundation-for-dry-skin-700.webp"
 tags: [foundation, dry skin, makeup tips, skincare]
 description: "A clear, science‑backed guide to choosing hydrating, comfortable foundations for dry or dehydrated skin."
 ---
 
 <figure>
-  <img src="/assets/images/best-foundation-for-dry-skin-700.webp" alt="Best Foundation for Dry Skin" />
+  <img src="/assets/images/Cosmetics/best-foundation-for-dry-skin-700.webp" alt="Best Foundation for Dry Skin" />
   <figcaption></figcaption>
 </figure>
 
