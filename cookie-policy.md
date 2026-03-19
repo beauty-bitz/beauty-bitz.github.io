@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cookie Policy
-permalink: /cookie-policy
+permalink: /cookie-policy/
 ---
 
 <nav class="breadcrumbs">
