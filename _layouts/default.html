@@ -104,7 +104,12 @@
     
     <!-- Add logo as site logo in browser searches  - end -->
 
-   
+     <!-- Define a safe fallback gtag() function BEFORE Silktide loads -->
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){ dataLayer.push(arguments); }
+	</script>
+
 
 </head>
 <body>
