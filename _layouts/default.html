@@ -463,9 +463,7 @@
             required: true,
             onAccept: function() {
               console.log('Add logic for the required Necessary here');
-			  setTimeout(function () {
-	          window.location.reload();
-	        }, 300); 	
+			  	
             }  
           },
           {
@@ -480,17 +478,13 @@
               dataLayer.push({
                 'event': 'consent_accepted_analytics',
               });
-			  setTimeout(function () {
-		          window.location.reload();
-		        }, 300);	
+			  	
             },
             onReject: function() {
               gtag('consent', 'update', {
                 analytics_storage: 'denied',
               });
-			  setTimeout(function () {
-		          window.location.reload();
-		        }, 300);	
+			  	
             }
           },
           {
@@ -514,9 +508,7 @@
                 ad_user_data: 'denied',
                 ad_personalization: 'denied',
               });
-			  setTimeout(function () {
-		          window.location.reload();
-		        }, 300);	
+			  	
             }
           }
         ],
