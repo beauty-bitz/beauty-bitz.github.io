@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJSE8W46R6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-CJSE8W46R6');
-  </script>
+  <!-- Google tag (gtag.js) Configured off until Silktide consent given by user -->
 
-  <!-- CookieYes Banner -->
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/7b50ac555df5950f04c68fb7/script.js"></script>
+  <script type="text/plain" data-cookie-category="analytics">
+	  // Load Google Analytics only after consent
+	  var script = document.createElement('script');
+	  script.src = "https://www.googletagmanager.com/gtag/js?id=G-CJSE8W46R6";
+	  script.async = true;
+	  document.head.appendChild(script);
+	
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	
+	  gtag('js', new Date());
+	  gtag('config', 'G-CJSE8W46R6');
+  </script>	
 
+  
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="097e0ca0-b854-4af8-8d85-ea3e6da5fadd"></script>
 
@@ -92,6 +97,98 @@
     
     <!-- Add logo as site logo in browser searches  - end -->
 
+    <!-- Silktide Cookie Banner - Start -->	
+	<link rel="stylesheet" id="silktide-consent-manager-css" href="path-to-css/silktide-consent-manager.css">
+		<script src="path-to-js/silktide-consent-manager.js"></script>
+		<script>
+		silktideCookieBannerManager.updateCookieBannerConfig({
+		  background: {
+		    showBackground: true
+		  },
+		  cookieIcon: {
+		    position: "bottomLeft"
+		  },
+			categories: {
+			    necessary: true,
+			    analytics: true,
+			    marketing: false
+			  },
+		  cookieTypes: [
+		    {
+		      id: "necessary",
+		      name: "Necessary",
+		      description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+		      required: true,
+		      onAccept: function() {
+		        console.log('Add logic for the required Necessary here');
+		      }
+		    },
+		    {
+		      id: "analytics",
+		      name: "Analytics",
+		      description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+		      defaultValue: true,
+		      onAccept: function() {
+		        gtag('consent', 'update', {
+		          analytics_storage: 'granted',
+		        });
+		        dataLayer.push({
+		          'event': 'consent_accepted_analytics',
+		        });
+		      },
+		      onReject: function() {
+		        gtag('consent', 'update', {
+		          analytics_storage: 'denied',
+		        });
+		      }
+		    },
+		    {
+		      id: "advertising",
+		      name: "Advertising",
+		      description: "<p>These cookies provide extra features and personalization to improve your experience. They may be set by us or by partners whose services we use.</p>",
+		      onAccept: function() {
+		        gtag('consent', 'update', {
+		          ad_storage: 'granted',
+		          ad_user_data: 'granted',
+		          ad_personalization: 'granted',
+		        });
+		        dataLayer.push({
+		          'event': 'consent_accepted_advertising',
+		        });
+		      },
+		      onReject: function() {
+		        gtag('consent', 'update', {
+		          ad_storage: 'denied',
+		          ad_user_data: 'denied',
+		          ad_personalization: 'denied',
+		        });
+		      }
+		    }
+		  ],
+		  text: {
+		    banner: {
+		      description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href=\"https://qmstesting.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
+		      acceptAllButtonText: "Accept all",
+		      acceptAllButtonAccessibleLabel: "Accept all cookies",
+		      rejectNonEssentialButtonText: "Reject non-essential",
+		      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+		      preferencesButtonText: "Preferences",
+		      preferencesButtonAccessibleLabel: "Toggle preferences"
+		    },
+		    preferences: {
+		      title: "Customize your cookie preferences",
+		      description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+		      creditLinkText: "Get this banner for free",
+		      creditLinkAccessibleLabel: "Get this banner for free"
+		    }
+		  },
+		  position: {
+		    banner: "bottomCenter"
+		  }
+		});
+		</script>
+
+	<!-- Silktide Cookie Banner - End -->	
 
 </head>
 <body>
