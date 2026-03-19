@@ -971,8 +971,7 @@ th, td {
   /* Footer menu */
   .footer-menu {
   margin-top: 20px;
-  text-align: center;
-  margin-left: 50px;	  
+  text-align: center;  
 }
 
 .footer-menu nav {
@@ -986,6 +985,12 @@ th, td {
   width: 800px;	
   margin-left: 0px;	
 }
+
+.footer-menu nav ul
+	 width: 800px;
+	 display: none;
+	 }	
+	 
 
 .footer-menu nav ul li a {
   text-decoration: underline;
