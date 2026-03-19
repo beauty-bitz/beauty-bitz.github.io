@@ -974,7 +974,7 @@ th, td {
   text-align: center;  
 }
 
-.footer-menu nav {
+.footer-menu nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -984,6 +984,10 @@ th, td {
   gap: 20px;
   width: 800px;	
 }
+
+.footer-menu nav li {
+  display: inline;  /* not required, but harmless */
+}	 
 
 .footer-menu nav ul li a {
   text-decoration: underline;
