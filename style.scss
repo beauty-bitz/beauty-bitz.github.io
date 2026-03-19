@@ -982,8 +982,7 @@ th, td {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-left: 60px;	
+  gap: 20px;	
 }
 
 .footer-menu nav ul li a {
@@ -991,6 +990,17 @@ th, td {
   color: #333;
   font-weight: bold;
 }
+
+.footer-nav { 
+   margin-right: 225px !important;		
+   margin-left: 225px !important;	  
+   width: 600px !important;
+   text-decoration: underline !important;	
+   border-bottom: none !important;
+	border-top: none !important;   
+	 
+     
+   }	 
 
  }/* End Desktop */ 	 
 
