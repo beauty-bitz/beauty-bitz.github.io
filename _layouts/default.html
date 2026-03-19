@@ -540,36 +540,7 @@
       });
       </script>
 
-	  <script>
-		document.addEventListener("silktideConsentClosed", function () {
-		  document.body.style.overflow = "auto";
-		  document.body.style.position = "static";
-		  document.body.style.marginLeft = "0";
-		});
-		  
-		document.addEventListener("DOMContentLoaded", function () {
-		  const html = document.documentElement;
-		
-		  // Track whether the banner was open at least once
-		  let wasOpen = html.classList.contains("silktide-consent-manager--open");
-		
-		  const observer = new MutationObserver(() => {
-		    const isOpen = html.classList.contains("silktide-consent-manager--open");
-		
-		    // If it WAS open and now it's closed → reload once
-		    if (wasOpen && !isOpen) {
-		      observer.disconnect();
-		      setTimeout(() => {
-		        window.location.reload();
-		      }, 200);
-		    }
-		
-		    wasOpen = isOpen;
-		  });
-		
-		  observer.observe(html, { attributes: true, attributeFilter: ["class"] });
-		});
-	 </script>
+	 
 
    <!-- SILK TIDE COOKIE BANNER - END  -->	
 	
