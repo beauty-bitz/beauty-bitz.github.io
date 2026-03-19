@@ -975,14 +975,15 @@ th, td {
   margin-left: 50px;	  
 }
 
-.footer-menu nav ul {
+.footer-menu nav {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;	
+  gap: 20px;
+  margin-left: 120px;	
 }
 
 .footer-menu nav ul li a {
@@ -991,7 +992,7 @@ th, td {
   font-weight: bold;
 }
 
-.footer-nav { 
+nav { 
    		
    margin-left: 400px !important;	  
    width: 700px !important;
