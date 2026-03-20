@@ -3,18 +3,8 @@
   <div class="wrapper-footer">
     <div class="container">
       <footer class="footer">
-        {% include svg-icons.html %}
-        <div class="footer-menu">
-          <nav>
-            <ul>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/contact/">Contact</a></li>
-              <li><a href="/disclaimer/">Disclaimer</a></li>
-              <li><a href="/privacy/">Privacy Policy</a></li>
-			  <li><a href="/cookie-policy/">Cookie Policy</a></li>	
-            </ul>
-          </nav>
-        </div>
+       
+        
 		  <br />
           <div class="footer-safety" style="margin-top: 50px;">
             The content on this site is for educational purposes only and is not medical advice. Always patch test new products and consult a qualified healthcare professional if you have medical conditions, allergies, or concerns. DIY recipes and skincare guidance are followed at your own risk.  
@@ -28,6 +18,59 @@
     </div>
   </div>
 
+ <!-- Desktop Page Width Styles -->
+  <style>
+    @media (min-width: 820px) {
+     
+    .amazon-attr {
+	   margin-left: 270px !important; 
+	 }  
+	
+	/* Safety disclaimer - desktop */ 
+	.footer-safety {	 
+	  font-height: 1.1em;
+	  margin-left: 275px !important;	
+	 } 	 
+     /* Footer menu */
+	.footer-menu nav {
+	  margin-left: 100px !important;
+	  margin-bottom: 20px;	
+	}	
+	.footer-menu nav ul {
+	  list-style: none;
+	  display: flex;	  
+	  flex-wrap: wrap;
+	  gap: 10px;
+	  padding: 0;
+	
+	}	
+	.footer-menu nav li {
+	  display: inline-block;
+	}	
+	.footer-menu nav ul li a {
+	  text-decoration: underline;
+	  color: #333;
+	  font-weight: bold;
+	  font-size: 16px;
+	}
+
+	 	
+    }
+  </style>
+
+<!-- Footer menu -->
+{% include svg-icons.html %}
+<div class="footer-menu">
+  <nav>
+	<ul>
+	  <li><a href="/about/">About</a></li>
+	  <li><a href="/contact/">Contact</a></li>
+	  <li><a href="/disclaimer/">Disclaimer</a></li>
+	  <li><a href="/privacy/">Privacy Policy</a></li>
+	  <li><a href="/cookie-policy/">Cookie Policy</a></li>	
+	</ul>
+  </nav>
+</div>
 
 <!-- Social Share Buttons -->
 <div class='social-share'>
