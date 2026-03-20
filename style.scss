@@ -967,6 +967,12 @@ th, td {
   }
 
  /* Center entire footer */
+.hero-border {
+  width: 100%;
+  max-width: 1270px;
+  margin-left: auto;
+  margin-right: auto;
+}	 
  .wrapper-footer,
 .wrapper-footer .container,
 .footer {
@@ -977,6 +983,8 @@ th, td {
   margin-left: auto;
   margin-right: auto;
 }
+
+	 
 	 
 
   /* Footer menu */	 
