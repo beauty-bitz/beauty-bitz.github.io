@@ -1011,19 +1011,18 @@ th, td {
   font-size: 16px;
 }
  .amazon-attr {
-	 
-	margin-left: 200px;
 	font-height: 1.1em;
 	width: 650px;
-	justify-content: center; 
+	justify-content: center;
+	margin-left: 200px !important; 
 	}  
 	
 	/* Safety disclaimer - desktop */ 
 	.footer-safety {
 	  width: 650px; 
-	  margin-left: 200px;
 	  font-height: 1.1em;
 	  justify-content: center;	
+	  margin-left: 200px !important;	
 	 } 	 
 
 
