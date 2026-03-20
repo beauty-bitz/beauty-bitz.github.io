@@ -809,7 +809,7 @@ img {
  .recent-post-grid {
   display: grid;
   gap: 0px;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+  grid-template-columns: repeat(4, 1fr); 
   width: 1025px;
   font-weight: 900;
   flex-wrap: wrap;	 
@@ -1012,7 +1012,7 @@ th, td {
 }
  .amazon-attr {
 	 
-	margin: 0 auto; 15px auto;
+	margin: 0 auto 15px auto;
 	font-height: 1.1em;
 	width: 650px;
 	justify-content: center; 
@@ -1021,7 +1021,7 @@ th, td {
 	/* Safety disclaimer - desktop */ 
 	.footer-safety {
 	  width: 650px; 
-	  margin: 0 auto; 15px auto;
+	  margin: 0 auto 15px auto;
 	  font-height: 1.1em;
 	  justify-content: center;	
 	 } 	 
