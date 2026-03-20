@@ -966,28 +966,27 @@ th, td {
    	  
   }
 
- /* Center entire footer */
+/* Fix the HR divider before the footer */
 .hero-border {
   width: 100%;
   max-width: 1270px;
   margin-left: auto;
   margin-right: auto;
-}	 
- .wrapper-footer,
-.wrapper-footer .container,
-.footer {
-  text-align: center;
 }
 
+/* Center the footer container */
+.wrapper-footer .container {
+  text-align: center !important;
+  max-width: 100%;
+}
+
+/* Center footer blocks */
 .footer > div {
   margin-left: auto;
   margin-right: auto;
 }
 
-	 
-	 
-
-  /* Footer menu */	 
+/* Footer menu */
 .footer-menu nav ul {
   list-style: none;
   display: flex;
@@ -1002,14 +1001,12 @@ th, td {
   display: inline-block;
 }
 
-
 .footer-menu nav ul li a {
   text-decoration: underline;
   color: #333;
   font-weight: bold;
-  font-size: 16px;	
+  font-size: 16px;
 }
-
 
 
  }/* End Desktop */ 	 
