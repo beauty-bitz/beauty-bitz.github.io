@@ -294,9 +294,7 @@ footer {
   text-align: center;
 }
 
-.footer-menu a {
-  font-size: 14px;
-}
+
 
 
 // Desktop
@@ -974,6 +972,10 @@ th, td {
   text-align: center;  
 }
 
+.footer-menu a {
+  font-size: 14px;
+}	 
+
 .footer-menu nav ul {
   list-style: none;
   padding: 0;
@@ -982,8 +984,8 @@ th, td {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0px;
-  width: 800px;	
-  margin-left: 200px;	
+  width: 1000px;	
+  
 }
 
 .footer-menu nav li {
