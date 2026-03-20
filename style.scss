@@ -967,14 +967,6 @@ th, td {
   }
 
   /* Footer menu */
-  .footer-menu {
-  margin-top: 20px;
-  text-align: center;  
-}
-
-.footer-menu a {
-  font-size: 14px;
-}	 
 
 .footer-menu nav ul {
   list-style: none;
@@ -986,17 +978,13 @@ th, td {
   gap: 0px;
   width: 1000px;	
   
-}
-
-.footer-menu nav li {
-  display: inline;  /* not required, but harmless */
-  margin-left: 200px;	
-}	 
+} 
 
 .footer-menu nav ul li a {
   text-decoration: underline;
   color: #333;
   font-weight: bold;
+  font-size: 14px;	
 }
 
 
