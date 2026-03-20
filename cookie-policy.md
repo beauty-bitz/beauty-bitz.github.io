@@ -131,7 +131,7 @@ Below is a general overview of the types of cookies that may be set:
     <tr>
       <td>Necessary</td>
       <td>Enables core site functionality</td>
-      <td>QMSTesting.com</td>
+      <td>beautyblurbs.com</td>
       <td>Session / Short-term</td>
     </tr>
     <tr>
