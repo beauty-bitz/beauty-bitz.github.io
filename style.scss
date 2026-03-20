@@ -797,29 +797,22 @@ img {
 
 
 /* RECENT POSTS — centered and responsive */
+
 .recent-posts-heading {
   font-size: 2em;
   margin-top: -20px;
   margin-bottom: 1em;
   text-align: center;
-  margin-left: 0; /* remove manual offset */
+  margin-left: 275px;	
   color: #000000;
 }
-
-.recent-post-grid {
+ .recent-post-grid {
   display: grid;
   gap: 0px;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
-  max-width: 1025px;   /* keeps your intended width */
-  margin: 0 auto;      /* centers the entire grid */
-  justify-items: center;
-}
-
-/* Optional: make it responsive on smaller screens */
-@media (max-width: 1100px) {
-  .recent-post-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+  grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+  width: 1025px;
+  font-weight: 900;
+  flex-wrap: wrap;	 
 }
 
 
@@ -1018,16 +1011,19 @@ th, td {
   font-size: 16px;
 }
  .amazon-attr {
-	margin: 0 auto 15px auto;
+	 
+	margin: 0 auto; 15px auto;
 	font-height: 1.1em;
 	width: 650px;
+	justify-content: center; 
 	}  
 	
 	/* Safety disclaimer - desktop */ 
 	.footer-safety {
 	  width: 650px; 
-	  margin: 0 auto 15px auto;
-	  font-height: 1.1em; 
+	  margin: 0 auto; 15px auto;
+	  font-height: 1.1em;
+	  justify-content: center;	
 	 } 	 
 
 
