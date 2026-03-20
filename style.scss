@@ -966,8 +966,20 @@ th, td {
    	  
   }
 
-  /* Footer menu */
+ /* Center entire footer */
+ .wrapper-footer,
+.wrapper-footer .container,
+.footer {
+  text-align: center;
+}
 
+.footer > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+	 
+
+  /* Footer menu */	 
 .footer-menu nav ul {
   list-style: none;
   display: flex;
@@ -975,13 +987,13 @@ th, td {
   flex-wrap: wrap;
   gap: 10px;
   padding: 0;
-  margin: 0 auto;
+  margin: 0 auto 15px auto;
 }
-    
 
- .footer-menu nav li {
+.footer-menu nav li {
   display: inline-block;
 }
+
 
 .footer-menu nav ul li a {
   text-decoration: underline;
