@@ -3,13 +3,21 @@
   <div class="wrapper-footer">
     <div class="container">
       <footer class="footer">
-       
-         
-		  {% if page.collection == "posts" %}
+
+		   <div class="mobile-only">
+			 <!-- content for mobile -->
+			  <div class="footer-safety" style="margin-top: 50px;"> 
+		   </div>
+			   
+		   <div class="desktop-only">	 
+			 <!-- content for desktop -->  
+		     {% if page.collection == "posts" %}
 			  <div class="footer-safety" style="margin-top: 50px; margin-left: 400px;">
-		  {% else %}
+		     {% else %}
 			  <div class="footer-safety" style="margin-top: 50px; margin-left: 400px; width: 800px;">	  	
-		  {% endif %}	  
+		     {% endif %}
+			</div>	  
+				  
             The content on this site is for educational purposes only and is not medical advice. Always patch test new products and consult a qualified healthcare professional if you have medical conditions, allergies, or concerns. DIY recipes and skincare guidance are followed at your own risk.  
             <a href="https://beautyblurbs.com/disclaimer/" style="color: #000000; font-weight: 900px;">Read Full Disclaimer</a>
           </div>
@@ -22,7 +30,7 @@
     </div>
   </div>
 
- <!-- Desktop Page Width Styles -->
+ 
   <style>
 	 @media (max-width: 800px) { 
       /*Safety disclaimer - mobile */ 
@@ -31,7 +39,9 @@
       text-align: center;  
       margin-left: 30px;
        }
-	 
+	 .desktop-only {
+		 display: none;
+	 }	 
     } /* End Mobile */
 
 
@@ -54,9 +64,12 @@
 	footer {
     border-bottom: none !important;
 	  border-top: none !important;   
-  }    
+  } 
+	  
     @media (min-width: 820px) {
-     
+     .mobile-only {
+		 display: none;
+	 } 	 
     .amazon-attr {
 	   margin-left: auto !important; 
 	   margin-right: auto !important; 	
