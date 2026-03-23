@@ -468,6 +468,25 @@
 
    <!-- SILK TIDE COOKIE BANNER - END  -->
 
+   <!-- Change Browser Zoom if Web page does not fit on screen START-->
+<script>
+  function setZoom() {
+    if (window.matchMedia('(min-width: 780px) and (max-width: 1280px)').matches) {
+      document.body.style.zoom = "80%";
+    } else {
+      document.body.style.zoom = "100%";
+    }
+  }
+
+  // Call the function to set the zoom on page load
+  setZoom();
+
+  // Handle the window resize event
+  window.addEventListener('resize', setZoom);
+</script>
+<!-- Change Browser Zoom if Web page does not fit on screen END-->
+	
+
 
   
 
