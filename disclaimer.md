@@ -82,10 +82,10 @@ By using this website, you acknowledge that you have read, understood, and agree
 ## Contact
 For inquiries, please contact **Beauty Blurbs** at **contact@beautyblurbs.com**
 
-<style>
+style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */  
-     .site-name {
+   .site-name {
     margin-top: -10px;
   }  
   .site-avatar img {
@@ -113,7 +113,6 @@ For inquiries, please contact **Beauty Blurbs** at **contact@beautyblurbs.com**
     width: 800px;
     margin-left: 100px;
   }
-   
 
   } /*End Desktop */
 
@@ -134,7 +133,7 @@ For inquiries, please contact **Beauty Blurbs** at **contact@beautyblurbs.com**
   ol, ul {
     margin-left: 15px;
     margin-right: 10px; 
-  }
-
-  } /* End Mobile */  
+  }  
+    
+  } /* End Mobile */
 </style>
