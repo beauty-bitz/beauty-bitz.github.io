@@ -231,5 +231,35 @@
 .copyr {
  } 
  }
-</style>      
+</style>    
+
+{% if page.name == "about.md" or page.name == "contact.md" or page.name == "privacy.md or page.name == "disclaimer.md or page.name == "cookie-policy.md" %}
+<style>
+    @media (min-width: 820px) {	
+   /* Footer menu */
+	.footer-menu nav {
+	  justify-content: center;
+	  margin-bottom: 20px;
+	  width: 770px;	
+	}	
+	.footer-menu nav ul {
+	  list-style: none;
+	  display: flex;	  
+	  flex-wrap: wrap;
+	  gap: 10px;
+	  padding: 0;
+	
+	}	
+	.footer-menu nav li {
+	  display: inline-block;
+	}	
+	.footer-menu nav ul li a {
+	  text-decoration: underline;
+	  color: #333;
+	  font-weight: 400;
+	  font-size: 16px;
+	}
+	} /* Desktop end */		
+</style>
+{% endif %}
 
