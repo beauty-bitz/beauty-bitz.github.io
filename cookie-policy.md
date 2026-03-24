@@ -182,7 +182,62 @@ To exercise any of these rights, please contact us using the information below.
 
 If you have questions about this Cookie Policy or how we use cookies, you can contact **beautyblurbs.com** at *contact@beautyblurbs.com*
 
----
+<style>
+  @media only screen and (min-width: 820px) and (max-width: 2000px) {
+  /* Indent Content  */  
+   .site-name {
+    margin-top: -10px;
+  }  
+  .site-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 520px;
+  }
+
+ h1, h2, h3, h4, h5, h6 {
+    width: 800px;
+    margin-left: 100px;
+    
+  }
+ h4 {
+    width: 800px;
+    margin-left: 100px;
+   
+  }   
+  p {
+    width: 800px;
+    margin-left: 100px;
+  }
+  ol, ul {
+    width: 800px;
+    margin-left: 100px;
+  }
+
+  } /*End Desktop */
+
+  @media only screen and (max-width: 780px) { 
+    .page {
+    margin-left: 15px;
+    margin-right: 20px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+    margin-left: 15px;
+    margin-right: 10px;     
+  }
+  p {
+    margin-left: 15px;
+    margin-right: 10px; 
+  }
+  ol, ul {
+    margin-left: 15px;
+    margin-right: 10px; 
+  }  
+    
+  } /* End Mobile */
+</style>
+
 
 ## 9. Updates to This Policy
 
