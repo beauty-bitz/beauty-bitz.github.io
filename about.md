@@ -72,7 +72,7 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
   gap: 20px; /* spacing between items */
   list-style: none; /* remove bullets if needed */
   padding: 0;
-  margin-left: 275px;  
+  
 }
 .footer-menu li {
   display: inline; /* or inline-block */
