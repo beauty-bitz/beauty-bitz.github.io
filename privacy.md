@@ -281,20 +281,6 @@ For general inquiries, you can contact us at the following email address: contac
     width: 800px;
     margin-left: 100px;
   }
-  .footer-menu {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* spacing between items */
-  list-style: none; /* remove bullets if needed */
-  padding: 0;
-    
-}
-.footer-menu li {
-  display: inline; /* or inline-block */
-}
-
-   
 
   } /*End Desktop */
 
