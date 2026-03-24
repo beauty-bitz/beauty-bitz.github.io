@@ -120,7 +120,7 @@ For inquiries, please contact **Beauty Blurbs** at **contact@beautyblurbs.com**
   gap: 20px; /* spacing between items */
   list-style: none; /* remove bullets if needed */
   padding: 0;
-  margin-left: 275px;  
+  
 }
 .footer-menu li {
   display: inline; /* or inline-block */
