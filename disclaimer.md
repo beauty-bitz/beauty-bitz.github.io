@@ -82,7 +82,7 @@ By using this website, you acknowledge that you have read, understood, and agree
 ## Contact
 For inquiries, please contact **Beauty Blurbs** at **contact@beautyblurbs.com**
 
-style>
+<style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */  
    .site-name {
