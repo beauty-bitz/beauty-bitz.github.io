@@ -65,18 +65,29 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
     width: 800px;
     margin-left: 100px;
   }
-  .footer-menu {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* spacing between items */
-  list-style: none; /* remove bullets if needed */
-  padding: 0;
-  
-}
-.footer-menu li {
-  display: inline; /* or inline-block */
-}
+  /* Footer menu */
+	.footer-menu nav {
+	  justify-content: center;
+	  margin-bottom: 20px;
+	  width: 670px;	
+	}	
+	.footer-menu nav ul {
+	  list-style: none;
+	  display: flex;	  
+	  flex-wrap: wrap;
+	  gap: 10px;
+	  padding: 0;
+	
+	}	
+	.footer-menu nav li {
+	  display: inline-block;
+	}	
+	.footer-menu nav ul li a {
+	  text-decoration: underline;
+	  color: #333;
+	  font-weight: 400;
+	  font-size: 16px;
+	}	 	
 
    
 
