@@ -250,7 +250,7 @@ We recommend reviewing this Privacy Policy periodically for any alterations. Cha
 For general inquiries, you can contact us at the following email address: contact@beautyblurbs.com.
 
 
-<style>
+style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */  
    .site-name {
@@ -305,4 +305,3 @@ For general inquiries, you can contact us at the following email address: contac
     
   } /* End Mobile */
 </style>
-
