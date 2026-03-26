@@ -29,7 +29,7 @@ Whether you're refreshing your skincare routine, exploring new hair care rituals
 <h2>🌸 Why <span>Beauty Blurbs</span> ?</h2>
 <span>Beauty Blurbs</span> is more than a blog — it's a curated space for beauty lovers who value clarity, quality, and a touch of fun. We believe beauty care should feel empowering, not overwhelming. That’s why every post is designed to be easy to follow, evidence-informed, and refreshingly real.
 
-## 💬 A Note from the Creator
+## 💬 Note from the Creator
 Hi, I'm Margaret — the voice behind <span>Beauty Blurbs</span>. I started this blog to share my love for beauty care in a way that’s approachable, practical, and empowering. Over the years, I’ve tested routines, decoded ingredient lists, and curated product picks that actually make a difference. <span>Beauty Blurbs</span> is my way of passing along what works — not just what’s trending.
 
 I believe beauty care should feel like self-care, not a chore. Whether you're a minimalist or a product junkie, there's space here for your style, your questions, and your glow-up journey. Thanks for stopping by — I’m so glad you’re here.
