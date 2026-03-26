@@ -9,8 +9,6 @@ permalink: /about/
   <span class="current">About</span>
 </nav>
 
-{% include head.html %}
-
 <br /><br />
 
 <h1>About</h1>
