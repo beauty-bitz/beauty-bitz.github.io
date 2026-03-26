@@ -4,26 +4,15 @@
 
   <!-- Google tag (gtag.js) Configured off until Silktide consent given by user -->
 
-  <script type="text/plain" data-cookie-category="analytics">
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-
-  // Default = denied (important)
-  gtag('consent', 'default', {
-    analytics_storage: 'denied'
-  });
-
-  // Load GA
-  var script = document.createElement('script');
-  script.src = "https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R";
-  script.async = true;
-  document.head.appendChild(script);
-
-  gtag('js', new Date());
-  gtag('config', 'G-N08CPLZ22R');
-
-</script>
+  <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-N08CPLZ22R');
+	</script>
 
   
   <!-- Umami Analytics -->
