@@ -118,7 +118,7 @@ These services may process data outside of Canada. We ensure that any third‑pa
 Below is a general overview of the types of cookies that may be set:
 
 <div class="table-scroll"> 
-  <table>
+  <table class="table-one">
   <thead>
     <tr>
       <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Cookie Type</th>
@@ -150,6 +150,22 @@ Below is a general overview of the types of cookies that may be set:
 </table>
 
 </div>
+
+<style>
+     @media only screen and (min-width: 820px) and (max-width: 2000px) {
+     .table-one {
+       margin-left: 150px;
+     }  
+   
+    }  /* End Desktop */
+      
+     @media only screen and (max-width: 780px) {   
+    
+     }  /* End Mobile */ 
+       
+     
+  </style>  
+
 
 Exact cookie names may change as services update their technology.
 
