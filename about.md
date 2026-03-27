@@ -3,6 +3,7 @@ layout: default
 title: About
 permalink: /about/
 ---
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
 
 <nav class="breadcrumbs">
   <a href="/">🏠</a> &gt;
