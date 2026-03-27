@@ -153,9 +153,7 @@ Below is a general overview of the types of cookies that may be set:
 
 <style>
      @media only screen and (min-width: 820px) and (max-width: 2000px) {
-     .table-one {
-       margin-left: 150px;
-     }  
+    
    
     }  /* End Desktop */
       
