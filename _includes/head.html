@@ -14,7 +14,7 @@
   gtag('config', 'G-N08CPLZ22R');
 </script>
 
-<!-- GEO‑TARGETED CONSENT MODE USING CLOUDFLARE -->
+<!-- GEO‑TARGETED CONSENT MODE USING /cdn-cgi/trace -->
 <script>
   // GDPR countries (EU + UK)
   const gdprCountries = [
@@ -22,127 +22,133 @@
     "IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","GB"
   ];
 
-  // Wait for Cloudflare geo object to be available
-  function waitForCountry(callback) {
-    let attempts = 0;
-    const maxAttempts = 50; // ~2 seconds
-    const interval = setInterval(() => {
-      if (window.cf && window.cf.country) {
-        clearInterval(interval);
-        callback(window.cf.country);
-      } else if (attempts >= maxAttempts) {
-        clearInterval(interval);
-        callback(null); // fallback if country not detected
+  function getCountryFromTrace(text) {
+    const lines = text.split('\n');
+    for (const line of lines) {
+      if (line.startsWith('loc=')) {
+        return line.replace('loc=', '').trim();
       }
-      attempts++;
-    }, 100);
+    }
+    return null;
   }
 
-  // Run geo‑targeting logic once country is known
-  waitForCountry(function(country) {
+  // Fetch Cloudflare trace to detect country
+  fetch('/cdn-cgi/trace')
+    .then(function(res) { return res.text(); })
+    .then(function(text) {
+      const country = getCountryFromTrace(text);
 
-    if (gdprCountries.includes(country)) {
-      /* ---------------------------
-         GDPR REGION (EU + UK)
-         --------------------------- */
+      if (gdprCountries.includes(country)) {
+        /* ---------------------------
+           GDPR REGION (EU + UK)
+           --------------------------- */
 
-      // Default: analytics denied
-      gtag('consent', 'default', {
-        analytics_storage: 'denied',
-        ad_storage: 'denied',
-        ad_user_data: 'denied',
-        ad_personalization: 'denied'
-      });
-
-      // Load Silktide CSS + JS dynamically
-      const css = document.createElement("link");
-      css.rel = "stylesheet";
-      css.href = "/Silktide/silktide-consent-manager.css";
-      document.head.appendChild(css);
-
-      const script = document.createElement("script");
-      script.src = "/Silktide/silktide-consent-manager.js";
-      document.head.appendChild(script);
-
-      script.onload = function() {
-        silktideCookieBannerManager.updateCookieBannerConfig({
-          background: { showBackground: true },
-          cookieIcon: { position: "bottomLeft" },
-
-          cookieTypes: [
-            {
-              id: "necessary",
-              name: "Necessary",
-              description: "<p>These cookies are necessary for the website to function properly and cannot be switched off.</p>",
-              required: true
-            },
-            {
-              id: "analytics",
-              name: "Analytics",
-              description: "<p>These cookies help us improve the site by tracking which pages are most popular.</p>",
-              defaultValue: false,
-              onAccept: function() {
-                gtag('consent', 'update', { analytics_storage: 'granted' });
-                dataLayer.push({ event: 'consent_accepted_analytics' });
-              },
-              onReject: function() {
-                gtag('consent', 'update', { analytics_storage: 'denied' });
-              }
-            },
-            {
-              id: "advertising",
-              name: "Advertising",
-              description: "<p>These cookies provide extra features and personalization.</p>",
-              defaultValue: false,
-              onAccept: function() {
-                gtag('consent', 'update', {
-                  ad_storage: 'granted',
-                  ad_user_data: 'granted',
-                  ad_personalization: 'granted'
-                });
-                dataLayer.push({ event: 'consent_accepted_advertising' });
-              },
-              onReject: function() {
-                gtag('consent', 'update', {
-                  ad_storage: 'denied',
-                  ad_user_data: 'denied',
-                  ad_personalization: 'denied'
-                });
-              }
-            }
-          ],
-
-          text: {
-            banner: {
-              description: "<p>We use cookies to improve your experience, analyze traffic, and help keep this site free through ads. <a href=\"https://beautyblurbs.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
-              acceptAllButtonText: "Accept all",
-              rejectNonEssentialButtonText: "Reject non-essential",
-              preferencesButtonText: "Preferences"
-            },
-            preferences: {
-              title: "Customize your cookie preferences",
-              description: "<p>We respect your privacy. You can choose which types of cookies to allow.</p>",
-              creditLinkText: "",
-              creditLinkAccessibleLabel: ""
-            }
-          },
-
-          position: { banner: "bottomCenter" }
+        // Default: analytics denied
+        gtag('consent', 'default', {
+          analytics_storage: 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
         });
-      };
 
-    } else {
-      /* ---------------------------
-         NON‑GDPR REGION (Canada, USA, etc.)
-         --------------------------- */
+        // Load Silktide CSS + JS dynamically
+        const css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.href = "/Silktide/silktide-consent-manager.css";
+        document.head.appendChild(css);
 
-      // Allow analytics by default
+        const script = document.createElement("script");
+        script.src = "/Silktide/silktide-consent-manager.js";
+        document.head.appendChild(script);
+
+        script.onload = function() {
+          silktideCookieBannerManager.updateCookieBannerConfig({
+            background: { showBackground: true },
+            cookieIcon: { position: "bottomLeft" },
+
+            cookieTypes: [
+              {
+                id: "necessary",
+                name: "Necessary",
+                description: "<p>These cookies are necessary for the website to function properly and cannot be switched off.</p>",
+                required: true
+              },
+              {
+                id: "analytics",
+                name: "Analytics",
+                description: "<p>These cookies help us improve the site by tracking which pages are most popular.</p>",
+                defaultValue: false,
+                onAccept: function() {
+                  gtag('consent', 'update', { analytics_storage: 'granted' });
+                  dataLayer.push({ event: 'consent_accepted_analytics' });
+                },
+                onReject: function() {
+                  gtag('consent', 'update', { analytics_storage: 'denied' });
+                }
+              },
+              {
+                id: "advertising",
+                name: "Advertising",
+                description: "<p>These cookies provide extra features and personalization.</p>",
+                defaultValue: false,
+                onAccept: function() {
+                  gtag('consent', 'update', {
+                    ad_storage: 'granted',
+                    ad_user_data: 'granted',
+                    ad_personalization: 'granted'
+                  });
+                  dataLayer.push({ event: 'consent_accepted_advertising' });
+                },
+                onReject: function() {
+                  gtag('consent', 'update', {
+                    ad_storage: 'denied',
+                    ad_user_data: 'denied',
+                    ad_personalization: 'denied'
+                  });
+                }
+              }
+            ],
+
+            text: {
+              banner: {
+                description: "<p>We use cookies to improve your experience, analyze traffic, and help keep this site free through ads. <a href=\"https://beautyblurbs.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
+                acceptAllButtonText: "Accept all",
+                rejectNonEssentialButtonText: "Reject non-essential",
+                preferencesButtonText: "Preferences"
+              },
+              preferences: {
+                title: "Customize your cookie preferences",
+                description: "<p>We respect your privacy. You can choose which types of cookies to allow.</p>",
+                creditLinkText: "",
+                creditLinkAccessibleLabel: ""
+              }
+            },
+
+            position: { banner: "bottomCenter" }
+          });
+        };
+
+      } else {
+        /* ---------------------------
+           NON‑GDPR REGION (Canada, USA, etc.)
+           --------------------------- */
+
+        // Allow analytics by default
+        gtag('consent', 'default', {
+          analytics_storage: 'granted',
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted'
+        });
+      }
+    })
+    .catch(function() {
+      // Fallback: if trace fails, allow analytics (so GA doesn't silently die)
       gtag('consent', 'default', {
         analytics_storage: 'granted',
         ad_storage: 'granted',
         ad_user_data: 'granted',
         ad_personalization: 'granted'
       });
-    }
-  });
+    });
 </script>
