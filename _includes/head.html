@@ -38,20 +38,12 @@
     .then(function(text) {
       const country = getCountryFromTrace(text);
 
-      if (gdprCountries.includes(country)) {
-        /* ---------------------------
-           GDPR REGION (EU + UK)
-           --------------------------- */
+  if (gdprCountries.includes(country)) {
 
-        if (gdprCountries.includes(country)) {
+     /* ---------------------------
+           NON‑GDPR REGION (Canada, USA, etc.)
+      --------------------------- */
 
-          // Reset Silktide stored consent so banner always shows
-          Object.keys(localStorage).forEach(function(key) {
-            if (key.includes("silktide")) {
-              localStorage.removeItem(key);
-            }
-          });
-        
           gtag('consent', 'default', {
             analytics_storage: 'denied',
             ad_storage: 'denied',
@@ -71,8 +63,8 @@
           script.onload = function() {
             setTimeout(function() {
               silktideCookieBannerManager.updateCookieBannerConfig({
-                forceShow: true,                 // always show banner
-                openPreferencesOnLoad: true,     // open preferences panel automatically
+                forceShow: false,               // ← allow Silktide to remember user choice
+                openPreferencesOnLoad: true,    // show preferences panel on first visit
         
                 background: { showBackground: true },
                 cookieIcon: { position: "bottomLeft" },
@@ -139,9 +131,7 @@
               });
             }, 50);
           };
-        }
-
-      } else {
+        } else {
         /* ---------------------------
            NON‑GDPR REGION (Canada, USA, etc.)
            --------------------------- */
