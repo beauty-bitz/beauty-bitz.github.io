@@ -25,7 +25,7 @@
   // Wait for Cloudflare geo object to be available
   function waitForCountry(callback) {
     let attempts = 0;
-    const maxAttempts = 20; // ~2 seconds
+    const maxAttempts = 50; // ~2 seconds
     const interval = setInterval(() => {
       if (window.cf && window.cf.country) {
         clearInterval(interval);
