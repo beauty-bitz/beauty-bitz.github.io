@@ -7,14 +7,14 @@
   function gtag(){ dataLayer.push(arguments); }
 </script>
 
-<!-- Load Google Analytics (loads immediately, consent applied after) -->
+<!-- Load Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
 <script>
   gtag('js', new Date());
   gtag('config', 'G-N08CPLZ22R');
 </script>
 
-<!-- GEO‑TARGETED CONSENT MODE (Cloudflare Geo-IP) -->
+<!-- GEO‑TARGETED CONSENT MODE USING CLOUDFLARE -->
 <script>
   // GDPR countries (EU + UK)
   const gdprCountries = [
@@ -22,8 +22,24 @@
     "IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","GB"
   ];
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const country = window.cf && window.cf.country;
+  // Wait for Cloudflare geo object to be available
+  function waitForCountry(callback) {
+    let attempts = 0;
+    const maxAttempts = 20; // ~2 seconds
+    const interval = setInterval(() => {
+      if (window.cf && window.cf.country) {
+        clearInterval(interval);
+        callback(window.cf.country);
+      } else if (attempts >= maxAttempts) {
+        clearInterval(interval);
+        callback(null); // fallback if country not detected
+      }
+      attempts++;
+    }, 100);
+  }
+
+  // Run geo‑targeting logic once country is known
+  waitForCountry(function(country) {
 
     if (gdprCountries.includes(country)) {
       /* ---------------------------
