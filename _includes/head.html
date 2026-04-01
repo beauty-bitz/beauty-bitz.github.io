@@ -96,19 +96,27 @@ window.silktide.categories = {
             forceShow: false,
             openPreferencesOnLoad: true,
             cookieIcon: { position: "bottomLeft" },
-
             cookieTypes: [
-              { id: "necessary", required: true },
-
+              {
+                id: "necessary",
+                name: "Essential cookies",
+                description: "Required for the website to function properly and cannot be disabled.",
+                required: true
+              },
+            
               {
                 id: "analytics",
+                name: "Analytics cookies",
+                description: "Help us understand how visitors use our website so we can improve it.",
                 defaultValue: false,
                 onAccept: () => gtag('consent', 'update', { analytics_storage: 'granted' }),
                 onReject: () => gtag('consent', 'update', { analytics_storage: 'denied' })
               },
-
+            
               {
                 id: "advertising",
+                name: "Advertising cookies",
+                description: "Used to deliver relevant ads and measure their performance.",
                 defaultValue: false,
                 onAccept: () => gtag('consent', 'update', {
                   ad_storage: 'granted',
@@ -122,6 +130,7 @@ window.silktide.categories = {
                 })
               }
             ]
+
           });
         };
 
