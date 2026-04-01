@@ -16,127 +16,99 @@
 
 <!-- GEO‑TARGETED CONSENT MODE USING /cdn-cgi/trace -->
 <script>
-  // GDPR countries (EU + UK)
-  const gdprCountries = [
+  // Regions requiring a banner
+  const regulatedRegions = [
+    // EU + UK
     "AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE",
-    "IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","GB"
+    "IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","GB",
+
+    // California
+    "US-CA",
+
+    // Quebec (Canada)
+    "CA-QC"
   ];
 
   function getCountryFromTrace(text) {
     const lines = text.split('\n');
+    let country = null, region = null;
+
     for (const line of lines) {
-      if (line.startsWith('loc=')) {
-        return line.replace('loc=', '').trim();
-      }
+      if (line.startsWith('loc=')) country = line.replace('loc=', '').trim();
+      if (line.startsWith('region=')) region = line.replace('region=', '').trim();
     }
-    return null;
+
+    // Build combined code like US-CA or CA-QC
+    if (country && region) return `${country}-${region}`;
+    return country;
   }
 
-  // Fetch Cloudflare trace to detect country
   fetch('/cdn-cgi/trace')
-    .then(function(res) { return res.text(); })
-    .then(function(text) {
-      const country = getCountryFromTrace(text);
+    .then(r => r.text())
+    .then(text => {
+      const loc = getCountryFromTrace(text);
 
-  if (gdprCountries.includes(country)) {
-
-     /* ---------------------------
-           NON‑GDPR REGION (Canada, USA, etc.)
-      --------------------------- */
-
-          gtag('consent', 'default', {
-            analytics_storage: 'denied',
-            ad_storage: 'denied',
-            ad_user_data: 'denied',
-            ad_personalization: 'denied'
-          });
-        
-          const css = document.createElement("link");
-          css.rel = "stylesheet";
-          css.href = "/Silktide/silktide-consent-manager.css";
-          document.head.appendChild(css);
-        
-          const script = document.createElement("script");
-          script.src = "/Silktide/silktide-consent-manager.js";
-          document.head.appendChild(script);
-        
-          script.onload = function() {
-            setTimeout(function() {
-              silktideCookieBannerManager.updateCookieBannerConfig({
-                forceShow: false,               // ← allow Silktide to remember user choice
-                openPreferencesOnLoad: true,    // show preferences panel on first visit
-        
-                background: { showBackground: true },
-                cookieIcon: { position: "bottomLeft" },
-        
-                cookieTypes: [
-                  {
-                    id: "necessary",
-                    name: "Necessary",
-                    description: "<p>These cookies are necessary for the website to function properly and cannot be switched off.</p>",
-                    required: true
-                  },
-                  {
-                    id: "analytics",
-                    name: "Analytics",
-                    description: "<p>These cookies help us improve the site by tracking which pages are most popular.</p>",
-                    defaultValue: false,
-                    onAccept: function() {
-                      gtag('consent', 'update', { analytics_storage: 'granted' });
-                      dataLayer.push({ event: 'consent_accepted_analytics' });
-                    },
-                    onReject: function() {
-                      gtag('consent', 'update', { analytics_storage: 'denied' });
-                    }
-                  },
-                  {
-                    id: "advertising",
-                    name: "Advertising",
-                    description: "<p>These cookies provide extra features and personalization.</p>",
-                    defaultValue: false,
-                    onAccept: function() {
-                      gtag('consent', 'update', {
-                        ad_storage: 'granted',
-                        ad_user_data: 'granted',
-                        ad_personalization: 'granted'
-                      });
-                      dataLayer.push({ event: 'consent_accepted_advertising' });
-                    },
-                    onReject: function() {
-                      gtag('consent', 'update', {
-                        ad_storage: 'denied',
-                        ad_user_data: 'denied',
-                        ad_personalization: 'denied'
-                      });
-                    }
-                  }
-                ],
-        
-                text: {
-                  banner: {
-                    description: "<p>We use cookies to improve your experience, analyze traffic, and help keep this site free through ads. <a href=\"https://beautyblurbs.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
-                    acceptAllButtonText: "Accept all",
-                    rejectNonEssentialButtonText: "Reject non-essential",
-                    preferencesButtonText: "Preferences"
-                  },
-                  preferences: {
-                    title: "Customize your cookie preferences",
-                    description: "<p>We respect your privacy. You can choose which types of cookies to allow.</p>",
-                    creditLinkText: "",
-                    creditLinkAccessibleLabel: ""
-                  }
-                },
-        
-                position: { banner: "bottomCenter" }
-              });
-            }, 50);
-          };
-        } else {
+      if (regulatedRegions.includes(loc)) {
         /* ---------------------------
-           NON‑GDPR REGION (Canada, USA, etc.)
-           --------------------------- */
+           REGULATED REGION → SHOW BANNER
+        --------------------------- */
 
-        // Allow analytics by default
+        gtag('consent', 'default', {
+          analytics_storage: 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+
+        // Load Silktide only for regulated regions
+        const css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.href = "/Silktide/silktide-consent-manager.css";
+        document.head.appendChild(css);
+
+        const script = document.createElement("script");
+        script.src = "/Silktide/silktide-consent-manager.js";
+        document.head.appendChild(script);
+
+        script.onload = function() {
+          silktideCookieBannerManager.updateCookieBannerConfig({
+            forceShow: false,
+            openPreferencesOnLoad: true,
+            cookieIcon: { position: "bottomLeft" },
+
+            cookieTypes: [
+              { id: "necessary", required: true },
+
+              {
+                id: "analytics",
+                defaultValue: false,
+                onAccept: () => gtag('consent', 'update', { analytics_storage: 'granted' }),
+                onReject: () => gtag('consent', 'update', { analytics_storage: 'denied' })
+              },
+
+              {
+                id: "advertising",
+                defaultValue: false,
+                onAccept: () => gtag('consent', 'update', {
+                  ad_storage: 'granted',
+                  ad_user_data: 'granted',
+                  ad_personalization: 'granted'
+                }),
+                onReject: () => gtag('consent', 'update', {
+                  ad_storage: 'denied',
+                  ad_user_data: 'denied',
+                  ad_personalization: 'denied'
+                })
+              }
+            ]
+          });
+        };
+
+      } else {
+        /* ---------------------------
+           NON‑REGULATED REGION → ALLOW ALL
+        --------------------------- */
+
         gtag('consent', 'default', {
           analytics_storage: 'granted',
           ad_storage: 'granted',
@@ -145,8 +117,8 @@
         });
       }
     })
-    .catch(function() {
-      // Fallback: if trace fails, allow analytics (so GA doesn't silently die)
+    .catch(() => {
+      // Fallback: allow all
       gtag('consent', 'default', {
         analytics_storage: 'granted',
         ad_storage: 'granted',
