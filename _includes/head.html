@@ -75,7 +75,43 @@
 
 <script>
   // Initialize Silktide
+ function initSilktide() {
+  if (typeof silktideCookieBannerManager === 'undefined') {
+    setTimeout(initSilktide, 50); // wait until script is ready
+    return;
+  }
+
   silktideCookieBannerManager.updateCookieBannerConfig({
+    forceShow: false,
+    openPreferencesOnLoad: false,
+    cookieIcon: { position: "bottomLeft" },
+    cookieTypes: [
+      {
+        id: "necessary",
+        name: "Essential cookies",
+        description: "Required for the website to function properly.",
+        required: true
+      },
+      {
+        id: "analytics",
+        name: "Analytics cookies",
+        description: "Help us understand how visitors use our website.",
+        defaultValue: false
+      },
+      {
+        id: "advertising",
+        name: "Advertising cookies",
+        description: "Used to deliver relevant ads.",
+        defaultValue: false
+      }
+    ]
+  });
+
+  console.log('[CONSENT DEBUG] Silktide initialized');
+}
+
+// Start initialization
+initSilktide();
     forceShow: false,
     openPreferencesOnLoad: false,
     cookieIcon: { position: "bottomLeft" },
