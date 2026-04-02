@@ -1,23 +1,37 @@
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-<!-- Initialize dataLayer and gtag ONCE -->
+<!-- Initialize dataLayer -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
 </script>
 
-<!-- Load Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
+<!-- DEFAULT CONSENT (must come BEFORE GA loads) -->
 <script>
-  gtag('js', new Date());
-  gtag('config', 'G-N08CPLZ22R');
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
 </script>
 
-<!-- GEO‑TARGETED CONSENT MODE USING /cdn-cgi/trace -->
+<!-- Load Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
 
 <script>
-  // Regions requiring a banner
+  gtag('js', new Date());
+
+  // Disable automatic page_view so we control it manually
+  gtag('config', 'G-N08CPLZ22R', {
+    send_page_view: false
+  });
+</script>
+
+<!-- GEO-TARGETED CONSENT MODE -->
+<script>
   const regulatedRegions = [
     // EU + UK
     "AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE",
@@ -26,7 +40,7 @@
     // California
     "US-CA",
 
-    // Quebec (Canada)
+    // Quebec
     "CA-QC"
   ];
 
@@ -35,17 +49,33 @@
     let country = null, region = null;
 
     for (const line of lines) {
-      if (line.startsWith('loc=')) country = line.replace('loc=', '').trim();
-      if (line.startsWith('region=')) region = line.replace('region=', '').trim();
+      if (line.startsWith('loc=')) {
+        country = line.replace('loc=', '').trim();
+      }
+      if (line.startsWith('region=')) {
+        region = line.replace('region=', '').trim();
+      }
     }
 
-    // Build combined code like US-CA or CA-QC
-    if (country && region) return `${country}-${region}`;
-    return country;
+    return (country && region) ? `${country}-${region}` : country;
+  }
+
+  function allowAllAndTrack() {
+    gtag('consent', 'update', {
+      analytics_storage: 'granted',
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted'
+    });
+
+    // Fire page view manually
+    gtag('event', 'page_view', {
+      page_path: window.location.pathname
+    });
   }
 
   fetch('/cdn-cgi/trace')
-    .then(r => r.text())
+    .then(response => response.text())
     .then(text => {
       const loc = getCountryFromTrace(text);
 
@@ -54,14 +84,6 @@
            REGULATED REGION → SHOW BANNER
         --------------------------- */
 
-        gtag('consent', 'default', {
-          analytics_storage: 'denied',
-          ad_storage: 'denied',
-          ad_user_data: 'denied',
-          ad_personalization: 'denied'
-        });
-
-        // Load Silktide only for regulated regions
         const css = document.createElement("link");
         css.rel = "stylesheet";
         css.href = "/Silktide/silktide-consent-manager.css";
@@ -83,57 +105,56 @@
                 description: "Required for the website to function properly and cannot be disabled.",
                 required: true
               },
-            
               {
                 id: "analytics",
                 name: "Analytics cookies",
-                description: "Help us understand how visitors use our website so we can improve it.",
+                description: "Help us understand how visitors use our website.",
                 defaultValue: false,
-                onAccept: () => gtag('consent', 'update', { analytics_storage: 'granted' }),
-                onReject: () => gtag('consent', 'update', { analytics_storage: 'denied' })
+                onAccept: () => {
+                  gtag('consent', 'update', { analytics_storage: 'granted' });
+
+                  // Fire page view after consent
+                  gtag('event', 'page_view', {
+                    page_path: window.location.pathname
+                  });
+                },
+                onReject: () => {
+                  gtag('consent', 'update', { analytics_storage: 'denied' });
+                }
               },
-            
               {
                 id: "advertising",
                 name: "Advertising cookies",
-                description: "Used to deliver relevant ads and measure their performance.",
+                description: "Used to deliver relevant ads.",
                 defaultValue: false,
-                onAccept: () => gtag('consent', 'update', {
-                  ad_storage: 'granted',
-                  ad_user_data: 'granted',
-                  ad_personalization: 'granted'
-                }),
-                onReject: () => gtag('consent', 'update', {
-                  ad_storage: 'denied',
-                  ad_user_data: 'denied',
-                  ad_personalization: 'denied'
-                })
+                onAccept: () => {
+                  gtag('consent', 'update', {
+                    ad_storage: 'granted',
+                    ad_user_data: 'granted',
+                    ad_personalization: 'granted'
+                  });
+                },
+                onReject: () => {
+                  gtag('consent', 'update', {
+                    ad_storage: 'denied',
+                    ad_user_data: 'denied',
+                    ad_personalization: 'denied'
+                  });
+                }
               }
             ]
-
           });
         };
 
       } else {
         /* ---------------------------
-           NON‑REGULATED REGION → ALLOW ALL
+           NON-REGULATED REGION → AUTO ALLOW
         --------------------------- */
-
-        gtag('consent', 'default', {
-          analytics_storage: 'granted',
-          ad_storage: 'granted',
-          ad_user_data: 'granted',
-          ad_personalization: 'granted'
-        });
+        allowAllAndTrack();
       }
     })
     .catch(() => {
-      // Fallback: allow all
-      gtag('consent', 'default', {
-        analytics_storage: 'granted',
-        ad_storage: 'granted',
-        ad_user_data: 'granted',
-        ad_personalization: 'granted'
-      });
+      // Fallback: allow all if geo lookup fails
+      allowAllAndTrack();
     });
 </script>
