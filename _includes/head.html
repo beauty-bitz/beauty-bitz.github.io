@@ -10,7 +10,23 @@
   gtag('set', 'debug_mode', true);
 </script>
 
-<!-- DEFAULT CONSENT (must come BEFORE GA loads) -->
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<!-- Initialize dataLayer -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  // Debug mode (remove later)
+  gtag('set', 'debug_mode', true);
+
+  function debugLog(msg, data) {
+    console.log('[CONSENT DEBUG]', msg, data || '');
+  }
+</script>
+
+<!-- DEFAULT CONSENT -->
 <script>
   gtag('consent', 'default', {
     analytics_storage: 'denied',
@@ -21,78 +37,103 @@
   });
 </script>
 
-<!-- Load Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
-
+<!-- Load Google Analytics with fallback detection -->
 <script>
-  gtag('js', new Date());
+  function loadGA() {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R";
 
-  // Disable automatic page view
-  gtag('config', 'G-N08CPLZ22R', {
-    send_page_view: false
-  });
-</script>
+      script.onload = () => {
+        debugLog('GA loaded successfully');
+        resolve();
+      };
 
-<!-- Silktide Cookie Banner -->
-<script>
-  // Load Silktide assets
-  const css = document.createElement("link");
-  css.rel = "stylesheet";
-  css.href = "/Silktide/silktide-consent-manager.css";
-  document.head.appendChild(css);
+      script.onerror = () => {
+        debugLog('GA FAILED to load (likely blocked)');
+        reject();
+      };
 
-  const script = document.createElement("script");
-  script.src = "/Silktide/silktide-consent-manager.js";
-  document.head.appendChild(script);
-
-  // Debug helper
-  function debugLog(msg, data) {
-    console.log('[CONSENT DEBUG]', msg, data || '');
+      document.head.appendChild(script);
+    });
   }
 
-  script.onload = function() {
-    silktideCookieBannerManager.updateCookieBannerConfig({
-      forceShow: false,
-      openPreferencesOnLoad: false,
-      cookieIcon: { position: "bottomLeft" },
-      cookieTypes: [
-        {
-          id: "necessary",
-          name: "Essential cookies",
-          description: "Required for the website to function properly and cannot be disabled.",
-          required: true
-        },
-        {
-          id: "analytics",
-          name: "Analytics cookies",
-          description: "Help us understand how visitors use our website.",
-          defaultValue: false
-        },
-        {
-          id: "advertising",
-          name: "Advertising cookies",
-          description: "Used to deliver relevant ads.",
-          defaultValue: false
-        }
-      ]
+  function initGA() {
+    gtag('js', new Date());
+
+    gtag('config', 'G-N08CPLZ22R', {
+      send_page_view: false
     });
-  };
+  }
+</script>
+
+<!-- Silktide (CDN version to avoid path issues) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/silktide/cookieconsent@latest/dist/silktide-consent-manager.css">
+
+<script src="https://cdn.jsdelivr.net/gh/silktide/cookieconsent@latest/dist/silktide-consent-manager.js"></script>
+
+<script>
+  // Initialize Silktide
+  silktideCookieBannerManager.updateCookieBannerConfig({
+    forceShow: false,
+    openPreferencesOnLoad: false,
+    cookieIcon: { position: "bottomLeft" },
+    cookieTypes: [
+      {
+        id: "necessary",
+        name: "Essential cookies",
+        description: "Required for the website to function properly.",
+        required: true
+      },
+      {
+        id: "analytics",
+        name: "Analytics cookies",
+        description: "Help us understand how visitors use our website.",
+        defaultValue: false
+      },
+      {
+        id: "advertising",
+        name: "Advertising cookies",
+        description: "Used to deliver relevant ads.",
+        defaultValue: false
+      }
+    ]
+  });
 
   /* ----------------------------------------
-     GLOBAL CONSENT LISTENER (CRITICAL FIX)
+     LOAD GA FIRST (if possible)
+  ---------------------------------------- */
+  let gaLoaded = false;
+
+  loadGA()
+    .then(() => {
+      gaLoaded = true;
+      initGA();
+    })
+    .catch(() => {
+      debugLog('GA blocked — tracking will not work in this environment');
+    });
+
+  /* ----------------------------------------
+     CONSENT LISTENER (CRITICAL)
   ---------------------------------------- */
   document.addEventListener('silktideCookieBannerManager:consentChanged', function(event) {
     const consent = event.detail;
 
     debugLog('Consent changed:', consent);
 
-    // Analytics consent
+    if (!gaLoaded) {
+      debugLog('Skipping tracking — GA not loaded');
+      return;
+    }
+
+    // Analytics
     if (consent.analytics) {
       gtag('consent', 'update', {
         analytics_storage: 'granted'
       });
 
-      // Fire page view AFTER consent
       gtag('event', 'page_view', {
         page_path: window.location.pathname
       });
@@ -104,7 +145,7 @@
       });
     }
 
-    // Advertising consent
+    // Ads
     if (consent.advertising) {
       gtag('consent', 'update', {
         ad_storage: 'granted',
@@ -112,7 +153,7 @@
         ad_personalization: 'granted'
       });
 
-      debugLog('Ads consent granted');
+      debugLog('Ads enabled');
     } else {
       gtag('consent', 'update', {
         ad_storage: 'denied',
