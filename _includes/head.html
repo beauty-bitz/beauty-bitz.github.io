@@ -18,9 +18,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
 
-  // Debug mode (remove later)
-  gtag('set', 'debug_mode', true);
-
   function debugLog(msg, data) {
     console.log('[CONSENT DEBUG]', msg, data || '');
   }
@@ -37,8 +34,10 @@
   });
 </script>
 
-<!-- Load Google Analytics with fallback detection -->
+<!-- Load GA -->
 <script>
+  let gaLoaded = false;
+
   function loadGA() {
     return new Promise((resolve, reject) => {
       const script = document.createElement('script');
@@ -46,156 +45,109 @@
       script.src = "https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R";
 
       script.onload = () => {
-        debugLog('GA loaded successfully');
+        debugLog('GA loaded');
+        gaLoaded = true;
+
+        gtag('js', new Date());
+        gtag('config', 'G-N08CPLZ22R', { send_page_view: false });
+
         resolve();
       };
 
-      script.onerror = () => {
-        debugLog('GA FAILED to load (likely blocked)');
-        reject();
-      };
+      script.onerror = reject;
 
       document.head.appendChild(script);
     });
   }
+</script>
 
-  function initGA() {
-    gtag('js', new Date());
+<!-- GEO DETECTION -->
+<script>
+  const regulatedCountries = [
+    "AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE",
+    "IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","GB"
+  ];
 
-    gtag('config', 'G-N08CPLZ22R', {
-      send_page_view: false
-    });
+  function isRegulated(country) {
+    return regulatedCountries.includes(country);
   }
 </script>
 
-<!-- Silktide (CDN version to avoid path issues) -->
+<!-- Silktide CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/silktide/cookieconsent@latest/dist/silktide-consent-manager.css">
-
 <script src="https://cdn.jsdelivr.net/gh/silktide/cookieconsent@latest/dist/silktide-consent-manager.js"></script>
 
+<!-- MAIN LOGIC -->
 <script>
-  // Initialize Silktide
- function initSilktide() {
-  if (typeof silktideCookieBannerManager === 'undefined') {
-    setTimeout(initSilktide, 50); // wait until script is ready
-    return;
-  }
-
-  silktideCookieBannerManager.updateCookieBannerConfig({
-    forceShow: false,
-    openPreferencesOnLoad: false,
-    cookieIcon: { position: "bottomLeft" },
-    cookieTypes: [
-      {
-        id: "necessary",
-        name: "Essential cookies",
-        description: "Required for the website to function properly.",
-        required: true
-      },
-      {
-        id: "analytics",
-        name: "Analytics cookies",
-        description: "Help us understand how visitors use our website.",
-        defaultValue: false
-      },
-      {
-        id: "advertising",
-        name: "Advertising cookies",
-        description: "Used to deliver relevant ads.",
-        defaultValue: false
-      }
-    ]
-  });
-
-  console.log('[CONSENT DEBUG] Silktide initialized');
-}
-
-// Start initialization
-initSilktide();
-    forceShow: false,
-    openPreferencesOnLoad: false,
-    cookieIcon: { position: "bottomLeft" },
-    cookieTypes: [
-      {
-        id: "necessary",
-        name: "Essential cookies",
-        description: "Required for the website to function properly.",
-        required: true
-      },
-      {
-        id: "analytics",
-        name: "Analytics cookies",
-        description: "Help us understand how visitors use our website.",
-        defaultValue: false
-      },
-      {
-        id: "advertising",
-        name: "Advertising cookies",
-        description: "Used to deliver relevant ads.",
-        defaultValue: false
-      }
-    ]
-  });
-
-  /* ----------------------------------------
-     LOAD GA FIRST (if possible)
-  ---------------------------------------- */
-  let gaLoaded = false;
-
-  loadGA()
-    .then(() => {
-      gaLoaded = true;
-      initGA();
-    })
-    .catch(() => {
-      debugLog('GA blocked — tracking will not work in this environment');
-    });
-
-  /* ----------------------------------------
-     CONSENT LISTENER (CRITICAL)
-  ---------------------------------------- */
-  document.addEventListener('silktideCookieBannerManager:consentChanged', function(event) {
-    const consent = event.detail;
-
-    debugLog('Consent changed:', consent);
-
-    if (!gaLoaded) {
-      debugLog('Skipping tracking — GA not loaded');
+  function initSilktide() {
+    if (typeof silktideCookieBannerManager === 'undefined') {
+      setTimeout(initSilktide, 50);
       return;
     }
 
-    // Analytics
-    if (consent.analytics) {
-      gtag('consent', 'update', {
-        analytics_storage: 'granted'
-      });
+    silktideCookieBannerManager.updateCookieBannerConfig({
+      cookieTypes: [
+        { id: "necessary", required: true },
+        { id: "analytics", defaultValue: false },
+        { id: "advertising", defaultValue: false }
+      ]
+    });
 
-      gtag('event', 'page_view', {
-        page_path: window.location.pathname
-      });
+    debugLog('Silktide initialized');
+  }
 
-      debugLog('Analytics enabled → page_view sent');
-    } else {
-      gtag('consent', 'update', {
-        analytics_storage: 'denied'
-      });
-    }
+  function enableTracking() {
+    if (!gaLoaded) return;
 
-    // Ads
-    if (consent.advertising) {
-      gtag('consent', 'update', {
-        ad_storage: 'granted',
-        ad_user_data: 'granted',
-        ad_personalization: 'granted'
-      });
+    gtag('consent', 'update', {
+      analytics_storage: 'granted',
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted'
+    });
 
-      debugLog('Ads enabled');
-    } else {
-      gtag('consent', 'update', {
-        ad_storage: 'denied',
-        ad_user_data: 'denied',
-        ad_personalization: 'denied'
-      });
-    }
+    gtag('event', 'page_view', {
+      page_path: window.location.pathname
+    });
+
+    debugLog('Tracking enabled');
+  }
+
+  // Load GA first
+  loadGA().catch(() => {
+    debugLog('GA blocked');
   });
+
+  // Detect region
+  fetch('https://ipapi.co/json/')
+    .then(res => res.json())
+    .then(data => {
+      const country = data.country;
+      debugLog('User country:', country);
+
+      if (isRegulated(country)) {
+        /* ---------------------------
+           REGULATED → SHOW BANNER
+        --------------------------- */
+        initSilktide();
+
+        document.addEventListener('silktideCookieBannerManager:consentChanged', function(e) {
+          const consent = e.detail;
+
+          if (consent.analytics) {
+            enableTracking();
+          }
+        });
+
+      } else {
+        /* ---------------------------
+           NON-REGULATED → AUTO TRACK
+        --------------------------- */
+        enableTracking();
+      }
+    })
+    .catch(() => {
+      debugLog('Geo lookup failed → allowing tracking');
+      enableTracking();
+    });
 </script>
