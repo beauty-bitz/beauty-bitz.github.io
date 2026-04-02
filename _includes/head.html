@@ -5,6 +5,9 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
+
+  // Optional debug (remove in production if not needed)
+  gtag('set', 'debug_mode', true);
 </script>
 
 <!-- DEFAULT CONSENT (must come BEFORE GA loads) -->
@@ -24,137 +27,98 @@
 <script>
   gtag('js', new Date());
 
-  // Disable automatic page_view so we control it manually
+  // Disable automatic page view
   gtag('config', 'G-N08CPLZ22R', {
     send_page_view: false
   });
 </script>
 
-<!-- GEO-TARGETED CONSENT MODE -->
+<!-- Silktide Cookie Banner -->
 <script>
-  const regulatedRegions = [
-    // EU + UK
-    "AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE",
-    "IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","GB",
+  // Load Silktide assets
+  const css = document.createElement("link");
+  css.rel = "stylesheet";
+  css.href = "/Silktide/silktide-consent-manager.css";
+  document.head.appendChild(css);
 
-    // California
-    "US-CA",
+  const script = document.createElement("script");
+  script.src = "/Silktide/silktide-consent-manager.js";
+  document.head.appendChild(script);
 
-    // Quebec
-    "CA-QC"
-  ];
+  // Debug helper
+  function debugLog(msg, data) {
+    console.log('[CONSENT DEBUG]', msg, data || '');
+  }
 
-  function getCountryFromTrace(text) {
-    const lines = text.split('\n');
-    let country = null, region = null;
+  script.onload = function() {
+    silktideCookieBannerManager.updateCookieBannerConfig({
+      forceShow: false,
+      openPreferencesOnLoad: false,
+      cookieIcon: { position: "bottomLeft" },
+      cookieTypes: [
+        {
+          id: "necessary",
+          name: "Essential cookies",
+          description: "Required for the website to function properly and cannot be disabled.",
+          required: true
+        },
+        {
+          id: "analytics",
+          name: "Analytics cookies",
+          description: "Help us understand how visitors use our website.",
+          defaultValue: false
+        },
+        {
+          id: "advertising",
+          name: "Advertising cookies",
+          description: "Used to deliver relevant ads.",
+          defaultValue: false
+        }
+      ]
+    });
+  };
 
-    for (const line of lines) {
-      if (line.startsWith('loc=')) {
-        country = line.replace('loc=', '').trim();
-      }
-      if (line.startsWith('region=')) {
-        region = line.replace('region=', '').trim();
-      }
+  /* ----------------------------------------
+     GLOBAL CONSENT LISTENER (CRITICAL FIX)
+  ---------------------------------------- */
+  document.addEventListener('silktideCookieBannerManager:consentChanged', function(event) {
+    const consent = event.detail;
+
+    debugLog('Consent changed:', consent);
+
+    // Analytics consent
+    if (consent.analytics) {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+
+      // Fire page view AFTER consent
+      gtag('event', 'page_view', {
+        page_path: window.location.pathname
+      });
+
+      debugLog('Analytics enabled → page_view sent');
+    } else {
+      gtag('consent', 'update', {
+        analytics_storage: 'denied'
+      });
     }
 
-    return (country && region) ? `${country}-${region}` : country;
-  }
+    // Advertising consent
+    if (consent.advertising) {
+      gtag('consent', 'update', {
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted'
+      });
 
-  function allowAllAndTrack() {
-    gtag('consent', 'update', {
-      analytics_storage: 'granted',
-      ad_storage: 'granted',
-      ad_user_data: 'granted',
-      ad_personalization: 'granted'
-    });
-
-    // Fire page view manually
-    gtag('event', 'page_view', {
-      page_path: window.location.pathname
-    });
-  }
-
-  fetch('/cdn-cgi/trace')
-    .then(response => response.text())
-    .then(text => {
-      const loc = getCountryFromTrace(text);
-
-      if (regulatedRegions.includes(loc)) {
-        /* ---------------------------
-           REGULATED REGION → SHOW BANNER
-        --------------------------- */
-
-        const css = document.createElement("link");
-        css.rel = "stylesheet";
-        css.href = "/Silktide/silktide-consent-manager.css";
-        document.head.appendChild(css);
-
-        const script = document.createElement("script");
-        script.src = "/Silktide/silktide-consent-manager.js";
-        document.head.appendChild(script);
-
-        script.onload = function() {
-          silktideCookieBannerManager.updateCookieBannerConfig({
-            forceShow: false,
-            openPreferencesOnLoad: true,
-            cookieIcon: { position: "bottomLeft" },
-            cookieTypes: [
-              {
-                id: "necessary",
-                name: "Essential cookies",
-                description: "Required for the website to function properly and cannot be disabled.",
-                required: true
-              },
-              {
-                id: "analytics",
-                name: "Analytics cookies",
-                description: "Help us understand how visitors use our website.",
-                defaultValue: false,
-                onAccept: () => {
-                  gtag('consent', 'update', { analytics_storage: 'granted' });
-
-                  // Fire page view after consent
-                  gtag('event', 'page_view', {
-                    page_path: window.location.pathname
-                  });
-                },
-                onReject: () => {
-                  gtag('consent', 'update', { analytics_storage: 'denied' });
-                }
-              },
-              {
-                id: "advertising",
-                name: "Advertising cookies",
-                description: "Used to deliver relevant ads.",
-                defaultValue: false,
-                onAccept: () => {
-                  gtag('consent', 'update', {
-                    ad_storage: 'granted',
-                    ad_user_data: 'granted',
-                    ad_personalization: 'granted'
-                  });
-                },
-                onReject: () => {
-                  gtag('consent', 'update', {
-                    ad_storage: 'denied',
-                    ad_user_data: 'denied',
-                    ad_personalization: 'denied'
-                  });
-                }
-              }
-            ]
-          });
-        };
-
-      } else {
-        /* ---------------------------
-           NON-REGULATED REGION → AUTO ALLOW
-        --------------------------- */
-        allowAllAndTrack();
-      }
-    })
-    .catch(() => {
-      // Fallback: allow all if geo lookup fails
-      allowAllAndTrack();
-    });
+      debugLog('Ads consent granted');
+    } else {
+      gtag('consent', 'update', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+    }
+  });
 </script>
