@@ -77,7 +77,8 @@
 
   // Check browser language as a lightweight EU signal
   const lang = navigator.language || navigator.userLanguage;
-
+  console.log('LANGUSED:', lang);
+  
   const euLangs = [
     'en-GB','fr-FR','de-DE','es-ES','it-IT','nl-NL','sv-SE','da-DK',
     'fi-FI','pl-PL','cs-CZ','hu-HU','ro-RO','sk-SK','sl-SI','bg-BG',
@@ -85,6 +86,8 @@
   ];
 
   const isLikelyEU = euLangs.includes(lang);
+
+  console.log('isEU:', isLikelyEU);
 
   if (isLikelyEU) {
     // 🇪🇺 Show banner (user must consent)
