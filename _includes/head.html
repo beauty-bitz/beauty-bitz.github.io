@@ -1,4 +1,155 @@
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N08CPLZ22R');
+</script>
+
+
+
+<!-- Initialize dataLayer -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  function debugLog(msg, data) {
+    console.log('[CONSENT DEBUG]', msg, data || '');
+  }
+</script>
+
+<!-- DEFAULT CONSENT -->
+<script>
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+</script>
+
+<!-- Load GA -->
+<script>
+  let gaLoaded = false;
+
+  function loadGA() {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R";
+
+      script.onload = () => {
+        debugLog('GA loaded');
+        gaLoaded = true;
+
+        gtag('js', new Date());
+        gtag('config', 'G-N08CPLZ22R', { send_page_view: false });
+
+        resolve();
+      };
+
+      script.onerror = reject;
+
+      document.head.appendChild(script);
+    });
+  }
+</script>
+
+<!-- GEO DETECTION -->
+<script>
+  const regulatedCountries = [
+    "AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE",
+    "IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","GB"
+  ];
+
+  function isRegulated(country) {
+    return regulatedCountries.includes(country);
+  }
+</script>
+
+<!-- Silktide CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/silktide/cookieconsent@latest/dist/silktide-consent-manager.css">
+<script src="https://cdn.jsdelivr.net/gh/silktide/cookieconsent@latest/dist/silktide-consent-manager.js"></script>
+
+<!-- MAIN LOGIC -->
+<script>
+  function initSilktide() {
+    if (typeof silktideCookieBannerManager === 'undefined') {
+      setTimeout(initSilktide, 50);
+      return;
+    }
+
+    silktideCookieBannerManager.updateCookieBannerConfig({
+      cookieTypes: [
+        { id: "necessary", required: true },
+        { id: "analytics", defaultValue: false },
+        { id: "advertising", defaultValue: false }
+      ]
+    });
+
+    debugLog('Silktide initialized');
+  }
+
+  function enableTracking() {
+    if (!gaLoaded) return;
+
+    gtag('consent', 'update', {
+      analytics_storage: 'granted',
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted'
+    });
+
+    gtag('event', 'page_view', {
+      page_path: window.location.pathname
+    });
+
+    debugLog('Tracking enabled');
+  }
+
+  // Load GA first
+  loadGA().catch(() => {
+    debugLog('GA blocked');
+  });
+
+  // Detect region
+  fetch('https://ipapi.co/json/')
+    .then(res => res.json())
+    .then(data => {
+      const country = data.country;
+      debugLog('User country:', country);
+
+      if (isRegulated(country)) {
+        /* ---------------------------
+           REGULATED → SHOW BANNER
+        --------------------------- */
+        initSilktide();
+
+        document.addEventListener('silktideCookieBannerManager:consentChanged', function(e) {
+          const consent = e.detail;
+
+          if (consent.analytics) {
+            enableTracking();
+          }
+        });
+
+      } else {
+        /* ---------------------------
+           NON-REGULATED → AUTO TRACK
+        --------------------------- */
+        enableTracking();
+      }
+    })
+    .catch(() => {
+      debugLog('Geo lookup failed → allowing tracking');
+      enableTracking();
+    });
+</script>
+
 
