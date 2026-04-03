@@ -2,35 +2,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 <!-- =========================
-     1. SILKTIDE CONFIG (MUST BE FIRST)
-========================= -->
-<script>
-  window.silktideCookieBannerManagerConfig = {
-    autoInit: false
-  };
-</script>
-
-
-<!-- =========================
-     2. GOOGLE ANALYTICS
+  1. GOOGLE CONSENT MODE v2 (BASE SETUP)
 ========================= -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
 
-  // Default: denied (compliance)
+  // Default: deny EVERYTHING (required for GDPR compliance)
   gtag('consent', 'default', {
     analytics_storage: 'denied',
     ad_storage: 'denied',
     ad_user_data: 'denied',
     ad_personalization: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
     wait_for_update: 500
   });
 
   gtag('js', new Date());
 
-  // Prevent automatic pageview
   gtag('config', 'G-N08CPLZ22R', {
     send_page_view: false
   });
@@ -38,97 +30,141 @@
 
 
 <!-- =========================
-     3. SILKTIDE (SELF-HOSTED)
+  2. SILKTIDE CONFIG (NO AUTO INIT)
 ========================= -->
+<script>
+  window.silktideCookieBannerManagerConfig = {
+    cookieTypes: [
+      { id: "necessary", required: true },
+      { id: "analytics", defaultValue: false },
+      { id: "advertising", defaultValue: false }
+    ]
+  };
+</script>
+
 <link rel="stylesheet" href="/Silktide/silktide-consent-manager.css">
 <script src="/Silktide/silktide-consent-manager.js"></script>
 
 
 <!-- =========================
-     4. CONSENT + REGION LOGIC
+  3. TRACKING CONTROL
 ========================= -->
 <script>
-  /* -------------------------
-     ENABLE TRACKING
-  ------------------------- */
-  function enableTracking() {
+  function enableTracking(consent = {}) {
+
+    const analyticsAllowed = consent.analytics === true;
+
     gtag('consent', 'update', {
-      analytics_storage: 'granted',
-      ad_storage: 'granted',
-      ad_user_data: 'granted',
-      ad_personalization: 'granted'
+      analytics_storage: analyticsAllowed ? 'granted' : 'denied',
+      ad_storage: analyticsAllowed ? 'granted' : 'denied',
+      ad_user_data: analyticsAllowed ? 'granted' : 'denied',
+      ad_personalization: analyticsAllowed ? 'granted' : 'denied'
     });
 
-    gtag('event', 'page_view', {
-      page_path: window.location.pathname
-    });
+    if (analyticsAllowed) {
+      gtag('event', 'page_view', {
+        page_path: window.location.pathname
+      });
 
-    console.log('[CONSENT] Tracking enabled');
+      console.log('[CONSENT] Analytics enabled');
+    }
   }
+</script>
 
 
-  /* -------------------------
-     INIT SILKTIDE
-  ------------------------- */
-  function initSilktide() {
-    if (typeof silktideCookieBannerManager === 'undefined') {
-      setTimeout(initSilktide, 50);
+<!-- =========================
+  4. EU DETECTION (IP + LANGUAGE FALLBACK)
+========================= -->
+<script>
+  async function detectRegion() {
+    const lang = navigator.language || navigator.userLanguage || '';
+
+    const euLangs = [
+      'en-GB','fr-FR','de-DE','es-ES','it-IT','nl-NL','sv-SE','da-DK',
+      'fi-FI','pl-PL','cs-CZ','hu-HU','ro-RO','sk-SK','sl-SI','bg-BG',
+      'hr-HR','lt-LT','lv-LV','et-EE','mt-MT','el-GR','pt-PT'
+    ];
+
+    const languageIndicatesEU = euLangs.includes(lang);
+
+    // 🌍 IP fallback (more reliable than language)
+    let ipData = null;
+    try {
+      const res = await fetch('https://ipapi.co/json/');
+      ipData = await res.json();
+    } catch (e) {
+      console.warn('[CONSENT] IP lookup failed, fallback to language');
+    }
+
+    const euCountries = [
+      'AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE',
+      'GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT',
+      'RO','SK','SI','ES','SE'
+    ];
+
+    const isEUByIP = ipData?.country_code
+      ? euCountries.includes(ipData.country_code)
+      : false;
+
+    const isEU = isEUByIP || languageIndicatesEU;
+
+    console.log('LANG:', lang);
+    console.log('IP COUNTRY:', ipData?.country_code);
+    console.log('IS EU:', isEU);
+
+    return isEU;
+  }
+</script>
+
+
+<!-- =========================
+  5. SILKTIDE INIT (NO FLICKER)
+========================= -->
+<script>
+  function initSilktide(consentRequired) {
+
+    if (typeof window.silktideCookieBannerManager === 'undefined') {
+      setTimeout(() => initSilktide(consentRequired), 50);
       return;
     }
 
-    silktideCookieBannerManager.init({
-      cookieTypes: [
-        { id: "necessary", required: true },
-        { id: "analytics", defaultValue: false },
-        { id: "advertising", defaultValue: false }
-      ]
-    });
-
-    document.addEventListener('silktideCookieBannerManager:consentChanged', function(e) {
-      const consent = e.detail;
-
-      if (consent.analytics) {
-        enableTracking();
+    document.addEventListener(
+      'silktideCookieBannerManager:consentChanged',
+      function (e) {
+        enableTracking(e.detail || {});
       }
-    });
+    );
 
-    console.log('[CONSENT] Silktide initialized');
+    console.log('[CONSENT] Silktide ready');
   }
+</script>
 
 
-  /* -------------------------
-     REGION DETECTION
-  ------------------------- */
-  const lang = navigator.language || navigator.userLanguage;
-  console.log('LANGUSED:', lang);
+<!-- =========================
+  6. MAIN BOOTSTRAP (NO FLICKER LOGIC)
+========================= -->
+<script>
+  (async function bootstrapConsent() {
 
-  const euLangs = [
-    'en-GB','fr-FR','de-DE','es-ES','it-IT','nl-NL','sv-SE','da-DK',
-    'fi-FI','pl-PL','cs-CZ','hu-HU','ro-RO','sk-SK','sl-SI','bg-BG',
-    'hr-HR','lt-LT','lv-LV','et-EE','mt-MT','el-GR','pt-PT'
-  ];
+    const isEU = await detectRegion();
 
-  const isLikelyEU = euLangs.includes(lang);
-  console.log('isEU:', isLikelyEU);
+    if (isEU) {
+      // 🌍 EU → show banner
+      initSilktide(true);
 
+    } else {
+      // 🌎 Non-EU → silent consent grant
+      enableTracking({ analytics: true });
 
-  /* -------------------------
-     MAIN LOGIC
-  ------------------------- */
-  if (isLikelyEU) {
-    // 🇪🇺 EU/UK → show banner
-    initSilktide();
-  } else {
-    // 🌎 Non-EU → auto tracking
-    enableTracking();
+      // Prevent any banner flash
+      const style = document.createElement('style');
+      style.innerHTML = `
+        .silktide-cookie-banner {
+          display: none !important;
+        }
+      `;
+      document.head.appendChild(style);
+    }
 
-    // Safety: ensure banner never appears
-    const style = document.createElement('style');
-    style.innerHTML = `
-      .silktide-cookie-banner {
-        display: none !important;
-      }
-    `;
-    document.head.appendChild(style);
-  }
+  })();
 </script>
