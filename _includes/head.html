@@ -2,14 +2,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 <!-- =========================
-     GOOGLE ANALYTICS (ONCE)
+     1. SILKTIDE CONFIG (MUST BE FIRST)
+========================= -->
+<script>
+  window.silktideCookieBannerManagerConfig = {
+    autoInit: false
+  };
+</script>
+
+
+<!-- =========================
+     2. GOOGLE ANALYTICS
 ========================= -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
 
-  // Default: deny (required for compliance)
+  // Default: denied (compliance)
   gtag('consent', 'default', {
     analytics_storage: 'denied',
     ad_storage: 'denied',
@@ -28,22 +38,14 @@
 
 
 <!-- =========================
-     SILKTIDE (SELF-HOSTED)
+     3. SILKTIDE (SELF-HOSTED)
 ========================= -->
-
-<!-- Prevent auto-initialization -->
-<script>
-  window.silktideCookieBannerManagerConfig = {
-    autoInit: false
-  };
-</script>
-
 <link rel="stylesheet" href="/Silktide/silktide-consent-manager.css">
 <script src="/Silktide/silktide-consent-manager.js"></script>
 
 
 <!-- =========================
-     CONSENT + LOGIC
+     4. CONSENT + REGION LOGIC
 ========================= -->
 <script>
   /* -------------------------
@@ -95,7 +97,7 @@
 
 
   /* -------------------------
-     REGION DETECTION (NO API)
+     REGION DETECTION
   ------------------------- */
   const lang = navigator.language || navigator.userLanguage;
   console.log('LANGUSED:', lang);
@@ -119,5 +121,14 @@
   } else {
     // 🌎 Non-EU → auto tracking
     enableTracking();
+
+    // Safety: ensure banner never appears
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .silktide-cookie-banner {
+        display: none !important;
+      }
+    `;
+    document.head.appendChild(style);
   }
 </script>
