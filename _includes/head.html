@@ -1,13 +1,15 @@
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-<!-- Google Analytics (ONLY LOAD ONCE) -->
+<!-- =========================
+     GOOGLE ANALYTICS (ONCE)
+========================= -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
 
-  // Default: DENIED (for compliance)
+  // Default: deny (required for compliance)
   gtag('consent', 'default', {
     analytics_storage: 'denied',
     ad_storage: 'denied',
@@ -18,20 +20,35 @@
 
   gtag('js', new Date());
 
-  // Do NOT send pageview yet
+  // Prevent automatic pageview
   gtag('config', 'G-N08CPLZ22R', {
     send_page_view: false
   });
 </script>
 
 
-<!-- Silktide Cookie Banner -->
+<!-- =========================
+     SILKTIDE (SELF-HOSTED)
+========================= -->
+
+<!-- Prevent auto-initialization -->
+<script>
+  window.silktideCookieBannerManagerConfig = {
+    autoInit: false
+  };
+</script>
+
 <link rel="stylesheet" href="/Silktide/silktide-consent-manager.css">
 <script src="/Silktide/silktide-consent-manager.js"></script>
 
 
-
+<!-- =========================
+     CONSENT + LOGIC
+========================= -->
 <script>
+  /* -------------------------
+     ENABLE TRACKING
+  ------------------------- */
   function enableTracking() {
     gtag('consent', 'update', {
       analytics_storage: 'granted',
@@ -47,13 +64,17 @@
     console.log('[CONSENT] Tracking enabled');
   }
 
+
+  /* -------------------------
+     INIT SILKTIDE
+  ------------------------- */
   function initSilktide() {
     if (typeof silktideCookieBannerManager === 'undefined') {
       setTimeout(initSilktide, 50);
       return;
     }
 
-    silktideCookieBannerManager.updateCookieBannerConfig({
+    silktideCookieBannerManager.init({
       cookieTypes: [
         { id: "necessary", required: true },
         { id: "analytics", defaultValue: false },
@@ -61,7 +82,6 @@
       ]
     });
 
-    // Listen for consent
     document.addEventListener('silktideCookieBannerManager:consentChanged', function(e) {
       const consent = e.detail;
 
@@ -74,12 +94,12 @@
   }
 
 
-  // 🚀 SMART LOGIC (NO GEO API)
-
-  // Check browser language as a lightweight EU signal
+  /* -------------------------
+     REGION DETECTION (NO API)
+  ------------------------- */
   const lang = navigator.language || navigator.userLanguage;
   console.log('LANGUSED:', lang);
-  
+
   const euLangs = [
     'en-GB','fr-FR','de-DE','es-ES','it-IT','nl-NL','sv-SE','da-DK',
     'fi-FI','pl-PL','cs-CZ','hu-HU','ro-RO','sk-SK','sl-SI','bg-BG',
@@ -87,11 +107,14 @@
   ];
 
   const isLikelyEU = euLangs.includes(lang);
-
   console.log('isEU:', isLikelyEU);
 
+
+  /* -------------------------
+     MAIN LOGIC
+  ------------------------- */
   if (isLikelyEU) {
-    // 🇪🇺 Show banner (user must consent)
+    // 🇪🇺 EU/UK → show banner
     initSilktide();
   } else {
     // 🌎 Non-EU → auto tracking
