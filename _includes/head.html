@@ -119,10 +119,10 @@
   });
 
   // Detect region
-  fetch('https://ipapi.co/json/')
+  fetch('https://ipwho.is/')
     .then(res => res.json())
     .then(data => {
-      const country = data.country;
+      const country = data.country_code;
       debugLog('User country:', country);
 
       if (isRegulated(country)) {
