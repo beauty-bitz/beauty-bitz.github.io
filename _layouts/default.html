@@ -554,7 +554,10 @@
 ============================================================ -->
 <script>
   (function bootstrapConsent() {
-    const country = (getCookie('country') || 'XX').toUpperCase();
+    
+	// const country = (getCookie('country') || 'XX').toUpperCase();
+    const country = 'GB'; // Force UK mode for testing
+  
     const regulated = isRegulatedRegion(country);
 
     console.log('[CONSENT] Country:', country);
