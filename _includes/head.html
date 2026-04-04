@@ -43,7 +43,8 @@
 ============================================================ -->
 <script>
   window.silktideCookieBannerManagerConfig = {
-    autoInit: false,   // ← prevents Silktide from starting automatically
+    autoInit: false,
+    disableAutoLoad: true,   // ← REQUIRED for your Silktide version
     preferencesButton: true,
     cookieTypes: [
       { id: "necessary", required: true },
