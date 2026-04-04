@@ -363,14 +363,12 @@
 <!-- ============================================================
   1. GOOGLE CONSENT MODE v2 (DEFAULT: DENIED)
 ============================================================ -->
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
-
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){ dataLayer.push(arguments); }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
 
-gtag('consent', 'default', {
+  gtag('consent', 'default', {
     analytics_storage: 'denied',
     ad_storage: 'denied',
     ad_user_data: 'denied',
@@ -378,170 +376,137 @@ gtag('consent', 'default', {
     functionality_storage: 'granted',
     security_storage: 'granted',
     wait_for_update: 500
-});
+  });
 
-gtag('js', new Date());
-gtag('config', 'G-N08CPLZ22R', { send_page_view: false });
+  gtag('js', new Date());
+  gtag('config', 'G-N08CPLZ22R', { send_page_view: false });
 </script>
 
 <!-- ============================================================
   2. PREVENT BANNER FLICKER
 ============================================================ -->
-
 <script>
-document.documentElement.classList.add('no-consent-banner');
+  document.documentElement.classList.add('no-consent-banner');
 </script>
-
 <style>
-.no-consent-banner .silktide-cookie-banner {
+  .no-consent-banner .silktide-cookie-banner {
     display: none !important;
-}
+  }
 </style>
 
 <!-- ============================================================
-  3. SILKTIDE CONFIG
+  3. SILKTIDE CONFIG (ALLOW AUTO INIT)
 ============================================================ -->
-
 <script>
-window.silktideCookieBannerManagerConfig = {
-    autoInit: false,
+  window.silktideCookieBannerManagerConfig = {
+    autoInit: true,          // let Silktide initialize itself
     preferencesButton: true,
     cookieTypes: [
-        { id: "necessary", required: true },
-        { id: "analytics", defaultValue: false },
-        { id: "advertising", defaultValue: false }
+      { id: "necessary",  required: true },
+      { id: "analytics",  defaultValue: false },
+      { id: "advertising", defaultValue: false }
     ]
-};
+  };
 </script>
 
 <!-- ============================================================
-  4. LOAD SILKTIDE
+  4. REGION DETECTION
 ============================================================ -->
-
-<script src="Silktide/silktide-consent-manager.js"></script>
-<link rel="stylesheet" href="Silktide/silktide-consent-manager.css">
-
-<!-- ============================================================
-  5. REGION DETECTION
-============================================================ -->
-
 <script>
-function getCookie(name) {
+  function getCookie(name) {
     const value = "; " + document.cookie;
     const parts = value.split("; " + name + "=");
     if (parts.length === 2) return parts.pop().split(";")[0];
     return null;
-}
+  }
 
-function isRegulatedRegion(country) {
+  function isRegulatedRegion(country) {
     const eu = [
-        'AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE',
-        'GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT',
-        'RO','SK','SI','ES','SE'
+      'AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE',
+      'GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT',
+      'RO','SK','SI','ES','SE'
     ];
     const uk = ['GB'];
 
     return eu.includes(country) || uk.includes(country);
-}
+  }
 </script>
 
 <!-- ============================================================
-  6. GOOGLE CONSENT UPDATE HANDLER
+  5. GA4 CONSENT UPDATE HANDLER
 ============================================================ -->
-
 <script>
-function updateConsent(consent = {}) {
+  function updateConsent(consent = {}) {
     const analyticsAllowed   = consent.analytics === true;
     const advertisingAllowed = consent.advertising === true;
 
     gtag('consent', 'update', {
-        analytics_storage: analyticsAllowed ? 'granted' : 'denied',
-        ad_storage: advertisingAllowed ? 'granted' : 'denied',
-        ad_user_data: advertisingAllowed ? 'granted' : 'denied',
-        ad_personalization: advertisingAllowed ? 'granted' : 'denied'
+      analytics_storage:   analyticsAllowed   ? 'granted' : 'denied',
+      ad_storage:          advertisingAllowed ? 'granted' : 'denied',
+      ad_user_data:        advertisingAllowed ? 'granted' : 'denied',
+      ad_personalization:  advertisingAllowed ? 'granted' : 'denied'
     });
 
     if (analyticsAllowed) {
-        gtag('event', 'page_view', {
-            page_path: window.location.pathname
-        });
+      gtag('event', 'page_view', {
+        page_path: window.location.pathname
+      });
     }
-}
+  }
 </script>
 
 <!-- ============================================================
-  7. SAFE SILKTIDE INIT (RACE-CONDITION PROOF)
+  6. MAIN BOOTSTRAP (LOAD SILKTIDE ONLY IN REGULATED REGIONS)
 ============================================================ -->
-
-<script>
-function initSilktide(consentRequired) {
-    let attempts = 0;
-
-    function tryInit() {
-        const manager = window.silktideCookieBannerManager;
-
-        if (manager && typeof manager.init === 'function') {
-
-            manager.init();
-
-            document.addEventListener(
-                'silktideCookieBannerManager:consentChanged',
-                function(e) {
-                    updateConsent(e.detail || {});
-                }
-            );
-
-            if (consentRequired && typeof manager.showBanner === 'function') {
-                document.documentElement.classList.remove('no-consent-banner');
-                manager.showBanner();
-            }
-
-        } else if (attempts < 100) {
-            attempts++;
-            setTimeout(tryInit, 50);
-        } else {
-            console.error('Silktide failed to initialize.');
-        }
-    }
-
-    tryInit();
-}
-</script>
-
-<!-- ============================================================
-  8. MAIN BOOTSTRAP
-============================================================ -->
-
 <script>
 (function bootstrapConsent() {
+  // PRODUCTION:
+  let country = (getCookie('country') || 'XX').toUpperCase();
 
-    // PRODUCTION
-    // let country = (getCookie('country') || 'XX').toUpperCase();
+  // TESTING (uncomment ONE while testing, then re-comment):
+  // country = 'GB';
+  // country = 'FR';
+  // country = 'DE';
 
-    // TESTING (uncomment ONE if needed)
-     country = 'GB';
-    // country = 'FR';
-    // country = 'DE';
+  const regulated = isRegulatedRegion(country);
 
-    const regulated = isRegulatedRegion(country);
+  console.log('[CONSENT] Country:', country);
+  console.log('[CONSENT] Regulated:', regulated);
 
-    console.log('[CONSENT] Country:', country);
-    console.log('[CONSENT] Regulated:', regulated);
+  if (regulated) {
+    // Load Silktide JS + CSS dynamically ONLY in regulated regions
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = 'Silktide/silktide-consent-manager.css';
+    document.head.appendChild(css);
 
-    if (regulated) {
-        initSilktide(true);
-    } else {
-        // No banner outside regulated regions
-        updateConsent({
-            analytics: true,
-            advertising: true
-        });
-    }
+    const script = document.createElement('script');
+    script.src = 'Silktide/silktide-consent-manager.js';
+    script.onload = function() {
+      // Silktide will auto-init because autoInit: true
+      document.documentElement.classList.remove('no-consent-banner');
 
+      // Hook GA4 into Silktide consent events (if Silktide fires this event)
+      document.addEventListener(
+        'silktideCookieBannerManager:consentChanged',
+        function(e) {
+          updateConsent(e.detail || {});
+        }
+      );
+    };
+    document.head.appendChild(script);
+
+  } else {
+    // Non‑regulated regions: no banner, full tracking
+    document.documentElement.classList.remove('no-consent-banner');
+    updateConsent({
+      analytics:   true,
+      advertising: true
+    });
+  }
 })();
 </script>
 
-	
 
   
 
