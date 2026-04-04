@@ -543,7 +543,9 @@
   8. MAIN BOOTSTRAP
 ============================================================ -->
 (function bootstrapConsent() {
-    const country = (getCookie('country') || 'XX').toUpperCase();
+	// const country = (getCookie('country') || 'XX').toUpperCase();
+    const country = 'GB'; // Force UK mode for testing
+
     const regulated = isRegulatedRegion(country);
 
     // KILL‑SWITCH: disable Silktide in all non‑regulated regions
