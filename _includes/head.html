@@ -38,7 +38,7 @@
 </style>
 
 <!-- ============================================================
-  3. SILKTIDE CONFIG (with Preferences button enabled)
+  3. SILKTIDE CONFIG (Preferences button ON)
 ============================================================ -->
 <script>
   window.silktideCookieBannerManagerConfig = {
@@ -76,7 +76,7 @@
 </script>
 
 <!-- ============================================================
-  5. REGION DETECTION (EU/UK + CPRA + Quebec Law 25)
+  5. REGION DETECTION (EU/UK ONLY)
 ============================================================ -->
 <script>
   function getCookie(name) {
@@ -93,22 +93,19 @@
       'RO','SK','SI','ES','SE'
     ];
     const uk = ['GB'];
-    const quebec = ['CA-QC']; // Quebec Law 25
-    const cpra = ['US-CA'];   // California CPRA
 
-    // Cloudflare only gives country, not province/state.
-    // So we treat ALL of CA as Quebec-regulated (safe default).
-    // And ALL of US as CPRA-regulated (safe default).
-    // You can refine this later if you add IP-to-region enrichment.
-    if (country === 'CA') return true; // Quebec Law 25 (safe default)
-    if (country === 'US') return true; // CPRA (safe default)
+    // Canada = NOT regulated
+    if (country === 'CA') return false;
+
+    // US = NOT regulated (no state-level detection available)
+    if (country === 'US') return false;
 
     return eu.includes(country) || uk.includes(country);
   }
 </script>
 
 <!-- ============================================================
-  6. SILKTIDE INIT + CALLBACKS
+  6. SILKTIDE INIT (correct API: showBanner)
 ============================================================ -->
 <script>
   function initSilktide(consentRequired) {
@@ -123,7 +120,7 @@
     );
 
     if (consentRequired) {
-      window.silktideCookieBannerManager.show();
+      window.silktideCookieBannerManager.showBanner();
     }
   }
 </script>
