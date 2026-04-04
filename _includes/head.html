@@ -2,6 +2,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 <!-- ============================================================
+  0. SILKTIDE KILL‑SWITCH (prevents auto‑init + hides icon)
+  MUST COME BEFORE EVERYTHING ELSE
+============================================================ -->
+<script>
+  // Prevent Silktide from auto-starting before our logic runs
+  window.silktideCookieBannerManager = {
+    autoLoad: false,
+    autoInit: false,
+    init: function(){},
+    showBanner: function(){},
+    show: function(){}
+  };
+</script>
+
+<style>
+  /* Hide ALL Silktide UI unless we explicitly enable it */
+  .silktide-cookie-banner,
+  .silktide-cookie-icon,
+  [class*="silktide-cookie"] {
+    display: none !important;
+  }
+</style>
+
+<!-- ============================================================
   1. GOOGLE CONSENT MODE v2 (BASELINE)
 ============================================================ -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
@@ -9,7 +33,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
 
-  // Safe default: deny everything until we decide otherwise
   gtag('consent', 'default', {
     analytics_storage: 'denied',
     ad_storage: 'denied',
@@ -39,12 +62,11 @@
 
 <!-- ============================================================
   3. SILKTIDE CONFIG (Preferences button ON + autoInit disabled)
-  MUST COME BEFORE THE SILKTIDE SCRIPT
 ============================================================ -->
 <script>
   window.silktideCookieBannerManagerConfig = {
     autoInit: false,
-    disableAutoLoad: true,   // ← REQUIRED for your Silktide version
+    disableAutoLoad: true,
     preferencesButton: true,
     cookieTypes: [
       { id: "necessary", required: true },
@@ -55,7 +77,7 @@
 </script>
 
 <!-- ============================================================
-  4. SILKTIDE SCRIPT (must load AFTER config)
+  4. SILKTIDE SCRIPT (must load AFTER config + kill‑switch)
 ============================================================ -->
 <link rel="stylesheet" href="/Silktide/silktide-consent-manager.css">
 <script src="/Silktide/silktide-consent-manager.js"></script>
@@ -100,10 +122,7 @@
     ];
     const uk = ['GB'];
 
-    // Canada = NOT regulated
     if (country === 'CA') return false;
-
-    // US = NOT regulated (no state-level detection available)
     if (country === 'US') return false;
 
     return eu.includes(country) || uk.includes(country);
@@ -119,10 +138,9 @@
       return setTimeout(() => initSilktide(consentRequired), 50);
     }
 
-    // Initialize Silktide manually
+    // Re-enable Silktide now that we are in a regulated region
     window.silktideCookieBannerManager.init();
 
-    // Listen for Silktide consent changes
     document.addEventListener(
       'silktideCookieBannerManager:consentChanged',
       e => enableTracking(e.detail || {})
@@ -146,12 +164,9 @@
     console.log('%c[CONSENT] Regulated region: ' + regulated, 'color: #0d6efd; font-weight: bold;');
 
     if (regulated) {
-      // Show banner
       document.documentElement.classList.remove('no-consent-banner');
       initSilktide(true);
-
     } else {
-      // Silent allow-all
       enableTracking({ analytics: true, advertising: true });
     }
   })();
