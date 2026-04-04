@@ -360,49 +360,187 @@
 </script>
 <!-- Change Browser Zoom if Web page does not fit on screen END-->
 	
-<!-- Make sure to include the CSS and JavaScript files before using them -->
+<!-- ============================================================
+  1. GOOGLE CONSENT MODE v2 (DEFAULT: DENIED)
+============================================================ -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+
+gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500
+});
+
+gtag('js', new Date());
+gtag('config', 'G-N08CPLZ22R', { send_page_view: false });
+</script>
+
+<!-- ============================================================
+  2. PREVENT BANNER FLICKER
+============================================================ -->
+
+<script>
+document.documentElement.classList.add('no-consent-banner');
+</script>
+
+<style>
+.no-consent-banner .silktide-cookie-banner {
+    display: none !important;
+}
+</style>
+
+<!-- ============================================================
+  3. SILKTIDE CONFIG
+============================================================ -->
+
+<script>
+window.silktideCookieBannerManagerConfig = {
+    autoInit: false,
+    preferencesButton: true,
+    cookieTypes: [
+        { id: "necessary", required: true },
+        { id: "analytics", defaultValue: false },
+        { id: "advertising", defaultValue: false }
+    ]
+};
+</script>
+
+<!-- ============================================================
+  4. LOAD SILKTIDE
+============================================================ -->
+
 <link rel="stylesheet" href="/Silktide/silktide-consent-manager.css">
 <script src="/Silktide/silktide-consent-manager.js"></script>
 
-<script>
-function initSilktide(consentRequired) {
-    // Check if the manager is available
-    if (!window.silktideCookieBannerManager) {
-        console.error('Silktide Cookie Banner Manager is not defined.');
-        return;
-    }
+<!-- ============================================================
+  5. REGION DETECTION
+============================================================ -->
 
-    // Ensure the init function exists before calling it
-    if (typeof window.silktideCookieBannerManager.init === 'function') {
-        window.silktideCookieBannerManager.init();
-        document.addEventListener('silktideCookieBannerManager:consentChanged', e => enableTracking(e.detail || {}));
-        
-        if (consentRequired && typeof window.silktideCookieBannerManager.showBanner === 'function') {
-            window.silktideCookieBannerManager.showBanner();
-        } else {
-            console.error('showBanner function is not defined.');
-        }
-    } else {
-        console.error('init function is not defined.');
-    }
+<script>
+function getCookie(name) {
+    const value = "; " + document.cookie;
+    const parts = value.split("; " + name + "=");
+    if (parts.length === 2) return parts.pop().split(";")[0];
+    return null;
 }
 
-(function bootstrapConsent() {
-    const country = (getCookie('country') || 'XX').toUpperCase();
-    const regulated = isRegulatedRegion(country);
-    
-    if (!regulated) {
-        document.documentElement.classList.add('non-regulated');
-    } else {
-        document.documentElement.classList.remove('no-consent-banner');
-        initSilktide(true);
+function isRegulatedRegion(country) {
+    const eu = [
+        'AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE',
+        'GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT',
+        'RO','SK','SI','ES','SE'
+    ];
+    const uk = ['GB'];
+
+    return eu.includes(country) || uk.includes(country);
+}
+</script>
+
+<!-- ============================================================
+  6. GOOGLE CONSENT UPDATE HANDLER
+============================================================ -->
+
+<script>
+function updateConsent(consent = {}) {
+    const analyticsAllowed   = consent.analytics === true;
+    const advertisingAllowed = consent.advertising === true;
+
+    gtag('consent', 'update', {
+        analytics_storage: analyticsAllowed ? 'granted' : 'denied',
+        ad_storage: advertisingAllowed ? 'granted' : 'denied',
+        ad_user_data: advertisingAllowed ? 'granted' : 'denied',
+        ad_personalization: advertisingAllowed ? 'granted' : 'denied'
+    });
+
+    if (analyticsAllowed) {
+        gtag('event', 'page_view', {
+            page_path: window.location.pathname
+        });
     }
+}
+</script>
+
+<!-- ============================================================
+  7. SAFE SILKTIDE INIT (RACE-CONDITION PROOF)
+============================================================ -->
+
+<script>
+function initSilktide(consentRequired) {
+    let attempts = 0;
+
+    function tryInit() {
+        const manager = window.silktideCookieBannerManager;
+
+        if (manager && typeof manager.init === 'function') {
+
+            manager.init();
+
+            document.addEventListener(
+                'silktideCookieBannerManager:consentChanged',
+                function(e) {
+                    updateConsent(e.detail || {});
+                }
+            );
+
+            if (consentRequired && typeof manager.showBanner === 'function') {
+                document.documentElement.classList.remove('no-consent-banner');
+                manager.showBanner();
+            }
+
+        } else if (attempts < 100) {
+            attempts++;
+            setTimeout(tryInit, 50);
+        } else {
+            console.error('Silktide failed to initialize.');
+        }
+    }
+
+    tryInit();
+}
+</script>
+
+<!-- ============================================================
+  8. MAIN BOOTSTRAP
+============================================================ -->
+
+<script>
+(function bootstrapConsent() {
+
+    // PRODUCTION
+    let country = (getCookie('country') || 'XX').toUpperCase();
+
+    // TESTING (uncomment ONE if needed)
+    // country = 'GB';
+    // country = 'FR';
+    // country = 'DE';
+
+    const regulated = isRegulatedRegion(country);
+
+    console.log('[CONSENT] Country:', country);
+    console.log('[CONSENT] Regulated:', regulated);
+
+    if (regulated) {
+        initSilktide(true);
+    } else {
+        // No banner outside regulated regions
+        updateConsent({
+            analytics: true,
+            advertising: true
+        });
+    }
+
 })();
 </script>
 
-<!-- SILKTIDE SCRIPT END -->	 
-
-	
 	
 
   
