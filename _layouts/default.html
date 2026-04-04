@@ -504,12 +504,11 @@
     document.documentElement.classList.remove('non-regulated');
 
     const css = document.createElement('link');
-    css.rel = 'stylesheet';
-    css.href = 'Silktide/silktide-consent-manager.css';
+    <link rel="stylesheet" href="https://consent-manager.silktide.com/latest/silktide-consent-manager.css">
     document.head.appendChild(css);
 
     const script = document.createElement('script');
-    script.src = 'Silktide/silktide-consent-manager.js';
+    <script src="https://consent-manager.silktide.com/latest/silktide-consent-manager.js"></script>
     script.onload = function() {
       // Silktide auto‑inits because autoInit: true
       document.documentElement.classList.remove('no-consent-banner');
