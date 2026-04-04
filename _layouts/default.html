@@ -362,7 +362,7 @@
 	
 
 <!-- ============================================================
-  0. GLOBAL OVERRIDES — HIDE SILKTIDE ONLY IN NON‑REGULATED REGIONS
+  0. CONDITIONAL OVERRIDES — HIDE SILKTIDE ONLY IN NON‑REGULATED REGIONS
 ============================================================ -->
 <style>
   /* Only hide Silktide UI when <html> has class="non-regulated" */
@@ -491,9 +491,9 @@
 ============================================================ -->
 <script>
   function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';')[0];
+    const value = "; " + document.cookie;
+    const parts = value.split("; " + name + "=");
+    if (parts.length === 2) return parts.pop().split(";")[0];
     return null;
   }
 
@@ -535,22 +535,25 @@
 </script>
 
 <!-- ============================================================
-  8. MAIN BOOTSTRAP (with conditional kill‑switch + conditional CSS)
+  8. MAIN BOOTSTRAP (kill‑switch + conditional CSS + GA4)
 ============================================================ -->
 <script>
 (function bootstrapConsent() {
 
-    // TEMPORARY TESTING OVERRIDE
-    // const country = (getCookie('country') || 'XX').toUpperCase();
-    const country = 'GB'; // Force UK mode for testing
+    // PRODUCTION:
+    const country = (getCookie('country') || 'XX').toUpperCase();
+
+    // TESTING (uncomment ONE line while testing, then re-comment):
+    // const country = 'GB'; // Force UK
+    // const country = 'FR'; // Force France
+    // const country = 'DE'; // Force Germany
 
     const regulated = isRegulatedRegion(country);
 
-    // Add class to <html> so CSS hides Silktide ONLY in non‑regulated regions
+    // Mark non‑regulated regions on <html> and disable Silktide JS there
     if (!regulated) {
         document.documentElement.classList.add('non-regulated');
 
-        // Kill‑switch: disable Silktide JS entirely in non‑regulated regions
         window.silktideCookieBannerManager = {
             autoLoad: false,
             autoInit: false,
@@ -571,6 +574,7 @@
     }
 })();
 </script>
+
 
 
 <!-- SILKTIDE SCRIPT END -->	 
