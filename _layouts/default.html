@@ -365,38 +365,18 @@
   0. CONDITIONAL OVERRIDES — HIDE SILKTIDE ONLY IN NON‑REGULATED REGIONS
 ============================================================ -->
 <style>
-  /* Only hide Silktide UI when <html> has class="non-regulated" */
-
   .non-regulated .silktide-cookie-icon,
   .non-regulated [class*="silktide-cookie-icon"],
-  .non-regulated silktide-cookie-icon {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-  }
-
+  .non-regulated silktide-cookie-icon,
   .non-regulated .silktide-cookie-banner,
   .non-regulated [class*="silktide-cookie-banner"],
-  .non-regulated silktide-cookie-banner {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-  }
-
+  .non-regulated silktide-cookie-banner,
   .non-regulated [id*="silktide"],
   .non-regulated [class*="silktide"],
   .non-regulated [data-silktide],
   .non-regulated silktide-cookie,
   .non-regulated silktide-banner,
-  .non-regulated silktide-icon {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-  }
-
+  .non-regulated silktide-icon,
   .non-regulated *[style*="silktide"],
   .non-regulated *[style*="cookie"],
   .non-regulated *[style*="banner"],
@@ -535,22 +515,21 @@
 </script>
 
 <!-- ============================================================
-  8. MAIN BOOTSTRAP (kill‑switch + conditional CSS + GA4)
+  8. MAIN BOOTSTRAP (corrected)
 ============================================================ -->
 <script>
 (function bootstrapConsent() {
 
     // PRODUCTION:
-    // const country = (getCookie('country') || 'XX').toUpperCase();
+    const country = (getCookie('country') || 'XX').toUpperCase();
 
-    // TESTING (uncomment ONE line while testing, then re-comment):
-    const country = 'GB'; // Force UK
-    // const country = 'FR'; // Force France
-    // const country = 'DE'; // Force Germany
+    // TESTING (uncomment ONE line while testing):
+    // const country = 'GB';
+    // const country = 'FR';
+    // const country = 'DE';
 
     const regulated = isRegulatedRegion(country);
 
-    // Mark non‑regulated regions on <html> and disable Silktide JS there
     if (!regulated) {
         document.documentElement.classList.add('non-regulated');
 
