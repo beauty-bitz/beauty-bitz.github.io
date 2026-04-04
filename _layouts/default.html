@@ -421,32 +421,13 @@
 </script>
 
 <!-- ============================================================
-  3. SILKTIDE CONFIG (AUTO INIT)
+  3. SILKTIDE CONFIG (NO CUSTOM cookieTypes)
 ============================================================ -->
 <script>
   window.silktideCookieBannerManagerConfig = {
     autoInit: true,
-    preferencesButton: true,
-    cookieTypes: [
-      {
-        id: "necessary",
-        label: "Necessary cookies",
-        description: "Required for the website to function.",
-        required: true
-      },
-      {
-        id: "analytics",
-        label: "Analytics cookies",
-        description: "Help us understand how visitors use the site.",
-        defaultValue: false
-      },
-      {
-        id: "advertising",
-        label: "Advertising cookies",
-        description: "Used to show personalized or interest‑based ads.",
-        defaultValue: false
-      }
-    ]
+    preferencesButton: true
+    // Let Silktide use its own cookie types internally
   };
 </script>
 
@@ -469,7 +450,7 @@
     ];
     const uk = ['GB'];
 
-    // Explicit non‑regulated overrides if you ever want them:
+    // Optional explicit non‑regulated overrides:
     if (country === 'CA') return false;
     if (country === 'US') return false;
 
@@ -555,7 +536,6 @@
   }
 })();
 </script>
-
 
   
 
