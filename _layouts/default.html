@@ -360,21 +360,11 @@
 </script>
 <!-- Change Browser Zoom if Web page does not fit on screen END-->
 	
-<!-- ============================================================
-  0. SILKTIDE KILL‑SWITCH (prevents auto-init)
-============================================================ -->
-<script>
-  window.silktideCookieBannerManager = {
-    autoLoad: false,
-    autoInit: false,
-    init: function(){},
-    showBanner: function(){},
-    show: function(){}
-  };
-</script>
+
+
 
 <!-- ============================================================
-  0B. GLOBAL OVERRIDES — HIDE ALL SILKTIDE UI
+  0. GLOBAL OVERRIDES — HIDE ALL SILKTIDE UI
   (This block MUST come before Silktide CSS loads)
 ============================================================ -->
 <style>
@@ -552,25 +542,32 @@
 <!-- ============================================================
   8. MAIN BOOTSTRAP
 ============================================================ -->
-<script>
-  (function bootstrapConsent() {
-    
-	// const country = (getCookie('country') || 'XX').toUpperCase();
-    const country = 'GB'; // Force UK mode for testing
-  
+(function bootstrapConsent() {
+    const country = (getCookie('country') || 'XX').toUpperCase();
     const regulated = isRegulatedRegion(country);
+
+    // KILL‑SWITCH: disable Silktide in all non‑regulated regions
+    if (!regulated) {
+        window.silktideCookieBannerManager = {
+            autoLoad: false,
+            autoInit: false,
+            init: function(){},
+            showBanner: function(){},
+            show: function(){}
+        };
+    }
 
     console.log('[CONSENT] Country:', country);
     console.log('[CONSENT] Regulated:', regulated);
 
     if (regulated) {
-      document.documentElement.classList.remove('no-consent-banner');
-      initSilktide(true);
+        document.documentElement.classList.remove('no-consent-banner');
+        initSilktide(true);
     } else {
-      enableTracking({ analytics: true, advertising: true });
+        enableTracking({ analytics: true, advertising: true });
     }
-  })();
-</script>
+})();
+
 
 
 <!-- SILKTIDE SCRIPT END -->	 
