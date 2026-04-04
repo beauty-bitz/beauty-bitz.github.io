@@ -361,51 +361,46 @@
 <!-- Change Browser Zoom if Web page does not fit on screen END-->
 	
 
-
-
 <!-- ============================================================
-  0. GLOBAL OVERRIDES — HIDE ALL SILKTIDE UI
-  (This block MUST come before Silktide CSS loads)
+  0. GLOBAL OVERRIDES — HIDE SILKTIDE ONLY IN NON‑REGULATED REGIONS
 ============================================================ -->
 <style>
-  /* Hide Silktide floating icon */
-  .silktide-cookie-icon,
-  [class*="silktide-cookie-icon"],
-  silktide-cookie-icon {
+  /* Only hide Silktide UI when <html> has class="non-regulated" */
+
+  .non-regulated .silktide-cookie-icon,
+  .non-regulated [class*="silktide-cookie-icon"],
+  .non-regulated silktide-cookie-icon {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
     pointer-events: none !important;
   }
 
-  /* Hide Silktide banner */
-  .silktide-cookie-banner,
-  [class*="silktide-cookie-banner"],
-  silktide-cookie-banner {
+  .non-regulated .silktide-cookie-banner,
+  .non-regulated [class*="silktide-cookie-banner"],
+  .non-regulated silktide-cookie-banner {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
     pointer-events: none !important;
   }
 
-  /* Hide ANY Silktide UI element (catch‑all) */
-  [id*="silktide"],
-  [class*="silktide"],
-  [data-silktide],
-  silktide-cookie,
-  silktide-banner,
-  silktide-icon {
+  .non-regulated [id*="silktide"],
+  .non-regulated [class*="silktide"],
+  .non-regulated [data-silktide],
+  .non-regulated silktide-cookie,
+  .non-regulated silktide-banner,
+  .non-regulated silktide-icon {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
     pointer-events: none !important;
   }
 
-  /* Override Silktide inline styles */
-  *[style*="silktide"],
-  *[style*="cookie"],
-  *[style*="banner"],
-  *[style*="icon"] {
+  .non-regulated *[style*="silktide"],
+  .non-regulated *[style*="cookie"],
+  .non-regulated *[style*="banner"],
+  .non-regulated *[style*="icon"] {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
@@ -540,16 +535,22 @@
 </script>
 
 <!-- ============================================================
-  8. MAIN BOOTSTRAP
+  8. MAIN BOOTSTRAP (with conditional kill‑switch + conditional CSS)
 ============================================================ -->
+<script>
 (function bootstrapConsent() {
-	// const country = (getCookie('country') || 'XX').toUpperCase();
+
+    // TEMPORARY TESTING OVERRIDE
+    // const country = (getCookie('country') || 'XX').toUpperCase();
     const country = 'GB'; // Force UK mode for testing
 
     const regulated = isRegulatedRegion(country);
 
-    // KILL‑SWITCH: disable Silktide in all non‑regulated regions
+    // Add class to <html> so CSS hides Silktide ONLY in non‑regulated regions
     if (!regulated) {
+        document.documentElement.classList.add('non-regulated');
+
+        // Kill‑switch: disable Silktide JS entirely in non‑regulated regions
         window.silktideCookieBannerManager = {
             autoLoad: false,
             autoInit: false,
@@ -569,7 +570,7 @@
         enableTracking({ analytics: true, advertising: true });
     }
 })();
-
+</script>
 
 
 <!-- SILKTIDE SCRIPT END -->	 
