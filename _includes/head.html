@@ -1,15 +1,15 @@
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-<!-- =========================
-  1. GOOGLE CONSENT MODE v2
-========================= -->
+<!-- ============================================================
+  1. GOOGLE CONSENT MODE v2 (BASELINE)
+============================================================ -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N08CPLZ22R"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
 
-  // Default: deny everything (safe baseline)
+  // Safe default: deny everything until we decide otherwise
   gtag('consent', 'default', {
     analytics_storage: 'denied',
     ad_storage: 'denied',
@@ -24,11 +24,25 @@
   gtag('config', 'G-N08CPLZ22R', { send_page_view: false });
 </script>
 
-<!-- =========================
-  2. SILKTIDE CONFIG
-========================= -->
+<!-- ============================================================
+  2. PRE‑HIDE BANNER (prevents flicker in non‑regulated regions)
+============================================================ -->
+<script>
+  document.documentElement.classList.add('no-consent-banner');
+</script>
+
+<style>
+  .no-consent-banner .silktide-cookie-banner {
+    display: none !important;
+  }
+</style>
+
+<!-- ============================================================
+  3. SILKTIDE CONFIG (with Preferences button enabled)
+============================================================ -->
 <script>
   window.silktideCookieBannerManagerConfig = {
+    preferencesButton: true,
     cookieTypes: [
       { id: "necessary", required: true },
       { id: "analytics", defaultValue: false },
@@ -40,9 +54,9 @@
 <link rel="stylesheet" href="/Silktide/silktide-consent-manager.css">
 <script src="/Silktide/silktide-consent-manager.js"></script>
 
-<!-- =========================
-  3. TRACKING CONTROL
-========================= -->
+<!-- ============================================================
+  4. TRACKING CONTROL (GA4 + Ads)
+============================================================ -->
 <script>
   function enableTracking(consent = {}) {
     const analyticsAllowed   = consent.analytics === true;
@@ -61,9 +75,9 @@
   }
 </script>
 
-<!-- =========================
-  4. REGION DETECTION (FROM WORKER COOKIE)
-========================= -->
+<!-- ============================================================
+  5. REGION DETECTION (EU/UK + CPRA + Quebec Law 25)
+============================================================ -->
 <script>
   function getCookie(name) {
     const value = `; ${document.cookie}`;
@@ -79,13 +93,23 @@
       'RO','SK','SI','ES','SE'
     ];
     const uk = ['GB'];
+    const quebec = ['CA-QC']; // Quebec Law 25
+    const cpra = ['US-CA'];   // California CPRA
+
+    // Cloudflare only gives country, not province/state.
+    // So we treat ALL of CA as Quebec-regulated (safe default).
+    // And ALL of US as CPRA-regulated (safe default).
+    // You can refine this later if you add IP-to-region enrichment.
+    if (country === 'CA') return true; // Quebec Law 25 (safe default)
+    if (country === 'US') return true; // CPRA (safe default)
+
     return eu.includes(country) || uk.includes(country);
   }
 </script>
 
-<!-- =========================
-  5. SILKTIDE INIT + CALLBACKS
-========================= -->
+<!-- ============================================================
+  6. SILKTIDE INIT + CALLBACKS
+============================================================ -->
 <script>
   function initSilktide(consentRequired) {
     if (!window.silktideCookieBannerManager) {
@@ -98,33 +122,31 @@
       e => enableTracking(e.detail || {})
     );
 
-    // Show banner only when required
     if (consentRequired) {
       window.silktideCookieBannerManager.show();
     }
   }
 </script>
 
-<!-- =========================
-  6. MAIN BOOTSTRAP
-========================= -->
+<!-- ============================================================
+  7. MAIN BOOTSTRAP (region logic + console logging)
+============================================================ -->
 <script>
   (function bootstrapConsent() {
     const country = (getCookie('country') || 'XX').toUpperCase();
     const regulated = isRegulatedRegion(country);
 
+    console.log('%c[CONSENT] Country detected: ' + country, 'color: #d63384; font-weight: bold;');
+    console.log('%c[CONSENT] Regulated region: ' + regulated, 'color: #0d6efd; font-weight: bold;');
+
     if (regulated) {
-      // EU/UK → show banner, start denied
+      // Show banner
+      document.documentElement.classList.remove('no-consent-banner');
       initSilktide(true);
 
     } else {
-      // Non‑regulated → silent allow-all
+      // Silent allow-all
       enableTracking({ analytics: true, advertising: true });
-
-      // Hide banner completely
-      const style = document.createElement('style');
-      style.innerHTML = `.silktide-cookie-banner { display: none !important; }`;
-      document.head.appendChild(style);
     }
   })();
 </script>
