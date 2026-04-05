@@ -1,5 +1,61 @@
 // Silktide Consent Manager - https://silktide.com/consent-manager/  
 
+/* ============================================================
+   Silktide Cookie Banner Manager (Rebuilt)
+   Wraps the UI class and ensures stable initialization
+============================================================ */
+
+class SilktideCookieBannerManager {
+  constructor(config = {}) {
+    // Ensure cookieTypes always exists
+    this.config = {
+      cookieTypes: Array.isArray(config.cookieTypes) ? config.cookieTypes : [],
+      ...config
+    };
+
+    // Ensure each cookie type has required fields
+    this.config.cookieTypes = this.config.cookieTypes.map(type => ({
+      id: type.id,
+      name: type.name || type.label || "Cookie category",
+      description: type.description || "",
+      required: !!type.required,
+      defaultValue: !!type.defaultValue,
+      onAccept: typeof type.onAccept === "function" ? type.onAccept : null,
+      onReject: typeof type.onReject === "function" ? type.onReject : null
+    }));
+
+    // Create the UI instance
+    this.ui = new SilktideCookieBanner(this.config);
+
+    // Expose consentChanged event for GA4
+    this.setupConsentEvent();
+  }
+
+  setupConsentEvent() {
+    document.addEventListener(
+      "silktideCookieBannerManager:consentChanged",
+      (e) => {
+        if (typeof this.config.onConsentChanged === "function") {
+          this.config.onConsentChanged(e.detail);
+        }
+      }
+    );
+  }
+}
+
+/* ============================================================
+   Auto‑init support (matches Silktide behavior)
+============================================================ */
+
+window.SilktideCookieBannerManager = SilktideCookieBannerManager;
+
+if (window.silktideCookieBannerManagerConfig?.autoInit) {
+  window.silktideCookieBannerManager = new SilktideCookieBannerManager(
+    window.silktideCookieBannerManagerConfig
+  );
+}
+
+
 class SilktideCookieBanner {
   constructor(config) {
     this.config = config; // Save config to the instance
