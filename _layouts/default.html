@@ -469,7 +469,6 @@
     ];
     const uk = ['GB'];
 
-    // Optional explicit non‑regulated overrides:
     if (country === 'CA') return false;
     if (country === 'US') return false;
 
@@ -501,17 +500,17 @@
 </script>
 
 <!-- ============================================================
-  6. MAIN BOOTSTRAP (REGION LOGIC + LOAD SILKTIDE FROM CDN)
+  6. MAIN BOOTSTRAP (LOAD SILKTIDE ENGINE + UI TEMPLATES)
 ============================================================ -->
 <script>
 (function bootstrapConsent() {
   // PRODUCTION:
-  // let country = (getCookie('country') || 'XX').toUpperCase();
+  let country = (getCookie('country') || 'XX').toUpperCase();
 
   // TESTING OVERRIDES (uncomment ONE while testing, then re‑comment):
-   country = 'GB'; // UK
-  // country = 'FR'; // France
-  // country = 'DE'; // Germany
+  // country = 'GB';
+  // country = 'FR';
+  // country = 'DE';
 
   const regulated = isRegulatedRegion(country);
 
@@ -519,32 +518,43 @@
   console.log('[CONSENT] Regulated:', regulated);
 
   if (regulated) {
-    // Regulated region: load Silktide from jsDelivr and let it auto‑init
     document.documentElement.classList.remove('non-regulated');
 
+    // Load CSS
     const css = document.createElement('link');
     css.rel = 'stylesheet';
     css.href = 'https://cdn.jsdelivr.net/gh/silktide/consent-manager/silktide-consent-manager.css';
     document.head.appendChild(css);
 
+    // Load JS engine
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/gh/silktide/consent-manager/silktide-consent-manager.js';
     script.onload = function() {
-      // Silktide auto‑inits because autoInit: true
-      document.documentElement.classList.remove('no-consent-banner');
 
-      // Map Silktide consent changes into GA4
-      document.addEventListener(
-        'silktideCookieBannerManager:consentChanged',
-        function(e) {
-          updateConsent(e.detail || {});
-        }
-      );
+      // Load UI templates (REQUIRED for banner + icon + modal)
+      const templates = document.createElement('script');
+      templates.src = 'https://cdn.jsdelivr.net/gh/silktide/consent-manager/silktide-consent-manager.templates.js';
+      templates.onload = function() {
+
+        // Silktide auto‑inits because autoInit: true
+        document.documentElement.classList.remove('no-consent-banner');
+
+        // Map Silktide consent changes into GA4
+        document.addEventListener(
+          'silktideCookieBannerManager:consentChanged',
+          function(e) {
+            updateConsent(e.detail || {});
+          }
+        );
+      };
+
+      document.head.appendChild(templates);
     };
+
     document.head.appendChild(script);
 
   } else {
-    // Non‑regulated region: no banner, full tracking, hide any Silktide UI
+    // Non‑regulated region: no banner, full tracking
     document.documentElement.classList.add('non-regulated');
     document.documentElement.classList.remove('no-consent-banner');
 
@@ -555,6 +565,7 @@
   }
 })();
 </script>
+
 
 
   
