@@ -421,18 +421,7 @@
 </script>
 
 <!-- ============================================================
-  3. SILKTIDE CONFIG (NO CUSTOM cookieTypes)
-============================================================ -->
-<script>
-  window.silktideCookieBannerManagerConfig = {
-    autoInit: true,
-    preferencesButton: true
-    // Let Silktide use its own cookie types internally
-  };
-</script>
-
-<!-- ============================================================
-  4. REGION DETECTION
+  3. REGION DETECTION
 ============================================================ -->
 <script>
   function getCookie(name) {
@@ -459,7 +448,7 @@
 </script>
 
 <!-- ============================================================
-  5. GA4 CONSENT UPDATE HANDLER
+  4. GA4 CONSENT UPDATE HANDLER
 ============================================================ -->
 <script>
   function updateConsent(consent = {}) {
@@ -482,15 +471,15 @@
 </script>
 
 <!-- ============================================================
-  6. MAIN BOOTSTRAP (REGION LOGIC + SILKTIDE LOAD)
+  5. MAIN BOOTSTRAP (REGION LOGIC + LOAD SILKTIDE FROM CDN)
 ============================================================ -->
 <script>
 (function bootstrapConsent() {
   // PRODUCTION:
-  // let country = (getCookie('country') || 'XX').toUpperCase();
+  let country = (getCookie('country') || 'XX').toUpperCase();
 
   // TESTING OVERRIDES (uncomment ONE while testing, then re‑comment):
-   country = 'GB'; // UK
+  // country = 'GB'; // UK
   // country = 'FR'; // France
   // country = 'DE'; // Germany
 
@@ -500,20 +489,21 @@
   console.log('[CONSENT] Regulated:', regulated);
 
   if (regulated) {
-    // Regulated region: load Silktide and let it auto‑init
+    // Regulated region: load Silktide from jsDelivr and let it auto‑init
     document.documentElement.classList.remove('non-regulated');
 
     const css = document.createElement('link');
-    <link rel="stylesheet" href="https://consent-manager.silktide.com/latest/silktide-consent-manager.css">
+    css.rel = 'stylesheet';
+    css.href = 'https://cdn.jsdelivr.net/gh/silktide/consent-manager/silktide-consent-manager.css';
     document.head.appendChild(css);
 
     const script = document.createElement('script');
-    <script src="https://consent-manager.silktide.com/latest/silktide-consent-manager.js"></script>
+    script.src = 'https://cdn.jsdelivr.net/gh/silktide/consent-manager/silktide-consent-manager.js';
     script.onload = function() {
-      // Silktide auto‑inits because autoInit: true
+      // Silktide’s own init runs; remove pre‑hide class
       document.documentElement.classList.remove('no-consent-banner');
 
-      // Wire GA4 to Silktide consent events (if/when Silktide fires them)
+      // Map Silktide consent changes into GA4 (if event is fired)
       document.addEventListener(
         'silktideCookieBannerManager:consentChanged',
         function(e) {
@@ -535,6 +525,7 @@
   }
 })();
 </script>
+
 
   
 
