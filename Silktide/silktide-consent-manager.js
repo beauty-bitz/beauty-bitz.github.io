@@ -256,6 +256,13 @@ class SilktideCookieBanner {
       if (typeof this.config.onRejectAll === 'function') { this.config.onRejectAll(); }
     }
 
+     // Dispatch consentChanged event for GA4
+    document.dispatchEvent(
+      new CustomEvent("silktideCookieBannerManager:consentChanged", {
+      detail: this.getAcceptedCookies()
+      })
+    ); 
+
     // finally update the checkboxes in the modal with the values from localStorage
     this.updateCheckboxState();
   }
