@@ -1598,8 +1598,15 @@ p a {
 } */
 
 body {
-	background-color: #edd3da !important;
+	background-color: #edd3da;
 }
+
+  .TestCat .text1 { font-size: 18px !important; font-weight: 700; margin-left: 0px; color: #000000;}
+   .TypesCat .text2 { font-size: 18px !important; font-weight: 700; margin-left: 0px; color: #000000;}
+   .AutoCat .text3 { font-size: 18px !important; font-weight: 700; margin-left: 0px; color: #000000;}
+   .DevOpsCat .text4 { font-size: 18px !important; font-weight: 700; margin-left: 0px; color: #000000;}   
+
+.wrapper-header {border-top: none !important;}
 
 
 
