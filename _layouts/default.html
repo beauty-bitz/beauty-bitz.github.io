@@ -229,12 +229,12 @@
       console.log('[CONSENT] Regulated:', regulated);
 
       if (regulated) {
-        document.documentElement.classList.remove('non-regulated');
+        // document.documentElement.classList.remove('non-regulated');
 
         const script = document.createElement('script');
         script.src = '/Silktide/silktide-consent-manager.js';
         script.onload = function() {
-          document.documentElement.classList.remove('no-consent-banner');
+         // document.documentElement.classList.remove('no-consent-banner');
 
           document.addEventListener(
             'silktideCookieBannerManager:consentChanged',
