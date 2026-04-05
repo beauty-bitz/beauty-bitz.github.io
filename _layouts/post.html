@@ -180,6 +180,14 @@ layout: default
   </div>
 </div>
 
+<script>
+function afterSubmit() {
+  // Prevent iframe load errors
+}
+</script>
+
+
+
 <!-- Rating Script -->
 <style>
   .star {
@@ -404,6 +412,13 @@ document.addEventListener("DOMContentLoaded", () => {
     form.onsubmit = submitComment;  // use your new function
   }
 });
+
+
+function isMobile() {
+  return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+
 </script>
 
 <!-- RETRIEVE MOBILE POST COMMENTS RESPONSES ONLY ****************************************-->
