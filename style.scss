@@ -1597,9 +1597,8 @@ p a {
   -webkit-overflow-scrolling: touch;
 } */
 
-#silktide-wrapper {
-    all: unset;
-    display: contents;
+body {
+	background: #edd3da !important;
 }
 
 
