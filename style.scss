@@ -1597,6 +1597,8 @@ p a {
   -webkit-overflow-scrolling: touch;
 } */
 
+/* CSS to counter Silktide side effect on CSS */
+
 body {
 	background-color: #edd3da;
 }
@@ -1610,7 +1612,19 @@ body {
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
   #related-posts-cat {
 	  margin-top: 30px;
-  }	  
+  }	
+
+  /* Category page description */
+  .cat-desc {
+	  margin-left: -75px;
+	}
+	.recent-post-title {
+       background-color: white;
+	}	
+
+	.recent-post-card {
+		 background-color: white;
+	}	
 }
 
 
