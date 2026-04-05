@@ -222,50 +222,51 @@ class SilktideCookieBanner {
   // Consent Handling
   // ----------------------------------------------------------------
   handleCookieChoice(accepted) {
-    // We set that an initial choice was made regardless of what it was so we don't show the banner again
-    this.setInitialCookieChoiceMade();
+     // We set that an initial choice was made regardless of what it was so we don't show the banner again
+     this.setInitialCookieChoiceMade();
+   
+     this.removeBanner();
+     this.hideBackdrop();
+     this.toggleModal(false);
+     this.showCookieIcon();
+   
+     this.config.cookieTypes.forEach((type) => {
+       // Set localStorage and run accept/reject callbacks
+       if (type.required == true) {
+         localStorage.setItem(`silktideCookieChoice_${type.id}${this.getBannerSuffix()}`, 'true');
+         if (typeof type.onAccept === 'function') { type.onAccept() }
+       } else {
+         localStorage.setItem(
+           `silktideCookieChoice_${type.id}${this.getBannerSuffix()}`,
+           accepted.toString(),
+         );
+   
+         if (accepted) {
+           if (typeof type.onAccept === 'function') { type.onAccept(); }
+         } else {
+           if (typeof type.onReject === 'function') { type.onReject(); }
+         }
+       }
+     });
+   
+     // Trigger optional onAcceptAll/onRejectAll callbacks
+     if (accepted && typeof this.config.onAcceptAll === 'function') {
+       this.config.onAcceptAll();
+     } else if (!accepted && typeof this.config.onRejectAll === 'function') {
+       this.config.onRejectAll();
+     }
+   
+     // ⭐ Dispatch consentChanged event for GA4 (Accept All + Reject All)
+     document.dispatchEvent(
+       new CustomEvent("silktideCookieBannerManager:consentChanged", {
+         detail: this.getAcceptedCookies()
+       })
+     );
+   
+     // finally update the checkboxes in the modal with the values from localStorage
+     this.updateCheckboxState();
+   }
 
-    this.removeBanner();
-    this.hideBackdrop();
-    this.toggleModal(false);
-    this.showCookieIcon();
-
-    this.config.cookieTypes.forEach((type) => {
-      // Set localStorage and run accept/reject callbacks
-      if (type.required == true) {
-        localStorage.setItem(`silktideCookieChoice_${type.id}${this.getBannerSuffix()}`, 'true');
-        if (typeof type.onAccept === 'function') { type.onAccept() }
-      } else {
-        localStorage.setItem(
-          `silktideCookieChoice_${type.id}${this.getBannerSuffix()}`,
-          accepted.toString(),
-        );
-
-        if (accepted) {
-          if (typeof type.onAccept === 'function') { type.onAccept(); }
-        } else {
-          if (typeof type.onReject === 'function') { type.onReject(); }
-        }
-      }
-    });
-
-    // Trigger optional onAcceptAll/onRejectAll callbacks
-    if (accepted && typeof this.config.onAcceptAll === 'function') {
-      if (typeof this.config.onAcceptAll === 'function') { this.config.onAcceptAll(); }
-    } else if (typeof this.config.onRejectAll === 'function') {
-      if (typeof this.config.onRejectAll === 'function') { this.config.onRejectAll(); }
-    }
-
-     // Dispatch consentChanged event for GA4
-    document.dispatchEvent(
-      new CustomEvent("silktideCookieBannerManager:consentChanged", {
-      detail: this.getAcceptedCookies()
-      })
-    ); 
-
-    // finally update the checkboxes in the modal with the values from localStorage
-    this.updateCheckboxState();
-  }
 
   getAcceptedCookies() {
     return (this.config.cookieTypes || []).reduce((acc, cookieType) => {
@@ -555,22 +556,30 @@ class SilktideCookieBanner {
       }
 
       this.updateCheckboxState(false); // read from storage when opening
-    } else {
-      // Set that an initial choice was made when closing the modal
-      this.setInitialCookieChoiceMade();
+      } else {
+        // Set that an initial choice was made when closing the modal
+        this.setInitialCookieChoiceMade();
+            
+        // Save current checkbox states to storage
+        this.updateCheckboxState(true);
       
-      // Save current checkbox states to storage
-      this.updateCheckboxState(true);
-
-      this.hideBackdrop();
-      this.showCookieIcon();
-      this.allowBodyScroll();
-
-      // Trigger optional onPreferencesClose callback
-      if (typeof this.config.onPreferencesClose === 'function') {
-        this.config.onPreferencesClose();
+        this.hideBackdrop();
+        this.showCookieIcon();
+        this.allowBodyScroll();
+      
+        // Trigger optional onPreferencesClose callback
+        if (typeof this.config.onPreferencesClose === 'function') {
+          this.config.onPreferencesClose();
+        }
+      
+        // ⭐ Dispatch consentChanged event for GA4 (Modal Preferences Save)
+        document.dispatchEvent(
+          new CustomEvent("silktideCookieBannerManager:consentChanged", {
+            detail: this.getAcceptedCookies()
+          })
+        );
       }
-    }
+
   }
 
   // ----------------------------------------------------------------
