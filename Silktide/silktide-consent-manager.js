@@ -47,13 +47,7 @@ class SilktideCookieBannerManager {
    Auto‑init support (matches Silktide behavior)
 ============================================================ */
 
-window.SilktideCookieBannerManager = SilktideCookieBannerManager;
 
-if (window.silktideCookieBannerManagerConfig?.autoInit) {
-  window.silktideCookieBannerManager = new SilktideCookieBannerManager(
-    window.silktideCookieBannerManagerConfig
-  );
-}
 
 
 class SilktideCookieBanner {
@@ -838,4 +832,12 @@ class SilktideCookieBanner {
     document.body.style.position = '';
     document.body.style.width = '';
   }
+}
+
+window.SilktideCookieBannerManager = SilktideCookieBannerManager;
+
+if (window.silktideCookieBannerManagerConfig?.autoInit) {
+  window.silktideCookieBannerManager = new SilktideCookieBannerManager(
+    window.silktideCookieBannerManagerConfig
+  );
 }
