@@ -421,7 +421,37 @@
 </script>
 
 <!-- ============================================================
-  3. REGION DETECTION
+  3. SILKTIDE CONFIG (AUTO INIT + BASIC COOKIE TYPES)
+============================================================ -->
+<script>
+  window.silktideCookieBannerManagerConfig = {
+    autoInit: true,
+    preferencesButton: true,
+    cookieTypes: [
+      {
+        id: "necessary",
+        label: "Necessary cookies",
+        description: "Required for the website to function.",
+        required: true
+      },
+      {
+        id: "analytics",
+        label: "Analytics cookies",
+        description: "Help us understand how visitors use the site.",
+        defaultValue: false
+      },
+      {
+        id: "advertising",
+        label: "Advertising cookies",
+        description: "Used to show personalized or interest‑based ads.",
+        defaultValue: false
+      }
+    ]
+  };
+</script>
+
+<!-- ============================================================
+  4. REGION DETECTION
 ============================================================ -->
 <script>
   function getCookie(name) {
@@ -448,7 +478,7 @@
 </script>
 
 <!-- ============================================================
-  4. GA4 CONSENT UPDATE HANDLER
+  5. GA4 CONSENT UPDATE HANDLER
 ============================================================ -->
 <script>
   function updateConsent(consent = {}) {
@@ -471,15 +501,15 @@
 </script>
 
 <!-- ============================================================
-  5. MAIN BOOTSTRAP (REGION LOGIC + LOAD SILKTIDE FROM CDN)
+  6. MAIN BOOTSTRAP (REGION LOGIC + LOAD SILKTIDE FROM CDN)
 ============================================================ -->
 <script>
 (function bootstrapConsent() {
   // PRODUCTION:
-  // let country = (getCookie('country') || 'XX').toUpperCase();
+  let country = (getCookie('country') || 'XX').toUpperCase();
 
   // TESTING OVERRIDES (uncomment ONE while testing, then re‑comment):
- country = 'GB'; // UK
+  // country = 'GB'; // UK
   // country = 'FR'; // France
   // country = 'DE'; // Germany
 
@@ -500,10 +530,10 @@
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/gh/silktide/consent-manager/silktide-consent-manager.js';
     script.onload = function() {
-      // Silktide’s own init runs; remove pre‑hide class
+      // Silktide auto‑inits because autoInit: true
       document.documentElement.classList.remove('no-consent-banner');
 
-      // Map Silktide consent changes into GA4 (if event is fired)
+      // Map Silktide consent changes into GA4
       document.addEventListener(
         'silktideCookieBannerManager:consentChanged',
         function(e) {
