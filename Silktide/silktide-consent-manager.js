@@ -107,7 +107,8 @@ class SilktideCookieBanner {
   createWrapper() {
     this.wrapper = document.createElement('div');
     this.wrapper.id = 'silktide-wrapper';
-    document.body.insertBefore(this.wrapper, document.body.firstChild);
+    document.body.appendChild(this.wrapper);
+
   }
 
   // ----------------------------------------------------------------
