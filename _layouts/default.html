@@ -427,22 +427,23 @@
   window.silktideCookieBannerManagerConfig = {
     autoInit: true,
     preferencesButton: true,
+
     cookieTypes: [
       {
         id: "necessary",
-        label: "Necessary cookies",
+        name: "Necessary cookies",
         description: "Required for the website to function.",
         required: true
       },
       {
         id: "analytics",
-        label: "Analytics cookies",
+        name: "Analytics cookies",
         description: "Help us understand how visitors use the site.",
         defaultValue: false
       },
       {
         id: "advertising",
-        label: "Advertising cookies",
+        name: "Advertising cookies",
         description: "Used to show personalized or interest‑based ads.",
         defaultValue: false
       }
@@ -500,15 +501,15 @@
 </script>
 
 <!-- ============================================================
-  6. MAIN BOOTSTRAP (LOAD SILKTIDE ENGINE + UI TEMPLATES)
+  6. MAIN BOOTSTRAP (LOAD LOCAL SILKTIDE UI FILE)
 ============================================================ -->
 <script>
 (function bootstrapConsent() {
   // PRODUCTION:
-  // let country = (getCookie('country') || 'XX').toUpperCase();
+  let country = (getCookie('country') || 'XX').toUpperCase();
 
-  // TESTING OVERRIDES (uncomment ONE while testing, then re‑comment):
-  country = 'GB';
+  // TESTING OVERRIDES:
+  // country = 'GB';
   // country = 'FR';
   // country = 'DE';
 
@@ -520,35 +521,20 @@
   if (regulated) {
     document.documentElement.classList.remove('non-regulated');
 
-    // Load CSS
-    const css = document.createElement('link');
-    css.rel = 'stylesheet';
-    css.href = 'https://cdn.jsdelivr.net/gh/silktide/consent-manager/silktide-consent-manager.css';
-    document.head.appendChild(css);
-
-    // Load JS engine
+    // Load your local Silktide UI file
     const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/gh/silktide/consent-manager/silktide-consent-manager.js';
+    script.src = '/Silktide/silktide-consent-manager.js';
     script.onload = function() {
+      // Silktide auto‑inits because autoInit: true
+      document.documentElement.classList.remove('no-consent-banner');
 
-      // Load UI templates (REQUIRED for banner + icon + modal)
-      const templates = document.createElement('script');
-      templates.src = 'https://cdn.jsdelivr.net/gh/silktide/consent-manager/silktide-consent-manager.templates.js';
-      templates.onload = function() {
-
-        // Silktide auto‑inits because autoInit: true
-        document.documentElement.classList.remove('no-consent-banner');
-
-        // Map Silktide consent changes into GA4
-        document.addEventListener(
-          'silktideCookieBannerManager:consentChanged',
-          function(e) {
-            updateConsent(e.detail || {});
-          }
-        );
-      };
-
-      document.head.appendChild(templates);
+      // Map Silktide consent changes into GA4
+      document.addEventListener(
+        'silktideCookieBannerManager:consentChanged',
+        function(e) {
+          updateConsent(e.detail || {});
+        }
+      );
     };
 
     document.head.appendChild(script);
