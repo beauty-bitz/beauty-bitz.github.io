@@ -1607,7 +1607,11 @@ body {
    .DevOpsCat .text4 { font-size: 18px !important; font-weight: 700; margin-left: 0px; color: #000000;}   
 
 .wrapper-header {border-top: none !important;}
-
+@media only screen and (min-width: 820px) and (max-width: 2000px) {
+  #related-posts-cat {
+	  margin-top: 30px;
+  }	  
+}
 
 
 
