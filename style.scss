@@ -1618,7 +1618,18 @@ body {
   .cat-desc {
 	  margin-left: -75px;
 	}
-	
+
+  .TestCat a {color: #000000; font-size: 18px; font-weight: 700; margin: 0.5em 0 0; text-align: center; line-height: 20px; text-decoration: underline;}
+  .TypesCat a {color: #000000; font-size: 18px; font-weight: 700; margin: 0.5em 0 0; text-align: center; line-height: 20px; text-decoration: underline;}
+  .AutoCat a {color: #000000; font-size: 18px; font-weight: 700; margin: 0.5em 0 0; text-align: center; line-height: 20px; text-decoration: underline;}
+  .DevOpsCat a {color: #000000; font-size: 18px; font-weight: 700; margin: 0.5em 0 0; text-align: center; line-height: 20px; text-decoration: underline;}
+
+.related-post {
+  border-radius: 5px;
+  background: white;
+  width: 170px;
+}
+
 	
 	
 } /* Desktop end */
