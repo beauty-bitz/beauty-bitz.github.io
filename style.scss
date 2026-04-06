@@ -17,11 +17,6 @@ html {
   font-size: 100%;
 }
 
-body {
- background: #f5eaed;
- font: 18px/1.4 $helvetica;
- color: $black;
-}
 
 .container {
   margin: 0 auto;
@@ -1645,6 +1640,11 @@ p a {
     .TypesCat img {border: none;}
     .AutoCat img {border: none;}
     .DevOpsCat img {border: none;}   
+
+    body {
+	 background: #f5eaed !important;
+	 color: $black;
+	}
 
 
 
