@@ -401,12 +401,12 @@
 
       <div class="recent-post-grid">
         {% for post in site.posts limit:4 %}
-          <div class="recent-post-card">
+          <div class="recent-post-card" style="background: #f5eaed;">
             <a href="{{ post.url | relative_url }}">
               <div class="recent-thumbnail">
                 <img src="{{ post.image | default: '/assets/default-thumbnail.jpg' }}" alt="{{ post.title }}">
               </div>
-              <h3 class="recent-post-title">{{ post.title }}</h3>
+              <h3 class="recent-post-title" style="background: #f5eaed;">{{ post.title }}</h3>
             </a>
           </div>
         {% endfor %}
