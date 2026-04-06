@@ -693,11 +693,12 @@ img {
 @media only screen and (max-width: 768px) {
   .related-posts-grid {
   display: grid;
-  gap: 5px;
+  gap: 2px;
   grid-template-columns: repeat(2, 1fr); /* 4 equal-width columns */
   margin-top: 1em;
-  margin-left: 10px;	  
-	  
+  margin-left: 10px;
+  width: 100%;	  
+  max-width: 400px;	  
 }
 	
 .related-post {
