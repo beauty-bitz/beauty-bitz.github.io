@@ -295,7 +295,7 @@ footer {
 // Desktop
 /* Format post category image list  --------------------------------------------------------------------------------------------------*/
 
-.CategoryContainer{
+.CategoryContainer {
            
             margin-left: 0px;
             display: grid;
@@ -304,6 +304,7 @@ footer {
             width: 1025px;
             font-weight: 900;
             flex-wrap: wrap;
+	        
         }
 
         .TestCat {
@@ -408,6 +409,8 @@ footer {
             font-weight: 900;
             width: 100%;
             margin-left: 35px;
+	        padding: 5px;
+	        background: #faf5f6;
         }
 
         .TestCat {
