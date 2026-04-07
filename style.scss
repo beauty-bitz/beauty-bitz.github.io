@@ -1759,9 +1759,20 @@ body {
 }
 
  .hamburger {
-    background: #dea8b8;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    z-index: 1100;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    background: none;
+  } 
+  .hero-border {
+	  margin: 0;
   }	 
-	 
 
 	   
 
