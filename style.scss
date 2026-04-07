@@ -403,7 +403,7 @@ footer {
 @media only screen and (max-width: 780px) {
 /* Format post category image list  --------------------------------------------------------------------------------------------------*/
 
-.CategoryContainer{
+.CategoryContainer {
             display: flex;
             flex-direction: column;
             font-weight: 900;
@@ -411,8 +411,9 @@ footer {
 		    padding: 20px;
 		    background: #faf5f6;
 	        width: 100%;
-		    margins: 0;		
-	        max-width: 400px;
+		    margins: 0;	
+	        margin-left: -10px;
+	        max-width: 480px;
         }
 
         .TestCat {
