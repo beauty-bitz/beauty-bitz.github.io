@@ -407,9 +407,10 @@ footer {
             display: flex;
             flex-direction: column;
             font-weight: 900;
-            margin-left: 35px;
-	        padding: 15px;
-	        background: #faf5f6;
+            margin-left: 10px;
+	        align-items: center; 
+		    padding: 20px;
+		    background: #faf5f6;
 	        width: 100%;
 		    margins: auto;		
 	        max-width: 400px;
