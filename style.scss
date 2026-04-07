@@ -1734,15 +1734,25 @@ body {
  .TestCat {width: 100%; max-width: 768px; margin: auto;}
  .TypesCat {width: 100%; max-width: 768px; margin: auto;}
  .AutoCat {width: 100%; max-width: 768px; margin: auto;}
- .DevOpsCat {width: 100%; max-width: 768px; margin: auto;}	 
+ .DevOpsCat {width: 100%; max-width: 768px; margin: auto;}	
+
+ body {
+  margin: 0;
+  padding: 0;
+ }	 
 
  .wrapper-masthead {
 	margin-bottom: 15px;
 	background: #dea8b8; 
 	width: 110%; 
 	max-width: 768px; 
-	margin: 0px; 
- }	 
+	margin: 0;
+    padding: 0; 
+ }	
+ .wrapper-masthead h1,
+ .wrapper-masthead nav {
+  margin: 0;
+}	 
 	 
 
 	   
