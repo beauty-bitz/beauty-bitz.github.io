@@ -77,6 +77,7 @@ Some ingredients are simply too rich for oily skin.
 
 **Ingredients to avoid:**
 
+<div class="table-scroll">
 <table>
   <thead>
     <tr>
@@ -103,6 +104,7 @@ Some ingredients are simply too rich for oily skin.
     </tr>
   </tbody>
 </table>
+</div>
 
 
 ### **4. Look for Matte or Oil‑Control Formulas**
