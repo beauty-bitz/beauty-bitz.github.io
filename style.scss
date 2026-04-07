@@ -410,8 +410,9 @@ footer {
 	        align-items: center; 
 		    padding: 20px;
 		    background: #faf5f6;
-	        width: 120%;
-		    margin: 0;	
+	        width: 100%;
+		    margin-left: 0px;
+	        margin-right: 0px;
 	        max-width: 768px;
         }
 
@@ -1730,10 +1731,10 @@ body {
  .breadcrumbs {
    margin-top: -45px;
  }
- .TestCat {margin-right: 25px;}
- .TypesCat {margin-right: 25px;}
- .AutoCat {margin-right: 25px;}
- .DevOpsCat {margin-right: 25px;}	 
+ .TestCat {width: 100%; max-width: 768px; margin: auto;}
+ .TypesCat {width: 100%; max-width: 768px; margin: auto;}
+ .AutoCat {width: 100%; max-width: 768px; margin: auto;}
+ .DevOpsCat {width: 100%; max-width: 768px; margin: auto;}	 
 
 	 
 
