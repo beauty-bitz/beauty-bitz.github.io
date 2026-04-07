@@ -2,10 +2,12 @@
 layout: post
 title: "The Best Face Creams for Oily Skin: A Complete Guide"
 categories: ["Skin Care"]
-image: "/assets/images/Skin/bakuchiol flower700.webp"
-tags: [moisturizer, dry skin, bakuchiol, face oil, retinol alternative, bakuchiol retinol alternative]
-description: "A guide on bakuchiol, the retinol alternative."
+image: "/assets/images/Skin/best-face-creams-for-oily-skin-a-complete-guide.webp"
+tags: [skincare, oily skin, face cream, moisturizer, beauty routine, acne care, non-comedogenic, skincare tips, gel moisturizer, oil-free skincare]
+description: "Discover how to choose the best face cream for oily skin with this detailed guide. Learn which ingredients to avoid, what formulas work best, and how to keep your complexion balanced and shine-free. Includes practical examples and dermatologist-approved recommendations for a healthy, hydrated glow."
 ---
+
+
 
 ## Introduction
 
