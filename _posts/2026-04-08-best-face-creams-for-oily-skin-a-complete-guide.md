@@ -7,7 +7,10 @@ tags: [skincare, oily skin, face cream, moisturizer, beauty routine, acne care, 
 description: "Discover how to choose the best face cream for oily skin with this detailed guide. Learn which ingredients to avoid, what formulas work best, and how to keep your complexion balanced and shine-free. Includes practical examples and dermatologist-approved recommendations for a healthy, hydrated glow."
 ---
 
-
+<figure>
+  <img src="/assets/images/Skin/best-face-creams-for-oily-skin-a-complete-guide.webp" alt="The Best Face Creams for Oily Skin: A Complete Guide" />
+  <figcaption></figcaption>
+</figure>
 
 ## Introduction
 
