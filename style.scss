@@ -1739,12 +1739,14 @@ p {
   margin: 15px 0 !important;
 }
 
-a {
+body a {
   color: $black !important;
   text-decoration: none !important;
 	cursor: pointer !important;
+ font-size: 16px !important;	
   &:hover, &:active {
     color: $black !important;
+	font-size: 16px !important;  
   }
 }
 
@@ -1757,7 +1759,12 @@ ul, il {
   margin: 17px 0 !important;
   padding-left: 30px !important;
   font-size: 16px !important; 	
-}	 
+}
+ol, ul {
+  margin: 17px 0 !important;
+  padding-left: 30px !important;
+  font-size: 16px !important; 	
+}	
 
 ul {
   list-style-type: disc !important;
