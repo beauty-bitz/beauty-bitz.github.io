@@ -1695,12 +1695,7 @@ body {
 
  .breadcrumbs {
    margin-top: -45px;
- }
-
-img {
-	 border: 2px solid;
-	 border-color: black; 
-  }	  	   
+ } 	   
 
 } /* End Desktop */	
 
@@ -1768,12 +1763,12 @@ body {
 	  margin-left: -10px;
   }	 
 
-  img {
-	 border: 2px solid; 
-	 border-color: black; 
-  }	  
+
 
 } /* End Mobile */		
 
+img {
+  border: 2px solid #000;
+}
 	
 
