@@ -1699,9 +1699,13 @@ body {
    margin-top: -45px;
  } 
 
- /* Font Sizes */
+ /* Font Sizes - start *************************************/
 
-	 
+span {
+  font-size: 20px;
+}
+
+/* Font Sizes - start **************************************/	 
 
 } /* End Desktop */	
 
@@ -1769,7 +1773,9 @@ body {
 	  margin-left: -10px;
   }	 
 
-
+span {
+  font-size: 18px;
+}
 
 } /* End Mobile */		
 
