@@ -12,19 +12,13 @@ description: "Discover how to choose the best face cream for oily skin with this
   <figcaption></figcaption>
 </figure>
 
-```markdown
-# The Ultimate Beginner’s Guide to Skincare  
-*Simple, effective steps for healthy, glowing skin*
-
----
 
 ## Introduction
 
 Skincare doesn’t need to be complicated to be effective. With so many products, trends, and opinions online, it’s easy to feel overwhelmed when you’re just starting out. The truth is, a good routine is less about doing *more* and more about doing the *right things consistently*.
 
-This guide walks you through the essentials—helping you understand your skin, choose the right products, and build a routine that fits your lifestyle and budget. Whether your skin is dry, oily, sensitive, or somewhere in between, you’ll find practical advice to help you care for it with confidence.
+This guide walks you through the essentials—helping you understand your skin, choose the right products, and build a routine that fits your lifestyle and budget. Whether your skin is dry, oily, sensitive, or somewhere in between, you’ll find practical advice to help you care for it with confidence. Read this guide for simple, effective steps for healthy, glowing skin for any skin type.
 
----
 
 ## Understanding Your Skin Type
 
