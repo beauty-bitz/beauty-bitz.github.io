@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "The Best Face Creams for Oily Skin: A Complete Guide"
+title: "The Complete Beginner's Guide To Skincare"
 categories: ["Skin Care"]
-image: "/assets/images/Skin/best-face-creams-for-oily-skin-a-complete-guide.webp"
-tags: [skincare, oily skin, face cream, moisturizer, beauty routine, acne care, non-comedogenic, skincare tips, gel moisturizer, oil-free skincare]
-description: "Discover how to choose the best face cream for oily skin with this detailed guide. Learn which ingredients to avoid, what formulas work best, and how to keep your complexion balanced and shine-free. Includes practical examples and dermatologist-approved recommendations for a healthy, hydrated glow."
+image: "/assets/images/Skin/complete-beginner-guide-to-skincare.webp"
+tags: [skincare, skin care,face cream, moisturizer]
+description: "A simple, practical guide to building a skincare routine from scratch — learn how to identify your skin type, choose the right products, and create healthy habits for glowing skin"
 ---
 
 <figure>
-  <img src="/assets/images/Skin/best-face-creams-for-oily-skin-a-complete-guide.webp" alt="The Best Face Creams for Oily Skin: A Complete Guide" />
+  <img src="/assets/images/Skin/complete-beginner-guide-to-skincare.webp" alt="The Complete Beginner's Guide To Skincare" />
   <figcaption></figcaption>
 </figure>
 
