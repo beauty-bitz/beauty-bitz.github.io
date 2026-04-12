@@ -271,8 +271,12 @@ ol {
  .footer-menu nav {
     justify-content: center;
     margin-bottom: 20px;
-    width: 680px;
-  }	  
+    width: 660px;
+  }	
+
+  .table-one {
+   margin-left: 100px;
+   }	  
 	 
 	   
 
