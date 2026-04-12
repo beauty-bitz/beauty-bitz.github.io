@@ -211,7 +211,7 @@ If you have questions about this Cookie Policy or how we use cookies, you can co
 
  h1, h2, h3, h4, h5, h6 {
     width: 800px;
-    margin-left: 100px;
+   
     
   }
  h1 {
