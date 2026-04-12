@@ -197,7 +197,7 @@ If you have questions about this Cookie Policy or how we use cookies, you can co
     margin-left: 520px;
   }
 
- page {
+  body {	  
    width: 1000px;
  }	 
 
@@ -268,13 +268,7 @@ ol {
 
   .table-scroll {
    margin-left: 100px;  
-  }
-
-  .table-one {
-   margin-left: 100px;
-   }	  
-	 
-	   
+  }   
 
   } /*End Desktop */
 
