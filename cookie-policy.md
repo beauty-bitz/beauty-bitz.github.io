@@ -214,19 +214,58 @@ If you have questions about this Cookie Policy or how we use cookies, you can co
     margin-left: 100px;
     
   }
- h4 {
-    width: 800px;
-    margin-left: 100px;
-   
-  }   
-  p {
-    width: 800px;
-    margin-left: 100px;
+ h1 {
+  font-size: 36px;
+  color: black;	
+  a {
+    color: black;
   }
-  ol, ul {
-    width: 800px;
-    margin-left: 100px;
-  }
+}
+
+h2 {
+  font-size: 32px;
+  color: black;	
+}
+
+h3 {
+  font-size: 28px;
+  color: black;	
+}
+
+h4 {
+  font-size: 24px;
+  color: black;
+}
+
+p {
+  margin: 15px 0;
+  font-size: 20px;
+  color: black;	
+}
+
+span {
+  font-size: 20px;
+  color: black;	
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+  font-size: 18px;	
+}	 
+
+ ul {
+  list-style-type: disc;
+  margin-left: 20px !important;
+  margin-bottom: 10px !important;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}		 
+	 
+	   
 
   } /*End Desktop */
 
@@ -240,14 +279,43 @@ If you have questions about this Cookie Policy or how we use cookies, you can co
     margin-left: 15px;
     margin-right: 10px;     
   }
-  p {
-    margin-left: 15px;
-    margin-right: 10px; 
+
+  h1 {
+  font-size: 32px;
+  a {
+    color: $black;
   }
-  ol, ul {
-    margin-left: 15px;
-    margin-right: 10px; 
-  }  
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+  color: $black;
+}
+
+p {
+  margin: 15px 0;
+  font-size: 18px;	
+}
+
+span {
+  font-size: 18px;
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+  font-size: 16px;	
+}	
+
+  
     
   } /* End Mobile */
 </style>
