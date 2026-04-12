@@ -66,10 +66,10 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
     margin-left: 100px;
   }
 
-   .footer-menu nav {
+    .footer-menu nav {
     justify-content: center;
     margin-bottom: 20px;
-    width: 680px;
+    width: 670px;
   }
    
   } /*End Desktop */
