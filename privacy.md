@@ -285,7 +285,7 @@ For general inquiries, you can contact us at the following email address: contac
   .footer-menu nav {
     justify-content: center;
     margin-bottom: 20px;
-   width: 665px !important;
+   width: 650px !important;
   }	  
 
   } /*End Desktop */
