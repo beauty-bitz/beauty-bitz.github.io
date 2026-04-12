@@ -33,7 +33,7 @@ Oily skin is characterized by overactive sebaceous glands that produce more sebu
 Common contributing factors include:
 
 - **Genetics:** If your family has oily skin, you likely will too.  
-- **Hormones:** Fluctuations (e.g., puberty, menstrual cycles, stress) can increase oil production.  
+- **Hormones:** Fluctuations (e.g. stress) can increase oil production.  
 - **Climate:** Hot, humid environments often worsen oiliness.  
 - **Over‑cleansing:** Stripping the skin can trigger *more* oil production as a protective response.
 
