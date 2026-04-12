@@ -13,7 +13,9 @@ permalink: /contact/
 
 <h1>Contact</h1>
 
-#### Last Updated: 2025-05-19
+#### Last updated: March 19, 2026
+
+<br /><br />
 
 We are always happy to answer any inquiries you may have.
 
