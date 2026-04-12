@@ -79,7 +79,13 @@ For general inquiries, you can contact us at the following email address: contac
  ol, ul {
     width: 800px;
     margin-left: 100px;
-  }   
+  }  
+
+  .footer-menu nav {
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 660px;
+  }	  
 
   } /*End Desktop */
 
