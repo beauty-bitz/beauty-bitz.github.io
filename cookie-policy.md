@@ -151,18 +151,6 @@ Below is a general overview of the types of cookies that may be set:
 
 </div>
 
-<style>
-     @media only screen and (min-width: 820px) and (max-width: 2000px) {
-    
-   
-    }  /* End Desktop */
-      
-     @media only screen and (max-width: 780px) {   
-    
-     }  /* End Mobile */ 
-       
-     
-  </style>  
 
 
 Exact cookie names may change as services update their technology.
@@ -208,6 +196,10 @@ If you have questions about this Cookie Policy or how we use cookies, you can co
     border-radius: 50%;
     margin-left: 520px;
   }
+
+ page {
+   width: 800px;
+ }	 
 
  h1, h2, h3, h4, h5, h6 {
     width: 800px;
