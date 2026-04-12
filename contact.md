@@ -69,6 +69,12 @@ For general inquiries, you can contact us at the following email address: contac
     margin-left: 100px;
     
   }
+
+   h3 {
+  font-size: 24px;
+   width: 800px;		
+}
+    
  h4 {
     width: 800px;
     margin-left: 100px;
