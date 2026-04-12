@@ -273,15 +273,11 @@ ol {
     .page {
     margin-left: 15px;
     margin-right: 20px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-    margin-left: 15px;
-    margin-right: 10px;     
-  }
+    }   
 
   h1 {
   font-size: 32px;
+   width: 800px;	  
   a {
     color: $black;
   }
@@ -289,27 +285,37 @@ ol {
 
 h2 {
   font-size: 28px;
+   width: 800px;		
 }
 
 h3 {
   font-size: 24px;
+   width: 800px;		
 }
 
 h4 {
   font-size: 21px;
   color: $black;
+   width: 800px;		
 }
 
 p {
   margin: 15px 0;
   font-size: 18px;	
+  width: 800px;	
+  margin-left: 15px;
+  margin-right: 10px;    	
 }
 
 span {
+   width: 800px;		
   font-size: 18px;
+  margin-left: 15px;
+  margin-right: 10px;    	
 }
 
 ul, ol {
+  width: 800px;	
   margin: 15px 0;
   padding-left: 30px;
   font-size: 16px;	
