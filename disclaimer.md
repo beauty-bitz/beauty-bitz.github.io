@@ -102,6 +102,10 @@ For inquiries, please contact **Beauty Blurbs** at **contact@beautyblurbs.com**
     margin-left: 100px;
     
   }
+   h3 {
+  font-size: 24px;
+   width: 800px;		
+} 
  h4 {
     width: 800px;
     margin-left: 100px;
