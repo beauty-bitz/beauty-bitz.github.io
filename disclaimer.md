@@ -13,7 +13,9 @@ permalink: /disclaimer/
 
 ## Website Disclaimer
   
-#### Last updated: February 16, 2026
+#### Last updated: March 19, 2026
+
+<br /><br />
 
 Welcome to [https://beautyblurbs.com](https://beautyblurbs.com/). We are passionate about skincare, ingredient education, and DIY beauty. Please read this Disclaimer carefully before using this website.
 
