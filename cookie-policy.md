@@ -266,6 +266,10 @@ ol {
     width: 660px;
   }	
 
+  .table-scroll {
+   margin-left: 100px;  
+  }
+
   .table-one {
    margin-left: 100px;
    }	  
