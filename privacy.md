@@ -282,6 +282,12 @@ For general inquiries, you can contact us at the following email address: contac
     margin-left: 100px;
   }
 
+  .footer-menu nav {
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 660px;
+  }	  
+
   } /*End Desktop */
 
   @media only screen and (max-width: 780px) { 
