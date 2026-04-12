@@ -211,7 +211,7 @@ If you have questions about this Cookie Policy or how we use cookies, you can co
 
  h1, h2, h3, h4, h5, h6 {
     width: 800px;
-   
+    margin-left: 100px;
     
   }
  h1 {
@@ -241,11 +241,14 @@ p {
   margin: 15px 0;
   font-size: 20px;
   color: black;	
+  margin-left: 100px;	
+  	
 }
 
 span {
   font-size: 20px;
-  color: black;	
+  color: black;
+  margin-left: 100px;	
 }
 
 ul, ol {
@@ -256,14 +259,20 @@ ul, ol {
 
  ul {
   list-style-type: disc;
-  margin-left: 20px !important;
+  margin-left: 120px !important;
   margin-bottom: 10px !important;
 }
 
 ol {
   list-style-type: decimal;
-  margin-left: 20px;
-}		 
+  margin-left: 120px;
+}	
+
+ .footer-menu nav {
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 680px;
+  }	  
 	 
 	   
 
