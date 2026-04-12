@@ -198,7 +198,7 @@ If you have questions about this Cookie Policy or how we use cookies, you can co
   }
 
  page {
-   width: 800px;
+   width: 1000px;
  }	 
 
  h1, h2, h3, h4, h5, h6 {
