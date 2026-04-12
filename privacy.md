@@ -13,7 +13,9 @@ permalink: /privacy/
 
 <h1>Privacy Policy</h1>
 
-<h4>Last Updated: 2025-05-19</h4>
+<#### Last updated: March 19, 2026
+
+<br /><br />
 
 Welcome to Beauty Blurbs, located at [https://beautyblurbs.com](https://beautyblurbs.com/) (the “Site”). We acknowledge the significance of online privacy to users of our website.
 
