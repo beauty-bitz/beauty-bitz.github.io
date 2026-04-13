@@ -53,8 +53,8 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
 
    body {
     width: 1000px; /* makes body full width */
-    margin-left: 200px;   /* centers the content if max-width is limited */
-    margin-right: 200px; 	
+    margin-left: 300px;   /* centers the content if max-width is limited */
+    margin-right: 300px; 	
   }
   
  
