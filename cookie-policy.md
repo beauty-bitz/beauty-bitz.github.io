@@ -275,7 +275,9 @@ ol {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.95rem;
+  border-bottom: 1px solid #f2e6ea; /* Add this line */
 }
+  
 
 .bb-table th {
   background-color: #f4d7df;
