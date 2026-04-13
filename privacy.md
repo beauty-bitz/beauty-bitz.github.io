@@ -270,64 +270,30 @@ For general inquiries, you can contact us at the following email address: contac
     margin-left: 100px;
     
   }
-  h1 {
-  font-size: 36px;
-  color: black;	
-      a {
-        color: black;
-      }
-    }
+
+   h3 {
+  font-size: 24px;
+   width: 800px;		
+}
     
-    h2 {
-      font-size: 32px;
-      color: black;	
-    }
-    
-    h3 {
-      font-size: 28px;
-      color: black;	
-    }
-    
-    h4 {
-      font-size: 24px;
-      color: black;
-    }
-    
-    p {
-      margin: 15px 0;
-      font-size: 20px;
-      color: black;	
-      margin-left: 100px;
-    }
-    
-    span {
-      font-size: 20px;
-      color: black;
-      margin-left: 100px;
-    }
-    
-    ul, ol {
-      margin: 15px 0;
-      padding-left: 30px;
-      font-size: 18px;
-      margin-left: 100px;
-    }
-    
-    ul {
-      list-style-type: disc;
-      margin-left: 120px !important;
-      margin-bottom: 10px !important;
-    }
-    
-    ol {
-      list-style-type: decimal;
-      margin-left: 120px;
-    }		 
+ h4 {
+    width: 800px;
+    margin-left: 100px;
+   
+  }   
+  p {
+    width: 800px;
+    margin-left: 100px;
+  }
+ ol, ul {
+    width: 800px;
+    margin-left: 100px;
+  }  
 
   .footer-menu nav {
     justify-content: center;
     margin-bottom: 20px;
-   width: 675px !important;
+    width: 675px !important;
   }	  
 
   } /*End Desktop */
@@ -338,42 +304,18 @@ For general inquiries, you can contact us at the following email address: contac
     margin-right: 20px;
     }
 
-    h1 {
-  font-size: 32px;
-      a {
-        color: $black;
-      }
-    }
-    
-    h2 {
-      font-size: 28px;
-    }
-    
-    h3 {
-      font-size: 24px;
-    }
-    
-    h4 {
-      font-size: 21px;
-      color: $black;
-    }
-    
-    p {
-      margin: 15px 0;
-      font-size: 18px;	
-    }
-    
-    span {
-      font-size: 18px;
-    }
-    
-    ul, ol {
-      margin: 15px 0;
-      padding-left: 30px;
-      font-size: 16px;	
-    }	
-    
-
+    h1, h2, h3, h4, h5, h6 {
+    margin-left: 15px;
+    margin-right: 10px;     
+  }
+  p {
+    margin-left: 15px;
+    margin-right: 10px; 
+  }
+  ol, ul {
+    margin-left: 15px;
+    margin-right: 10px; 
+  }
     
   } /* End Mobile */
 </style>
