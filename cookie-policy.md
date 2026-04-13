@@ -11,6 +11,8 @@ permalink: /cookie-policy/
 
 <br /><br />
 
+<div class="page-container"?
+
 <h2>Cookie Policy</h2>
 
 **Last updated: March 19, 2026**
@@ -189,6 +191,8 @@ If you have questions about this Cookie Policy or how we use cookies, you can co
 
 We may update this Cookie Policy from time to time to reflect changes in technology, legal requirements, or our practices. The “last updated” date will be revised accordingly.
 
+</div>
+
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */ 
@@ -202,10 +206,11 @@ We may update this Cookie Policy from time to time to reflect changes in technol
     margin-left: 520px;
   }
 
-    .container {      
-        margin-left: 100px;
-      }
+   .page-container {
 
+     margin-left: 100px;
+
+   }  
  
   } /*End Desktop */
 
