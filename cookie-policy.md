@@ -13,162 +13,152 @@ permalink: /cookie-policy/
 
 <br /><br />
 
-<h2>Cookie Policy</h2>
+<h1>Cookie Policy</h1>
 
-<p><strong>Last updated: March 19, 2026</strong></p>
+<p><strong>Last updated: April 13, 2026</strong></p>
 
-<br /><br />
+<h2>Quick Summary for Visitors</h2>
 
 <p>
-This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “our”, “the site”) uses cookies and similar technologies to provide, improve, and personalize your browsing experience. By using this website, you agree to the practices described in this policy.
+Beauty Blurbs uses a small number of cookies to help the website function and to understand how visitors use the Site. 
+We do not sell personal information, and we only collect the minimum data needed to operate the Site.
 </p>
 
-<p>We aim to be transparent about what data we collect, why we collect it, and how you can control your preferences.</p>
-
-
-<h3>1. What Are Cookies?</h3>
-
-<p>Cookies are small text files stored on your device when you visit a website. They help websites function properly, remember your preferences, and understand how visitors use the site.</p>
-
-<p>Cookies may be:</p>
 <ul>
-  <li><strong>First‑party cookies</strong> — set by this website</li>
-  <li><strong>Third‑party cookies</strong> — set by external services we use (e.g., analytics tools)</li>
+  <li><strong>Necessary cookies</strong> help the Site load and remember your comment details.</li>
+  <li><strong>Analytics cookies</strong> help us understand which posts are most helpful.  
+      These load automatically in Canada and the United States, and only with consent in the EU/UK.</li>
+  <li><strong>No personalized ads</strong> are shown to visitors in Canada or the United States.</li>
+  <li><strong>Your privacy rights</strong> depend on your location and are explained in our Privacy Policy.</li>
 </ul>
 
+<p>
+If you have questions or want to exercise your privacy rights, please contact us at  
+<strong>contact@beautyblurbs.com</strong>.
+</p>
 
-<h3>2. How We Use Cookies</h3>
+<p>
+This Cookie Policy explains how Beauty Blurbs uses cookies and similar technologies to improve your browsing experience. 
+Our cookie practices differ depending on your location. Visitors in the EU/UK will see a cookie banner and may choose their preferences. 
+Visitors in Canada and the United States will not see a cookie banner, and analytics cookies load by default.
+</p>
 
-<p>We use cookies for the following purposes:</p>
+<h2>What Are Cookies?</h2>
 
-<h4><strong>Necessary Cookies</strong></h4>
-<p>These cookies are essential for the website to function and cannot be disabled. They support core features such as:</p>
+<p>
+Cookies are small text files stored on your device to help websites function, remember preferences, and understand how visitors use the site.
+Cookies may be set by this website (first‑party cookies) or by trusted third‑party services (third‑party cookies).
+</p>
 
-<ul>
-  <li>Basic site security</li>
-  <li>Loading pages correctly</li>
-  <li>Remembering your cookie preferences</li>
-</ul>
+<h2>Types of Cookies We Use</h2>
 
-<p>These cookies do <strong>not</strong> store personally identifiable information.</p>
+<h3>1. Necessary Cookies</h3>
+<p>
+These cookies are essential for the Site to function. They support basic features such as page loading, security, and remembering your comment details.
+These cookies do not store personally identifiable information.
+</p>
 
+<h3>2. Analytics Cookies</h3>
+<p>
+We use analytics tools to understand how visitors use the Site. This helps us improve content and user experience. 
+Analytics cookies may collect anonymized information such as page views, browser type, and general usage patterns.
+</p>
 
-<h4><strong>Analytics Cookies (Optional)</strong></h4>
-<p>These cookies help us understand how visitors use the site so we can improve content and usability. They may collect information such as:</p>
+<p>
+Analytics cookies load by default for visitors in Canada and the United States.  
+For visitors in the EU/UK, analytics cookies only load if you accept them through the cookie banner.
+</p>
 
-<ul>
-  <li>Pages visited</li>
-  <li>Time spent on the site</li>
-  <li>Browser and device type</li>
-</ul>
+<h3>3. Advertising & Personalization Cookies</h3>
+<p>
+Beauty Blurbs does not run personalized advertising for visitors in Canada or the United States.  
+For EU/UK visitors, advertising cookies remain off unless accepted through the cookie banner.
+</p>
 
-<p>We use this data in aggregated, anonymous form.</p>
+<h2>Google Consent Mode (EU/UK Only)</h2>
 
-<p>Analytics cookies are only activated if you <strong>accept</strong> them through the cookie banner.</p>
+<p>
+For visitors in the EU/UK, we use Google Consent Mode to adjust how Google services behave based on your cookie choices. 
+If you reject optional cookies, Google receives a “denied” signal and will not use cookies for analytics or advertising.
+</p>
 
+<h2>Managing Your Cookie Preferences</h2>
 
-<h4><strong>Advertising & Personalization Cookies (Optional)</strong></h4>
-<p>These cookies support enhanced features such as:</p>
+<p>
+EU/UK visitors can manage cookie preferences at any time using the cookie icon displayed on the bottom-left corner of the Site.
+Visitors in Canada and the United States do not see a cookie banner, as consent is not required for analytics cookies in these regions.
+</p>
 
-<ul>
-  <li>Personalized content</li>
-  <li>Advertising relevance</li>
-  <li>Measuring ad performance</li>
-</ul>
+<h2>Third‑Party Services</h2>
 
-<p>These cookies may be set by trusted third‑party partners. They are only activated if you <strong>accept</strong> them through the cookie banner.</p>
-
-
-<h3>3. Google Consent Mode v2</h3>
-
-<p>Our site uses <strong>Google Consent Mode v2</strong>, which adjusts how Google services behave based on your cookie choices.</p>
-
-<p>Depending on your selection, we may send Google the following consent signals:</p>
-
-<ul>
-  <li>analytics_storage</li>
-  <li>ad_storage</li>
-  <li>ad_user_data</li>
-  <li>ad_personalization</li>
-</ul>
-
-<p>If you reject optional cookies, Google receives a “denied” signal and will not use cookies for those purposes.</p>
-
-
-<h3>4. Managing Your Cookie Preferences</h3>
-
-<p>You can change your cookie settings at any time by clicking the <strong>cookie icon</strong> displayed on the bottom-left corner of the site.</p>
-
-<p>From there, you can:</p>
+<p>
+We may use the following third‑party tools, which may set cookies depending on your location and preferences:
+</p>
 
 <ul>
-  <li>Accept all cookies</li>
-  <li>Reject non‑essential cookies</li>
-  <li>Customize your preferences</li>
+  <li><strong>Google Analytics</strong> – site usage and performance</li>
+  <li><strong>Google Ads / Personalization</strong> – EU/UK only, if accepted</li>
 </ul>
 
-<p>Your choices will apply across the entire site.</p>
+<h2>Cookies Used on This Site</h2>
 
-
-<h3>5. Third‑Party Services We Use</h3>
-
-<p>We may use the following third‑party tools, which may set cookies depending on your consent:</p>
-
-<ul>
-  <li><strong>Google Analytics</strong> (analytics)</li>
-  <li><strong>Google Ads / Ad Personalization</strong> (advertising, if enabled)</li>
-</ul>
-
-<p>These services may process data outside of Canada. We ensure that any third‑party tools we use follow recognized privacy and security standards.</p>
-
-
-<h3>6. Cookies Used on This Site</h3>
-
-<p>Below is a general overview of the types of cookies that may be set:</p>
-
-<div class="table-scroll"> 
-  <table class="table-one">
+<div class="bb-table-scroll">
+  <table class="bb-table">
     <thead>
       <tr>
-        <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Cookie Type</th>
-        <th style="text-align:center; font-weight: 900; background-color: #dea8b8; width: 175px;">Purpose</th>
-        <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Stored By</th>
-        <th style="text-align:center; font-weight: 900; background-color: #dea8b8;">Duration</th>
+        <th>Cookie Type</th>
+        <th>Purpose</th>
+        <th>Stored By</th>
+        <th>Duration</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Necessary</td>
-        <td>Enables core site functionality</td>
-        <td>beautyblurbs.com</td>
+        <td>Supports core site functionality</td>
+        <td>Beauty Blurbs</td>
         <td>Session / Short-term</td>
       </tr>
       <tr>
         <td>Analytics</td>
-        <td>Tracks site usage to improve content</td>
+        <td>Helps us understand site usage</td>
         <td>Google Analytics</td>
-        <td>Varies (if accepted)</td>
+        <td>Varies</td>
       </tr>
       <tr>
         <td>Advertising</td>
-        <td>Supports personalized ads and measurement</td>
+        <td>Personalization (EU/UK only)</td>
         <td>Google Ads</td>
-        <td>Varies (if accepted)</td>
+        <td>Varies</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<p>Exact cookie names may change as services update their technology.</p>
+<p>
+Exact cookie names may change as services update their technology.
+</p>
 
-<h3>7. Contact Us</h3>
+<h2>Your Privacy Rights</h2>
 
-<p>If you have questions about this Cookie Policy or how we use cookies, you can contact <strong>beautyblurbs.com</strong> at <em>contact@beautyblurbs.com</em></p>
+<p>
+Your privacy rights depend on your location.  
+For full details, please refer to our <a href="/privacy-policy">Privacy Policy</a>.
+</p>
 
+<ul>
+  <li><strong>Canada (PIPEDA):</strong> Access, correction, and withdrawal of consent</li>
+  <li><strong>EU/UK (GDPR):</strong> Access, deletion, objection, portability, and more</li>
+  <li><strong>California (CCPA/CPRA):</strong> Access, deletion, correction, and opt‑out rights</li>
+</ul>
 
-<h3>8. Updates to This Policy</h3>
+<h2>Contact Us</h2>
 
-<p>We may update this Cookie Policy from time to time to reflect changes in technology, legal requirements, or our practices. The “last updated” date will be revised accordingly.</p>
+<p>
+If you have questions about this Cookie Policy, please contact us at  
+<strong>contact@beautyblurbs.com</strong>.
+</p>
+
 
 </div>
 
@@ -274,4 +264,34 @@ ol {
   
     
   } /* End Mobile */
+
+  /* Color CSS for table */
+  .bb-table-scroll {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.bb-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.bb-table th {
+  background-color: #f4d7df;
+  color: #333;
+  font-weight: 700;
+  padding: 10px;
+  text-align: left;
+}
+
+.bb-table td {
+  padding: 10px;
+  border-bottom: 1px solid #f2e6ea;
+}
+
+.bb-table tr:nth-child(even) {
+  background-color: #fdf7f9;
+}
+
 </style>
