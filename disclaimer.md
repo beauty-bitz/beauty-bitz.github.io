@@ -87,7 +87,7 @@ For inquiries, please contact **Beauty Blurbs** at **contact@beautyblurbs.com**
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */  
-   .site-name {
+    .site-name {
     margin-top: -10px;
   }  
   .site-avatar img {
@@ -102,10 +102,12 @@ For inquiries, please contact **Beauty Blurbs** at **contact@beautyblurbs.com**
     margin-left: 100px;
     
   }
+
    h3 {
   font-size: 24px;
    width: 800px;		
-} 
+}
+    
  h4 {
     width: 800px;
     margin-left: 100px;
@@ -115,10 +117,10 @@ For inquiries, please contact **Beauty Blurbs** at **contact@beautyblurbs.com**
     width: 800px;
     margin-left: 100px;
   }
-  ol, ul {
+ ol, ul {
     width: 800px;
     margin-left: 100px;
-  }
+  }  
 
   .footer-menu nav {
     justify-content: center;
@@ -145,7 +147,8 @@ For inquiries, please contact **Beauty Blurbs** at **contact@beautyblurbs.com**
   ol, ul {
     margin-left: 15px;
     margin-right: 10px; 
-  }  
-    
-  } /* End Mobile */
-</style>
+  }
+
+  } /* End Mobile */  
+
+  </style>
