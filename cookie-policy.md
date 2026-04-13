@@ -210,9 +210,59 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
    .page-container {
      margin-left: 100px;
-     widith: 1000px;
-
+     margin-right: -200px;
    }  
+
+   h1 {
+  font-size: 36px;
+  color: black;	
+  }
+
+h2 {
+  font-size: 32px;
+  color: black;	
+}
+
+h3 {
+  font-size: 28px;
+  color: black;	
+}
+
+h4 {
+  font-size: 24px;
+  color: black;
+}
+
+p {
+  font-size: 20px;
+  color: black;	
+  margin: 100px;	
+  	
+}
+
+span {
+  font-size: 20px;
+  color: black;
+  margin: 100px;
+}
+
+ul, ol {
+  margin: 115px 0;
+  padding-left: 30px;
+  font-size: 18px;	
+}	 
+
+ ul {
+  list-style-type: disc;
+  margin-left: 120px !important;
+  margin-bottom: 10px !important;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 120px;
+}	
+ 
  
   } /*End Desktop */
 
