@@ -9,11 +9,15 @@ permalink: /cookie-policy/
   <span class="current">Cookie Policy</span>
 </nav>
 
-<div class="page-container"?
+<div class="page-container">
+
+<br /><br />
 
 <h2>Cookie Policy</h2>
 
 <p><strong>Last updated: March 19, 2026</strong></p>
+
+<br /><br />
 
 <p>
 This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “our”, “the site”) uses cookies and similar technologies to provide, improve, and personalize your browsing experience. By using this website, you agree to the practices described in this policy.
@@ -21,7 +25,6 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
 <p>We aim to be transparent about what data we collect, why we collect it, and how you can control your preferences.</p>
 
-<hr />
 
 <h3>1. What Are Cookies?</h3>
 
@@ -33,7 +36,6 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
   <li><strong>Third‑party cookies</strong> — set by external services we use (e.g., analytics tools)</li>
 </ul>
 
-<hr />
 
 <h3>2. How We Use Cookies</h3>
 
@@ -50,7 +52,6 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
 <p>These cookies do <strong>not</strong> store personally identifiable information.</p>
 
-<hr />
 
 <h4><strong>Analytics Cookies (Optional)</strong></h4>
 <p>These cookies help us understand how visitors use the site so we can improve content and usability. They may collect information such as:</p>
@@ -65,7 +66,6 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
 <p>Analytics cookies are only activated if you <strong>accept</strong> them through the cookie banner.</p>
 
-<hr />
 
 <h4><strong>Advertising & Personalization Cookies (Optional)</strong></h4>
 <p>These cookies support enhanced features such as:</p>
@@ -78,7 +78,6 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
 <p>These cookies may be set by trusted third‑party partners. They are only activated if you <strong>accept</strong> them through the cookie banner.</p>
 
-<hr />
 
 <h3>3. Google Consent Mode v2</h3>
 
@@ -95,7 +94,6 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
 <p>If you reject optional cookies, Google receives a “denied” signal and will not use cookies for those purposes.</p>
 
-<hr />
 
 <h3>4. Managing Your Cookie Preferences</h3>
 
@@ -111,7 +109,6 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
 <p>Your choices will apply across the entire site.</p>
 
-<hr />
 
 <h3>5. Third‑Party Services We Use</h3>
 
@@ -124,7 +121,6 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
 <p>These services may process data outside of Canada. We ensure that any third‑party tools we use follow recognized privacy and security standards.</p>
 
-<hr />
 
 <h3>6. Cookies Used on This Site</h3>
 
@@ -165,7 +161,6 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
 <p>Exact cookie names may change as services update their technology.</p>
 
-<hr />
 
 <h3>7. Your Privacy Rights</h3>
 
@@ -188,13 +183,11 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
 <p>To exercise any of these rights, please contact us using the information below.</p>
 
-<hr />
 
 <h3>8. Contact Us</h3>
 
 <p>If you have questions about this Cookie Policy or how we use cookies, you can contact <strong>beautyblurbs.com</strong> at <em>contact@beautyblurbs.com</em></p>
 
-<hr />
 
 <h3>9. Updates to This Policy</h3>
 
