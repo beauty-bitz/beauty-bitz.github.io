@@ -195,7 +195,7 @@ We may update this Cookie Policy from time to time to reflect changes in technol
 
    body {
     width: 100%
-    max-width: 1000px; 
+    max-width: 1000px !important; 
    }
     
    .site-name {
@@ -209,7 +209,6 @@ We may update this Cookie Policy from time to time to reflect changes in technol
   }
 
  h1, h2, h3, h4, h5, h6 {
-    width: 800px;
     margin-left: 100px;    
   }
 
@@ -237,15 +236,14 @@ h4 {
 p {
   font-size: 20px;
   color: black;	
-  margin: 100px;	
-   width: 800px;	
+  margin: 100px;	 
 }
 
 span {
   font-size: 20px;
   color: black;
   margin: 100px;
-  width: 800px;
+ 
 }
 
 
@@ -254,18 +252,18 @@ span {
   list-style-type: disc;
   margin-left: 120px !important;
   margin-bottom: 10px !important;
-   width: 800px; 
+
 }
 
 ol {
   list-style-type: decimal;
   margin-left: 120px;
-  width: 800px;
+ 
 }	
 
 .table-scroll {
   margin-left: 100px;
-  width: 800px;
+ 
 }
     
   .footer-menu nav {
