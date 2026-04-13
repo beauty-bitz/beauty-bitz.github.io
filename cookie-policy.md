@@ -135,8 +135,6 @@ We may use the following third‑party tools, which may set cookies depending on
   </table>
 </div>
 
-<br /><br />
-
 <p>
 Exact cookie names may change as services update their technology.
 </p>
