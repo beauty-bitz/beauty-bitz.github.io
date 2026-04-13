@@ -194,7 +194,7 @@ We may update this Cookie Policy from time to time to reflect changes in technol
   /* Indent Content  */ 
 
    body {
-    width: 100%
+    width: 100%;
     max-width: 1000px !important; 
    }
     
