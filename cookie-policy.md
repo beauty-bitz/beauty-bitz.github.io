@@ -202,6 +202,10 @@ We may update this Cookie Policy from time to time to reflect changes in technol
     margin-left: 520px;
   }
 
+    .container {      
+        margin-left: 100px;
+      }
+
  
   } /*End Desktop */
 
