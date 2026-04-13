@@ -152,13 +152,13 @@ ol {
 
    ul {
   list-style-type: disc;
-  margin-left: 20px !important;
+  margin-left: 15px !important;
   margin-bottom: 10px !important;
 }
 
 ol {
   list-style-type: decimal;
-  margin-left: 20px;
+  margin-left: 15px;
 }	
 
   
