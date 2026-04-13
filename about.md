@@ -57,24 +57,55 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
     
   }
 
-   h3 {
-  font-size: 24px;
-   width: 800px;		
-}
-    
- h4 {
-    width: 800px;
-    margin-left: 100px;
-   
-  }   
-  p {
-    width: 800px;
-    margin-left: 100px;
+  h1 {
+  font-size: 36px;
+  color: black;	
   }
- ol, ul {
-    width: 800px;
-    margin-left: 100px;
-  }  
+
+h2 {
+  font-size: 32px;
+  color: black;	
+}
+
+h3 {
+  font-size: 28px;
+  color: black;	
+}
+
+h4 {
+  font-size: 24px;
+  color: black;
+}
+
+p {
+  font-size: 20px;
+  color: black;	
+  margin: 100px;	
+  	
+}
+
+span {
+  font-size: 20px;
+  color: black;
+  margin: 100px;
+}
+
+ul, ol {
+  margin: 115px 0;
+  padding-left: 30px;
+  font-size: 18px;	
+}	 
+
+ ul {
+  list-style-type: disc;
+  margin-left: 120px !important;
+  margin-bottom: 10px !important;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 120px;
+}	
 
   .footer-menu nav {
     justify-content: center;
