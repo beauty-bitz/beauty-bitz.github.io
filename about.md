@@ -43,12 +43,11 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
   /* Indent Content  */  
 
  body {
-   width: 100px;
-   max-width: 12000px;
+   width: 100%;
+   max-width: 1200px;
  }   
 
  h1, h2, h3, h4, h5, h6 {
-    width: 800px;
     margin-left: 100px;
     
   }
