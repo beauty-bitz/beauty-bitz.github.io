@@ -254,6 +254,12 @@ ol {
   list-style-type: decimal;
   margin-left: 20px;
 }	
+
+.footer-menu nav {
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 675px !important;
+  }	      
  
  
   } /*End Desktop */
