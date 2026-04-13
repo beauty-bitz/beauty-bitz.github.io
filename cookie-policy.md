@@ -161,30 +161,7 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 
 <p>Exact cookie names may change as services update their technology.</p>
 
-
-<h3>7. Your Privacy Rights</h3>
-
-<h4><strong>For Canadian Visitors (PIPEDA)</strong></h4>
-<ul>
-  <li>Know what personal information is collected</li>
-  <li>Request access to your data</li>
-  <li>Withdraw consent at any time</li>
-  <li>Request correction of inaccurate information</li>
-</ul>
-
-<h4><strong>For EU/UK Visitors (GDPR)</strong></h4>
-<ul>
-  <li>Access your personal data</li>
-  <li>Request deletion (“right to be forgotten”)</li>
-  <li>Restrict or object to processing</li>
-  <li>Withdraw consent at any time</li>
-  <li>Data portability</li>
-</ul>
-
-<p>To exercise any of these rights, please contact us using the information below.</p>
-
-
-<h3>8. Contact Us</h3>
+<h3>7. Contact Us</h3>
 
 <p>If you have questions about this Cookie Policy or how we use cookies, you can contact <strong>beautyblurbs.com</strong> at <em>contact@beautyblurbs.com</em></p>
 
