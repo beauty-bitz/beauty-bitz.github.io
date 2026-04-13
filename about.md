@@ -51,16 +51,18 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
     margin-left: 520px;
   }
 
-   body {	
-   width: 100%  
-   max-width: 1000px;
- }	 
-
- h1, h2, h3, h4, h5, h6 {
-    width: 800px;
-    margin-left: 100px;
-    
+   body {
+    width: 1100px; /* makes body full width */
+    margin-left: 200px;   /* centers the content if max-width is limited */
+    margin-right: 200px; 	
   }
+  
+  .container, .wrapper, .entry {
+    width: 700px; /* or whatever width you want */
+    margin-left: 100px;   /* centers the content if max-width is limited */
+    margin-right: 200px; 	
+  }	
+
        h1 {
         font-size: 36px;
         color: black;	
@@ -87,15 +89,12 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
       p {
         margin: 15px 0;
         font-size: 20px;
-        color: black;	
-        margin-left: 100px;	
-        	
+        color: black;		
       }
       
       span {
         font-size: 20px;
         color: black;
-        margin-left: 100px;	
       }
       
       ul, ol {
@@ -106,13 +105,13 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
       
        ul {
         list-style-type: disc;
-        margin-left: 120px !important;
+        margin-left: 20px !important;
         margin-bottom: 10px !important;
       }
       
       ol {
         list-style-type: decimal;
-        margin-left: 120px;
+        margin-left: 20px;
       }	
 
     .footer-menu nav {
