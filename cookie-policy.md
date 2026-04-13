@@ -145,7 +145,7 @@ Exact cookie names may change as services update their technology.
 
 <p>
 Your privacy rights depend on your location.  
-For full details, please refer to our <a href="/policy">Privacy Policy</a>.
+For full details, please refer to our <a href="/privacy/">Privacy Policy</a>.
 </p>
 
 <ul>
