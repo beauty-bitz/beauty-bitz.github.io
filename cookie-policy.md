@@ -166,7 +166,7 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 <p>If you have questions about this Cookie Policy or how we use cookies, you can contact <strong>beautyblurbs.com</strong> at <em>contact@beautyblurbs.com</em></p>
 
 
-<h3>9. Updates to This Policy</h3>
+<h3>8. Updates to This Policy</h3>
 
 <p>We may update this Cookie Policy from time to time to reflect changes in technology, legal requirements, or our practices. The “last updated” date will be revised accordingly.</p>
 
