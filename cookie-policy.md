@@ -282,6 +282,19 @@ ol {
     margin-left: 15px;
     margin-right: 10px; 
   }
+
+   ul {
+  list-style-type: disc;
+  margin-left: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 15px;
+}	
+
+  
     
   } /* End Mobile */
 </style>
