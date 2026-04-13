@@ -41,15 +41,11 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */  
-  .site-name {
-    margin-top: -10px;
-  }  
-  .site-avatar img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-left: 520px;
-  }
+
+ body {
+   width: 100px;
+   max-width: 12000px;
+ }   
 
  h1, h2, h3, h4, h5, h6 {
     width: 800px;
