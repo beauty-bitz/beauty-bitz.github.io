@@ -52,10 +52,9 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
   }
 
    body {
-  width: 1000px; /* makes body full width */
-  margin-left: 300px;   /* centers the content if max-width is limited */
-  margin-right: 300px; 	
-}
+     width: 100%;
+     max-width: 1000px; /* makes body full width */
+  }
 
 h1,h2,h3,h4,h5,h6 {
   margin-left: 150px;   /* centers the content if max-width is limited */
