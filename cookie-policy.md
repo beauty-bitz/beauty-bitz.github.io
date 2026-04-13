@@ -11,7 +11,7 @@ permalink: /cookie-policy/
 
 <br /><br />
 
-<div class="page-container"?
+<div class="page-container">
 
 <h2>Cookie Policy</h2>
 
