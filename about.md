@@ -53,12 +53,12 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
 
    body {
      width: 100%;
-     max-width: 1000px; /* makes body full width */
+     max-width: 1000px; 
   }
 
 h1,h2,h3,h4,h5,h6 {
-  margin-left: 150px;   /* centers the content if max-width is limited */
-  margin-right: 150px;
+  margin-left: 100px !important;
+  margin-left: 100px !important;
 }	 
 
 h1 {
@@ -85,32 +85,33 @@ h4 {
 }
 
 p {
-  margin: 150px 0;
+  margin: 100px 0;
   font-size: 20px;
   color: black;		
-  	
+  margin-left: 100px !important;	
 }
 
 span {
   font-size: 20px;
   color: black;
+  margin-left: 115px !important;
 }
 
 ul, ol {
-  margin: 165px 0;
+  margin-left: 115px !important;
   padding-left: 30px;
   font-size: 18px;	
 }	 
 
  ul {
   list-style-type: disc;
-  margin-left: 170px !important;
+  margin-left: 120px !important;
   margin-bottom: 10px !important;
 }
 
 ol {
   list-style-type: decimal;
-  margin-left: 170px;
+  margin-left: 20px !important;
 }	
 
 
