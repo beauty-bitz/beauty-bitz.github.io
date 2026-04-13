@@ -52,17 +52,12 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
   }
 
    body {
-    width: 1100px; /* makes body full width */
+    width: 1000px; /* makes body full width */
     margin-left: 200px;   /* centers the content if max-width is limited */
     margin-right: 200px; 	
   }
   
-  .container, .wrapper, .entry {
-    width: 700px; /* or whatever width you want */
-    margin-left: 100px;   /* centers the content if max-width is limited */
-    margin-right: 200px; 	
-  }	
-
+ 
        h1 {
         font-size: 36px;
         color: black;	
