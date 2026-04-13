@@ -52,67 +52,68 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
   }
 
    body {
-    width: 1000px; /* makes body full width */
-    margin-left: 300px;   /* centers the content if max-width is limited */
-    margin-right: 300px; 	
+  width: 1000px; /* makes body full width */
+  margin-left: 300px;   /* centers the content if max-width is limited */
+  margin-right: 300px; 	
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-left: 150px;   /* centers the content if max-width is limited */
+  margin-right: 150px;
+}	 
+
+h1 {
+  font-size: 36px;
+  color: black;	
+  a {
+    color: black;
   }
-    
-    .page {
-       margin-left: 150px;   /* centers the content if max-width is limited */
-       margin-right: 150px; 
-    }
-  
- 
-       h1 {
-        font-size: 36px;
-        color: black;	
-        a {
-          color: black;
-        }
-      }
-      
-      h2 {
-        font-size: 32px;
-        color: black;	
-      }
-      
-      h3 {
-        font-size: 28px;
-        color: black;	
-      }
-      
-      h4 {
-        font-size: 24px;
-        color: black;
-      }
-      
-      p {
-        margin: 15px 0;
-        font-size: 20px;
-        color: black;		
-      }
-      
-      span {
-        font-size: 20px;
-        color: black;
-      }
-      
-      ul, ol {
-        margin: 15px 0;
-        padding-left: 30px;
-        font-size: 18px;	
-      }	 
-      
-       ul {
-        list-style-type: disc;
-        margin-left: 20px !important;
-        margin-bottom: 10px !important;
-      }
-      
-      ol {
-        list-style-type: decimal;
-        margin-left: 20px;
-      }	
+}
+
+h2 {
+  font-size: 32px;
+  color: black;	
+}
+
+h3 {
+  font-size: 28px;
+  color: black;	
+}
+
+h4 {
+  font-size: 24px;
+  color: black;
+}
+
+p {
+  margin: 150px 0;
+  font-size: 20px;
+  color: black;		
+  	
+}
+
+span {
+  font-size: 20px;
+  color: black;
+}
+
+ul, ol {
+  margin: 165px 0;
+  padding-left: 30px;
+  font-size: 18px;	
+}	 
+
+ ul {
+  list-style-type: disc;
+  margin-left: 170px !important;
+  margin-bottom: 10px !important;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 170px;
+}	
+
 
     .footer-menu nav {
     justify-content: center;
