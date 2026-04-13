@@ -17,6 +17,8 @@ permalink: /privacy/
 
 <p><strong>Last updated: March 19, 2026</strong></p>
 
+<br /><br />
+
 <p>
 Welcome to Beauty Blurbs, located at 
 <a href="https://beautyblurbs.com">https://beautyblurbs.com</a> (the “Site”). 
