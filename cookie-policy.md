@@ -209,7 +209,7 @@ span {
 }
 
 ul, ol {
-  margin: 15px 0;
+  margin: 20px 0;
   font-size: 18px;	
 }	 
 
@@ -228,7 +228,9 @@ ol {
     justify-content: center;
     margin-bottom: 20px;
     width: 675px !important;
-  }	      
+  }	  
+
+    
  
  
   } /*End Desktop */
@@ -262,6 +264,10 @@ ol {
   list-style-type: decimal;
   margin-left: 30px;
 }	
+
+.bb-table-scroll {
+   margin-left: 15px;
+} 
 
   
     
