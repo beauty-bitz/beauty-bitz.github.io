@@ -202,37 +202,7 @@ We may update this Cookie Policy from time to time to reflect changes in technol
     margin-left: 520px;
   }
 
- h1, h2, h3, h4, h5, h6 {
-    width: 800px;
-    margin-left: 100px;
-    
-  }
-
-   h3 {
-  font-size: 24px;
-   width: 800px;		
-}
-    
- h4 {
-    width: 800px;
-    margin-left: 100px;
-   
-  }   
-  p {
-    width: 800px;
-    margin-left: 100px;
-  }
- ol, ul {
-    width: 800px;
-    margin-left: 100px;
-  }  
-
-  .footer-menu nav {
-    justify-content: center;
-    margin-bottom: 20px;
-    width: 675px !important;
-  }	  
-
+ 
   } /*End Desktop */
 
   @media only screen and (max-width: 780px) { 
