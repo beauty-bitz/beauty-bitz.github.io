@@ -13,7 +13,7 @@ permalink: /disclaimer/
 
 ## Website Disclaimer
   
-#### Last updated: March 19, 2026
+**Last updated: March 19, 2026**
 
 <br /><br />
 
