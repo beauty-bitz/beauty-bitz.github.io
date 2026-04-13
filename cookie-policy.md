@@ -299,7 +299,7 @@ ol {
 }
 
 .bb-table tr:last-child td {
-  border-bottom: 2px solid #f2e6ea;
+  border-bottom: 2px solid #ffffff;
 }
   
 
