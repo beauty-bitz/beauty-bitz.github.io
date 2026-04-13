@@ -192,69 +192,41 @@ We may update this Cookie Policy from time to time to reflect changes in technol
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */ 
-
-   body {
-    width: 1000px !important; 
-   }
+   .site-name {
+    margin-top: -10px;
+  }  
+  .site-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 520px;
+  }
 
  h1, h2, h3, h4, h5, h6 {
-    margin-left: 100px;    
+    width: 800px;
+    margin-left: 100px;
+    
   }
 
- 
-  h1 {
-  font-size: 36px;
-  color: black;	
-  }
-
-h2 {
-  font-size: 32px;
-  color: black;	
-}
-
-h3 {
-  font-size: 28px;
-  color: black;	
-}
-
-h4 {
+   h3 {
   font-size: 24px;
-  color: black;
-}
-
-p {
-  font-size: 20px;
-  color: black;	
-  margin: 100px;	 
-}
-
-span {
-  font-size: 20px;
-  color: black;
-  margin: 100px;
- 
-}
-
-
-
- ul {
-  list-style-type: disc;
-  margin-left: 120px !important;
-  margin-bottom: 10px !important;
-
-}
-
-ol {
-  list-style-type: decimal;
-  margin-left: 120px;
- 
-}	
-
-.table-scroll {
-  margin-left: 100px;
- 
+   width: 800px;		
 }
     
+ h4 {
+    width: 800px;
+    margin-left: 100px;
+   
+  }   
+  p {
+    width: 800px;
+    margin-left: 100px;
+  }
+ ol, ul {
+    width: 800px;
+    margin-left: 100px;
+  }  
+
   .footer-menu nav {
     justify-content: center;
     margin-bottom: 20px;
@@ -281,8 +253,6 @@ ol {
     margin-left: 15px;
     margin-right: 10px; 
   }
-
-  } /* End Mobile */  
+    
+  } /* End Mobile */
 </style>
-
-
