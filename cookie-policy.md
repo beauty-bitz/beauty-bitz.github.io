@@ -208,25 +208,65 @@ We may update this Cookie Policy from time to time to reflect changes in technol
     
   }
 
-   h3 {
-  font-size: 24px;
-   width: 800px;		
-}
-    
- h4 {
-    width: 800px;
-    margin-left: 100px;
-   
-  }   
-  p {
-    width: 800px;
-    margin-left: 100px;
+ 
+  h1 {
+  font-size: 36px;
+  color: black;	
   }
- ol, ul {
-    width: 800px;
-    margin-left: 100px;
-  }  
 
+h2 {
+  font-size: 32px;
+  color: black;	
+}
+
+h3 {
+  font-size: 28px;
+  color: black;	
+}
+
+h4 {
+  font-size: 24px;
+  color: black;
+}
+
+p {
+  font-size: 20px;
+  color: black;	
+  margin: 100px;	
+   width: 800px;	
+}
+
+span {
+  font-size: 20px;
+  color: black;
+  margin: 100px;
+  width: 800px;
+}
+
+ul, ol {
+  margin: 115px 0;
+  padding-left: 30px;
+  font-size: 18px;
+   width: 800px;
+}	 
+
+ ul {
+  list-style-type: disc;
+  margin-left: 120px !important;
+  margin-bottom: 10px !important;
+   width: 800px; 
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 120px;
+  width: 800px;
+}	
+
+.table-scroll {
+  margin-left: 100px;
+  width: 800px;
+}
   .footer-menu nav {
     justify-content: center;
     margin-bottom: 20px;
