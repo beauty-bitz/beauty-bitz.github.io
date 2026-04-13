@@ -249,19 +249,19 @@ ol {
     margin-right: 10px; 
   }
   ol, ul {
-    margin-left: 20px;
+    margin-left: 30px;
     margin-right: 10px; 
   }
 
 ul {
   list-style-type: disc;
-  margin-left: 20px !important;
+  margin-left: 30px !important;
   margin-bottom: 10px !important;
 }
 
 ol {
   list-style-type: decimal;
-  margin-left: 20px;
+  margin-left: 30px;
 }	
     
   } /* End Mobile */
