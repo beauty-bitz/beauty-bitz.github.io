@@ -302,18 +302,42 @@ For general inquiries, you can contact us at the following email address: contac
     margin-right: 20px;
     }
 
-    h1, h2, h3, h4, h5, h6 {
-    margin-left: 15px;
-    margin-right: 10px;     
+    h1 {
+  font-size: 32px;
+  a {
+    color: $black;
   }
-  p {
-    margin-left: 15px;
-    margin-right: 10px; 
-  }
-  ol, ul {
-    margin-left: 15px;
-    margin-right: 10px; 
-  }  
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+  color: $black;
+}
+
+p {
+  margin: 15px 0;
+  font-size: 18px;	
+}
+
+span {
+  font-size: 18px;
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+  font-size: 16px;	
+}	
+
+
     
   } /* End Mobile */
 </style>
