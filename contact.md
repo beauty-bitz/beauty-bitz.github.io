@@ -157,13 +157,13 @@ ol {
 
 ul {
   list-style-type: disc;
-  margin-left: 10px !important;
+  margin-left: 15px !important;
   margin-bottom: 10px !important;
 }
 
 ol {
   list-style-type: decimal;
-  margin-left: 10px;
+  margin-left: 15px;
 }	
     
   } /* End Mobile */
