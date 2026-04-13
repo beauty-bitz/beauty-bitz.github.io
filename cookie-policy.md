@@ -198,19 +198,10 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */ 
-   .site-name {
-    margin-top: -10px;
-  }  
-  .site-avatar img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-left: 520px;
-  }
 
    .page-container {
      margin-left: 100px;
-     margin-right: -200px;
+     margin-right: 0px;
    }  
 
    h1 {
