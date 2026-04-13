@@ -9,6 +9,8 @@ permalink: /contact/
   <span class="current">Contact</span>
 </nav>
 
+<div class="page-container">
+
 <br /><br />
 
 <h1>Contact</h1>
