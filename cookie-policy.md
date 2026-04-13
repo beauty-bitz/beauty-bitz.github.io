@@ -248,12 +248,7 @@ span {
   width: 800px;
 }
 
-ul, ol {
-  margin: 115px 0;
-  padding-left: 30px;
-  font-size: 18px;
-   width: 800px;
-}	 
+
 
  ul {
   list-style-type: disc;
@@ -272,6 +267,7 @@ ol {
   margin-left: 100px;
   width: 800px;
 }
+    
   .footer-menu nav {
     justify-content: center;
     margin-bottom: 20px;
