@@ -180,22 +180,91 @@ Our analytics system collects data such as IP addresses, user IDs and usernames 
 </p>
 
 <p>
-To ensure compliance with GDPR, we utilize analytics software to understand how customers use our site:
-</p>
-
-<ul>
-  <li>IP addresses are anonymized across all Google Analytics hits.</li>
-  <li>User ID tracking is disabled.</li>
-  <li>Demographics and Interests Reports are disabled.</li>
-  <li>AMP users are given the option to agree to the Google AMP Consent Box before being tracked.</li>
-</ul>
-
-<p>
-For further information on how Google utilizes your Personal Information, please refer to their Privacy Policy 
+For information on how Google utilizes your Personal Information, please refer to their Privacy Policy 
 <a href="https://www.google.com/intl/en/policies/privacy/">here</a>. 
 You can opt-out of Google Analytics 
 <a href="https://tools.google.com/dlpage/gaoptout">here</a>.
 </p>
+
+<h2>Privacy Rights for Canadian Visitors (PIPEDA)</h2>
+
+<p>
+If you are a resident of Canada, you have specific rights under the Personal Information Protection and Electronic Documents Act (PIPEDA). 
+These rights apply to the personal information we collect, use, and store. We are committed to transparency and ensuring that you remain in control of your information.
+</p>
+
+<p><strong>Your rights under PIPEDA include:</strong></p>
+
+<ul>
+  <li><strong>Right to Know:</strong> You may request information about what personal data we collect, why we collect it, and how it is used.</li>
+  <li><strong>Right to Access:</strong> You may request a copy of the personal information we hold about you.</li>
+  <li><strong>Right to Withdraw Consent:</strong> You may withdraw your consent to the collection or use of your personal information at any time, subject to legal or contractual restrictions.</li>
+  <li><strong>Right to Correct:</strong> You may request corrections to inaccurate or incomplete personal information.</li>
+</ul>
+
+<p>
+To exercise any of these rights, please contact us at <strong>contact@beautyblurbs.com</strong>.
+</p>
+
+
+
+<h2>Privacy Rights for EU/UK Visitors (GDPR)</h2>
+
+<p>
+If you are located in the European Union or the United Kingdom, you are protected by the General Data Protection Regulation (GDPR) and the UK GDPR. 
+These laws provide strong protections for your personal data and grant you several important rights.
+</p>
+
+<p><strong>Your rights under GDPR include:</strong></p>
+
+<ul>
+  <li><strong>Right of Access:</strong> You may request confirmation of whether we process your personal data and receive a copy of that data.</li>
+  <li><strong>Right to Rectification:</strong> You may request corrections to inaccurate or incomplete personal information.</li>
+  <li><strong>Right to Erasure (“Right to Be Forgotten”):</strong> You may request that we delete your personal data when it is no longer necessary, when consent is withdrawn, or when processing is unlawful.</li>
+  <li><strong>Right to Restrict Processing:</strong> You may request that we limit the processing of your personal data in certain circumstances.</li>
+  <li><strong>Right to Object:</strong> You may object to the processing of your personal data, including for direct marketing purposes.</li>
+  <li><strong>Right to Data Portability:</strong> You may request a copy of your personal data in a structured, commonly used, machine‑readable format.</li>
+  <li><strong>Right to Withdraw Consent:</strong> If we rely on consent to process your data, you may withdraw that consent at any time.</li>
+  <li><strong>Right Not to Be Subject to Automated Decision‑Making:</strong> You have the right to request human review of decisions made solely by automated processes, if applicable.</li>
+</ul>
+
+<p>
+If you wish to exercise any of these rights, please contact us at <strong>contact@beautyblurbs.com</strong>. 
+Please note that your data may be transferred outside the EU/UK, including to Canada or the United States.
+</p>
+
+
+
+<h2>Privacy Rights for California Residents (CCPA/CPRA)</h2>
+
+<p>
+If you are a resident of California, you have specific rights under the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA). 
+These rights apply to the personal information we collect, use, and disclose. While Beauty Blurbs does not sell personal information, we are committed to honoring all applicable privacy rights.
+</p>
+
+<p><strong>Your rights under CCPA/CPRA include:</strong></p>
+
+<ul>
+  <li><strong>Right to Know:</strong> You may request information about the categories of personal information we collect, the sources of that information, the purposes for which it is used, and whether it is disclosed.</li>
+  <li><strong>Right to Access:</strong> You may request a copy of the personal information we have collected about you.</li>
+  <li><strong>Right to Delete:</strong> You may request that we delete your personal information, subject to certain legal exceptions.</li>
+  <li><strong>Right to Correct:</strong> You may request corrections to inaccurate personal information.</li>
+  <li><strong>Right to Opt Out of “Sale” or “Sharing”:</strong> Beauty Blurbs does not sell personal information. If we ever use third‑party tools that qualify as “sharing” under California law, you may opt out at any time.</li>
+  <li><strong>Right to Limit Use of Sensitive Personal Information:</strong> We do not collect or process sensitive personal information for purposes that require this right.</li>
+  <li><strong>Right to Non‑Discrimination:</strong> You will not be denied services or treated differently for exercising your privacy rights.</li>
+</ul>
+
+<br></br>
+
+<p>
+Beauty Blurbs is a static website hosted on GitHub Pages and does not maintain user accounts or store personal information on our servers other than the comment text and name used when you submit a comment. Any personal information collected (such as comments or email inquiries) is limited to what you voluntarily provide. If you submit a privacy request, we will assist you based on the limited data we have access to.
+</p>
+
+<p>
+To exercise any of these rights, please contact us at <strong>contact@beautyblurbs.com</strong>. 
+We may request additional information to verify your identity before processing your request.
+</p>
+
 
 <h2>Search Feature</h2>
 
