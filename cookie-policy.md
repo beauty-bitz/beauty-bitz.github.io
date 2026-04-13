@@ -17,6 +17,8 @@ permalink: /cookie-policy/
 
 <p><strong>Last updated: April 13, 2026</strong></p>
 
+<br /><br />
+
 <h2>Quick Summary for Visitors</h2>
 
 <p>
