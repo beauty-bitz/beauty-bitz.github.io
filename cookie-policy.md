@@ -209,8 +209,8 @@ This Cookie Policy explains how <strong>beautyblurbs.com</strong> (“we”, “
   }
 
    .page-container {
-
      margin-left: 100px;
+     widith: 1000px;
 
    }  
  
