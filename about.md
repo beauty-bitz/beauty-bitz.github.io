@@ -41,131 +41,68 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */  
- 
-
-   body {
-     width: 100%;
-     max-width: 1000px; 
+  .site-name {
+    margin-top: -10px;
+  }  
+  .site-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 520px;
   }
 
-h1,h2,h3,h4,h5,h6 {
-  margin-left: 100px !important;
-  margin-left: 100px !important;
-}	 
-
-h1 {
-  font-size: 36px;
-  color: black;	
-  a {
-    color: black;
+ h1, h2, h3, h4, h5, h6 {
+    width: 800px;
+    margin-left: 100px;
+    
   }
-}
 
-h2 {
-  font-size: 32px;
-  color: black;	
-}
-
-h3 {
-  font-size: 28px;
-  color: black;	
-}
-
-h4 {
+   h3 {
   font-size: 24px;
-  color: black;
+   width: 800px;		
 }
+    
+ h4 {
+    width: 800px;
+    margin-left: 100px;
+   
+  }   
+  p {
+    width: 800px;
+    margin-left: 100px;
+  }
+ ol, ul {
+    width: 800px;
+    margin-left: 100px;
+  }  
 
-p {
-  margin: 100px;
-  font-size: 20px;
-  color: black;		
-  margin-left: 100px !important;	
-}
-
-span {
-  font-size: 20px;
-  color: black;
-  margin-left: 115px !important;
-}
-
-ul, ol {
-  margin-left: 115px !important;
-  padding-left: 30px;
-  font-size: 18px;	
-}	 
-
- ul {
-  list-style-type: disc;
-  margin-left: 120px !important;
-}
-
-ol {
-  list-style-type: decimal;
-  margin-left: 20px !important;
-}	
-
-
-    .footer-menu nav {
+  .footer-menu nav {
     justify-content: center;
     margin-bottom: 20px;
     width: 675px !important;
-  }
-   
+  }	  
+
   } /*End Desktop */
 
   @media only screen and (max-width: 780px) { 
-  
-  body {
-      max-width: 768px;
-      width: 100%;	 
-      margin: 0;
-      padding: 0;
-     }	
-    
     .page {
-      margin-left: 10px;
-      margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 20px;
     }
 
-  h1 {
-    font-size: 32px;
-    a {
-      color: $black;
-    }
+    h1, h2, h3, h4, h5, h6 {
+    margin-left: 15px;
+    margin-right: 10px;     
   }
-  
-  h2 {
-    font-size: 28px;
-  }
-  
-  h3 {
-    font-size: 24px;
-  }
-  
-  h4 {
-    font-size: 21px;
-    color: $black;
-  }
-  
   p {
-    margin: 15px 0;
-    font-size: 18px;	
+    margin-left: 15px;
+    margin-right: 10px; 
   }
-  
-  span {
-    font-size: 18px;
+  ol, ul {
+    margin-left: 15px;
+    margin-right: 10px; 
   }
-  
-  ul, ol {
-    margin: 15px 0;
-    padding-left: 30px;
-    font-size: 16px;	
-  }	
-
-
 
   } /* End Mobile */  
 
-  
-</style>
+ </style> 
