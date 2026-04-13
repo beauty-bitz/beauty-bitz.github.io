@@ -102,7 +102,6 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
     margin-left: 15px;
     margin-right: 10px; 
   }
-
-  } /* End Mobile */  
-
- </style> 
+    
+  } /* End Mobile */
+</style>
