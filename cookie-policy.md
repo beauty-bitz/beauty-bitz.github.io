@@ -191,7 +191,13 @@ We may update this Cookie Policy from time to time to reflect changes in technol
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
-  /* Indent Content  */  
+  /* Indent Content  */ 
+
+   body {
+    width: 100%
+    max-width: 1000px; 
+   }
+    
    .site-name {
     margin-top: -10px;
   }  
@@ -204,8 +210,7 @@ We may update this Cookie Policy from time to time to reflect changes in technol
 
  h1, h2, h3, h4, h5, h6 {
     width: 800px;
-    margin-left: 100px;
-    
+    margin-left: 100px;    
   }
 
  
