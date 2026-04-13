@@ -277,7 +277,7 @@ ol {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.95rem;
-  border-bottom: 1px solid #f2e6ea; /* Add this line */
+  border-bottom: 1px solid #000000; /* Add this line */
 }
   
 
@@ -291,7 +291,7 @@ ol {
 
 .bb-table td {
   padding: 10px;
-  border-bottom: 1px solid #f2e6ea;
+  border-bottom: 1px solid #000000;
 }
 
 .bb-table tr:nth-child(even) {
@@ -299,7 +299,7 @@ ol {
 }
 
 .bb-table tr:last-child td {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #000000;
 }
   
 
