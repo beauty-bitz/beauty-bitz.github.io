@@ -56,6 +56,11 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
     margin-left: 300px;   /* centers the content if max-width is limited */
     margin-right: 300px; 	
   }
+    
+    .page {
+       margin-left: 150px;   /* centers the content if max-width is limited */
+       margin-right: 150px; 
+    }
   
  
        h1 {
@@ -124,10 +129,11 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
       width: 100%;	 
       margin: 0;
       padding: 0;
-     }	 
+     }	
+    
     .page {
-      margin-left: 15px;
-      margin-right: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
   h1 {
