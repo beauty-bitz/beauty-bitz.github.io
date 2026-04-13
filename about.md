@@ -125,10 +125,12 @@ I believe beauty care should feel like self-care, not a chore. Whether you're a 
 
   @media only screen and (max-width: 780px) { 
   
-    body {	
-     width: 100%  
-     max-width: 400px;
-   }
+  body {
+      max-width: 768px;
+      width: 100%;	 
+      margin: 0;
+      padding: 0;
+     }	 
     .page {
       margin-left: 15px;
       margin-right: 20px;
