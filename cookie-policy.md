@@ -296,4 +296,9 @@ ol {
   background-color: #fdf7f9;
 }
 
+.bb-table tr:last-child td {
+  border-bottom: 2px solid #f2e6ea;
+}
+  
+
 </style>
