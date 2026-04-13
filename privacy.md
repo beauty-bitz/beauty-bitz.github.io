@@ -210,7 +210,7 @@ span {
 }
 
 ul, ol {
-  margin: 15px 0;
+  margin: 20px 0;
   font-size: 18px;	
 }	 
 
