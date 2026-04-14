@@ -62,7 +62,7 @@ irritation, allergic reactions, sensitization, burns, infection, or other advers
 from the use or misuse of information provided on this website.
 </p>
 
-<h2>4. Safety Reminder</h2>
+<h2>4. Reminder</h2>
 
 <ul>
   <li>Always perform a patch test before using any new skincare product or DIY formulation.</li>
