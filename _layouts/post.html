@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<nav class="breadcrumbs" style="width: 1525px; margin: 0;">
+<nav class="breadcrumbs">
   <a href="/">🏠</a>{% assign cat = page.categories[0] %}&gt;<a href="/{{ cat | downcase | replace: ' ', '-' }}/">{{ cat }}</a>&gt;<span class="current-page-title">{{ page.title }}</span>
 </nav>
 
@@ -522,6 +522,11 @@ body {
   
 }
 
+.desktop-header-nav {
+   margin-left: 100px !important; 
+   margin-right: 100px !important; 
+}	 
+
 .date {
  margin-left: 150px;
 } 
@@ -531,6 +536,8 @@ body {
  } 
 
  .breadcrumbs {
+   margin-left: 100px !important; 
+   margin-right: 100px !important; 
    margin-top: -45px;
  }
 
@@ -606,6 +613,11 @@ body {
   max-width: 768px; /* or whatever width you want */
   margin: 0;	
 }
+
+.desktop-header-nav	{
+  margin-left: 100px !important;
+  margin-right: 100px !important; 	
+}	
 
 .date {
  margin-left: 0px;
