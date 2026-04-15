@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<nav class="breadcrumbs" style="width: 100%; margin-left: 250px !important;>
+<nav class="breadcrumbs" style="width: 100%; margin-left: 250px !important;">
   <a href="/">🏠</a>{% assign cat = page.categories[0] %}&gt;<a href="/{{ cat | downcase | replace: ' ', '-' }}/">{{ cat }}</a>&gt;<span class="current-page-title">{{ page.title }}</span>
 </nav>
 
@@ -585,15 +585,6 @@ ol {
   margin-left: 20px;
 }
 
-.breadcrumbs {
-    text-align: left !important;
-    margin-left: 250px !important;
-    margin-right: 25px !important;
-	width: 100% !important;
-    max-width: 1525px !important;
-    padding-left: 1em !important; /* Indentation width */
-    text-indent: -1em!important;  /* Negative indent pulls first line back */	  
-  }
 
   	 
 	 
