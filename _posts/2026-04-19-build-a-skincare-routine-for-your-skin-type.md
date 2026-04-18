@@ -2,13 +2,13 @@
 layout: post
 title: "How to Build a Skincare Routine for Your Skin Type"
 categories: ["Skin Care"]
-image: "/assets/images/Skin/images/build-a-skincare-routine-for-your-skin-type.webp"
+image: "/assets/images/Skin/build-a-skincare-routine-for-your-skin-type.webp"
 tags: [skincare, skin care, skincare routine, skincare routine by skin type]
 description: "How to Build a Skincare Routine for Your Skin Type."
 ---
 
 <figure>
-  <img src="/assets/images/Skin/images/build-a-skincare-routine-for-your-skin-type.webp" alt="Skincare Routine for Your Skin Type" />
+  <img src="/assets/images/Skin/build-a-skincare-routine-for-your-skin-type.webp" alt="Skincare Routine for Your Skin Type" />
   <figcaption></figcaption>
 </figure>
 
