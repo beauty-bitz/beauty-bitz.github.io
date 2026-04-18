@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Bakuchiol: A Gentle, Science-Backed Alternative for Smoother, Younger-Looking Skin"
+title: "How to Build a Skincare Routine for Your Skin Type"
 categories: ["Skin Care"]
-image: "/assets/images/Skin/bakuchiol flower700.webp"
-tags: [moisturizer, dry skin, bakuchiol, face oil, retinol alternative, bakuchiol retinol alternative]
-description: "A guide on bakuchiol, the retinol alternative."
+image: "/assets/images/Skin/images/build-a-skincare-routine-for-your-skin-type.webp"
+tags: [skincare, skin care, skincare routine, skincare routine by skin type]
+description: "How to Build a Skincare Routine for Your Skin Type."
 ---
 
 <figure>
-  <img src="/assets/images/Skin/bakuchiol flower700.webp" alt="Moisturizer for dry skin" />
+  <img src="/assets/images/Skin/images/build-a-skincare-routine-for-your-skin-type.webp" alt="Skincare Routine for Your Skin Type" />
   <figcaption></figcaption>
 </figure>
 
