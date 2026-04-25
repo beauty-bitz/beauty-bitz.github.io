@@ -13,8 +13,6 @@ description: "A complete beginner‑friendly guide to moisturizers. Learn how hu
 </figure>
 
 
-# **The Ultimate Guide to Moisturizers**
-
 ## **Introduction**
 Moisturizers are the backbone of every skincare routine. They hydrate, protect, and strengthen your skin barrier — and choosing the right one can make a huge difference in how your skin looks and feels. This guide breaks down everything you need to know about moisturizers so you can choose the perfect one for your skin type.
 
@@ -57,6 +55,8 @@ Most moisturizers contain a mix of all three.
 
 
 ## **Choosing the Right Moisturizer for Your Skin Type**
+
+<br>
 
 ### **Oily Skin**
 **Look for:**
