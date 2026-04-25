@@ -18,7 +18,6 @@ description: "A complete beginner‑friendly guide to moisturizers. Learn how hu
 ## **Introduction**
 Moisturizers are the backbone of every skincare routine. They hydrate, protect, and strengthen your skin barrier — and choosing the right one can make a huge difference in how your skin looks and feels. This guide breaks down everything you need to know about moisturizers so you can choose the perfect one for your skin type.
 
----
 
 ## **What Moisturizers Actually Do**
 Moisturizers work in three ways:
@@ -37,7 +36,6 @@ Moisturizers work in three ways:
 
 Most moisturizers contain a mix of all three.
 
----
 
 ## **Types of Moisturizers**
 
@@ -57,7 +55,6 @@ Most moisturizers contain a mix of all three.
 - Very occlusive  
 - Best for extremely dry or damaged skin  
 
----
 
 ## **Choosing the Right Moisturizer for Your Skin Type**
 
@@ -70,7 +67,6 @@ Most moisturizers contain a mix of all three.
 **Avoid:**
 - Heavy creams  
 
----
 
 ### **Dry Skin**
 **Look for:**
@@ -79,14 +75,14 @@ Most moisturizers contain a mix of all three.
 - Squalane  
 - Thick creams  
 
----
+
 
 ### **Combination Skin**
 **Look for:**
 - Lightweight lotions  
 - Hydrating serums + light moisturizer  
 
----
+
 
 ### **Sensitive Skin**
 **Look for:**
