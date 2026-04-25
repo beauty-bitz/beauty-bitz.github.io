@@ -1,4 +1,16 @@
+---
+layout: post
+title: "The Ultimate Guide to Moisturizers"
+categories: ["Skin Care"]
+image: "/assets/images/Skin/the-ultimate-guide-to-moisturizers.webp"
+tags: [skincare, skin care, moisturizer, moisturizers guide]
+description: "A complete beginner‑friendly guide to moisturizers. Learn how humectants, emollients, and occlusives work, plus how to choose the best moisturizer for your skin type."
+---
 
+<figure>
+  <img src="/assets/images/Skin/the-ultimate-guide-to-moisturizers.webp" alt="The Ultimate Guide to Moisturizers" />
+  <figcaption></figcaption>
+</figure>
 
 
 # **The Ultimate Guide to Moisturizers**
