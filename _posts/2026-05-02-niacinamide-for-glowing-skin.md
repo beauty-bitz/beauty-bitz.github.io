@@ -57,15 +57,15 @@ Most people do well with **2–5% niacinamide**, which delivers results without 
 Niacinamide is generally well‑tolerated across all skin types — even sensitive skin. Still, patch‑testing is always a smart step when introducing a new product.
 
 ### **Layer It With the Right Ingredients**
-Niacinamide plays well with others, making it easy to incorporate into your existing routine. It pairs beautifully with:
+Niacinamide is versatile and plays well with others, making it easy to incorporate into your existing routine. It pairs beautifully with hydrating and barrier‑supportive ingredients, such as:
 - **Hyaluronic acid** for hydration  
 - **Vitamin C** for enhanced brightening  
-- **Retinol** for barrier support and reduced irritation  
+- **Retinol** for barrier support and reduced irritation
 
-Avoid pairing it with very low‑pH acidic products in the same step, as this may reduce its effectiveness.
+Avoid pairing niacinamide with very low‑pH acidic products in the same step like glycolic acid toners or pure L‑ascorbic acid serums, which can reduce niacinamide's effectiveness. If you use both, simply apply them at different times of the day or alternate them to keep your routine balanced and effective.
 
 ### **Use It Consistently**
-For glowing, long‑term results, apply niacinamide **once or twice daily**. Use it after cleansing and toning, but before heavier creams or oils.
+For glowing, long‑term results, apply niacinamide consistently **once or twice daily**. Use it after cleansing and toning, but before heavier creams or oils.
 
 ### **Be Patient With Results**
 Niacinamide works steadily and gently. Expect visible improvements — brighter tone, smoother texture, calmer skin — within **4–8 weeks** of consistent use.
