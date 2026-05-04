@@ -62,7 +62,7 @@ Niacinamide is versatile and plays well with others, making it easy to incorpora
 - **Vitamin C** for enhanced brightening  
 - **Retinol** for barrier support and reduced irritation
 
-Avoid pairing niacinamide with very low‑pH acidic products in the same step like glycolic acid toners or pure L‑ascorbic acid serums, which can reduce niacinamide's effectiveness. If you use both, simply apply them at different times of the day or alternate them to keep your routine balanced and effective.
+Avoid pairing niacinamide with very low‑pH acidic products in the same step like glycolic acid toners or pure L‑ascorbic acid serums, which can reduce niacinamide's effectiveness. If you use niacinamide with very low‑pH acidic products, simply apply them at different times of the day or alternate them to keep your routine balanced and effective.
 
 ### **Use It Consistently**
 For glowing, long‑term results, apply niacinamide consistently **once or twice daily**. Use it after cleansing and toning, but before heavier creams or oils.
