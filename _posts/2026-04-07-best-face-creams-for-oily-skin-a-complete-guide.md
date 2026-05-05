@@ -234,11 +234,13 @@ If you’re unsure about your skin type or which products to choose, consulting 
   font-weight: 700;
   padding: 10px;
   text-align: left;
+  font-size: 24px;
 }
 
 .table td {
   padding: 10px;
   border-bottom: 1px solid #000000;
+  font-size: 18px;
 }
 
 .table tr:nth-child(even) {
