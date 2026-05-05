@@ -1,4 +1,16 @@
+---
+layout: post
+title: "Niacinamide for Glowing Skin: How to Add It to Your Routine"
+categories: ["Skin Care"]
+image: "/assets/images/Skin/niacinamide-benefits.webp"
+tags: [skin care benefits of niacinamide, niacinamide skin care, niacinamide, niacinamide secrets, niacinamide skin benefits, niacinamide face]
+description: "A simple, beginner‑friendly guide to using niacinamide for brighter, glowing skin — including its benefits and how to add it to your daily routine."
+---
 
+<figure>
+  <img src="/assets/images/Skin/niacinamide-benefits.webp" alt="niacinamide skin benefits" />
+  <figcaption></figcaption>
+</figure>
 
 # **The Best Face Creams for Dry Skin: How to Choose the Right One**
 
