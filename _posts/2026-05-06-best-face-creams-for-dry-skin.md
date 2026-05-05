@@ -1,10 +1,5 @@
 
 
-Here’s a full **markdown‑formatted blog post for dry skin**, written to mirror the structure, tone, and clarity of your oily‑skin post — but tailored specifically for dry, tight, dehydrated, or flaky skin.  
-
-Let me know if you want an HTML version, SEO tags, or a matching short description for GitHub Pages.
-
----
 
 # **The Best Face Creams for Dry Skin: How to Choose the Right One**
 
@@ -108,14 +103,38 @@ These ingredients help seal in moisture and prevent water loss.
 ### **4. Avoid Harsh or Drying Ingredients**
 
 Dry skin is easily irritated, so avoid ingredients that strip moisture.
-
-| Avoid | Why |
-|-------|------|
-| Alcohol‑heavy formulas | Can worsen dryness and irritation |
-| Foaming cleansers | Strip natural oils |
-| Strong exfoliants | Can damage the barrier |
-| Essential oils | May trigger sensitivity |
-| Fragrance | Common irritant for dry or reactive skin |
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr>
+      <th>Avoid</th>
+      <th>Why</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alcohol‑heavy formulas</td>
+      <td>Can worsen dryness and irritation</td>
+    </tr>
+    <tr>
+      <td>Foaming cleansers</td>
+      <td>Strip natural oils</td>
+    </tr>
+    <tr>
+      <td>Strong exfoliants</td>
+      <td>Can damage the barrier</td>
+    </tr>
+    <tr>
+      <td>Essential oils</td>
+      <td>May trigger sensitivity</td>
+    </tr>
+    <tr>
+      <td>Fragrance</td>
+      <td>Common irritant for dry or reactive skin</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ---
 
@@ -214,14 +233,3 @@ Remember:
 - Trying samples or travel sizes can help you find the perfect match.  
 
 If dryness persists or becomes painful, consulting a dermatologist can help identify underlying issues such as eczema or dermatitis.
-
----
-
-If you want, I can also create:
-
-- SEO‑optimized tags  
-- A short description for your blog  
-- A matching AM/PM routine for dry skin  
-- A comparison table between dry vs. oily skin needs  
-
-Just tell me what you’d like next.
