@@ -215,7 +215,7 @@ If you’re unsure about your skin type or which products to choose, consulting 
 
 <style>
   /* Color CSS for table */
-  .bb-table-scroll {
+  .table-scroll {
   overflow-x: auto;
   margin-top: 1rem;
 }
@@ -225,6 +225,7 @@ If you’re unsure about your skin type or which products to choose, consulting 
   border-collapse: collapse;
   font-size: 0.95rem;
   border-bottom: 1px solid #000000; /* Add this line */
+  margin-bottom: 20px;
 }
   
 
