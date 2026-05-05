@@ -80,7 +80,7 @@ A hyaluronic acid gel moisturizer that feels cooling and disappears into the ski
 
 Some ingredients are simply too rich for oily skin.
 
-**Ingredients to avoid:**
+### **Ingredients to avoid:**
 
 <div class="table-scroll">
 <table>
