@@ -212,3 +212,42 @@ Remember:
 - Testing samples or travel sizes can help you find the perfect match.  
 
 If you’re unsure about your skin type or which products to choose, consulting a dermatologist can provide personalized guidance and help identify any underlying issues contributing to excess oil production.
+
+<style>
+  /* Color CSS for table */
+  .bb-table-scroll {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #000000; /* Add this line */
+}
+  
+
+.table th {
+  background-color: #f4d7df;
+  color: #333;
+  font-weight: 700;
+  padding: 10px;
+  text-align: left;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.table tr:nth-child(even) {
+  background-color: #fdf7f9;
+}
+
+.table tr:last-child td {
+  border-bottom: 2px solid #000000;
+}
+  
+</style>  
+  
