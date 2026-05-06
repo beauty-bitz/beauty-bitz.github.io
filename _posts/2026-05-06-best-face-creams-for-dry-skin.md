@@ -186,8 +186,6 @@ Depending on your needs, look for creams that offer:
 - **Occlusive Balms:** Seal in moisture and protect the skin barrier while you sleep, preventing water loss.  
 - **Sleeping Masks:** Provide deep hydration and nourishment overnight, so you wake up with plumper, more radiant skin.  
 
-Would you like me to add this updated section directly into your full blog post so it flows seamlessly with the rest?
-
 ### **8. Always Patch Test First**
 
 Before applying a new product to your entire face:
