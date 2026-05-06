@@ -188,13 +188,7 @@ Depending on your needs, look for creams that offer:
 
 ### **8. Always Patch Test First**
 
-Before applying a new product to your entire face:
-
-- Apply a small amount to your jawline or behind your ear.  
-- Wait 24–48 hours.  
-- Check for redness, bumps, or irritation.
-
-This is especially important for dry, sensitive skin.
+Before applying a new product to your entire face always perform a patch test first. This is especially important for dry, sensitive skin. See <a href='https://beautyblurbs.com/how-to-safely-patch-test-new-skincare-products/' style='color:#b76e79; text-decoration: underline;'>How to Patch Test New Skincare Products Safely</a> for more details.
 
 ## **Examples of Face Cream Types for Dry Skin**
 
