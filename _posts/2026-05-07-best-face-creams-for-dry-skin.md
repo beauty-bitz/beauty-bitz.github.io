@@ -19,8 +19,6 @@ Managing dry skin can feel like a constant battle against tightness, flaking, an
 This guide breaks down how to choose the best face cream for dry skin, which ingredients truly help, what to avoid, and how to build a routine that restores comfort, softness, and long‑lasting hydration.  
 **You’ll also learn why fragrance‑free products are especially important for dry or sensitive skin.**
 
----
-
 ## **Understanding Dry Skin**
 
 Dry skin occurs when the skin doesn’t produce enough natural oils (lipids) to lock in moisture. Without these protective oils, water evaporates more quickly, leading to:
@@ -51,13 +49,9 @@ Dry skin can be sensitive, but it also tends to:
 
 The key is replenishing moisture and strengthening the skin barrier.
 
----
-
 ## **How to Choose the Best Face Cream for Dry Skin**
 
 Selecting the right moisturizer is essential for restoring comfort and preventing moisture loss. Here’s what to look for.
-
----
 
 ### **1. Choose Rich, Emollient, and Barrier‑Repairing Formulas**
 
@@ -71,8 +65,6 @@ Look for moisturizers labeled:
 - “For dry or very dry skin”  
 
 These formulas typically blend **humectants**, **emollients**, and **occlusives** — the trio that keeps dry skin comfortable.
-
----
 
 ### **2. Look for Barrier‑Strengthening Ingredients**
 
@@ -91,8 +83,6 @@ These ingredients help restore the skin’s natural protective layer.
 **Example:**  
 A ceramide‑rich cream that feels cushiony and keeps skin soft for hours.
 
----
-
 ### **3. Embrace Nourishing Oils and Butters**
 
 Unlike oily skin, dry skin benefits from richer textures.
@@ -107,8 +97,6 @@ Unlike oily skin, dry skin benefits from richer textures.
 - Avocado oil  
 
 These ingredients help seal in moisture and prevent water loss.
-
----
 
 ### **4. Avoid Harsh or Drying Ingredients**
 
@@ -167,8 +155,6 @@ Look for labels such as:
 **Tip:**  
 “Unscented” is not the same as fragrance‑free — it may still contain masking fragrance.
 
----
-
 ### **6. Choose Cream or Balm Textures (Not Gels)**
 
 Gel moisturizers are usually too lightweight for dry skin.
@@ -181,8 +167,6 @@ Gel moisturizers are usually too lightweight for dry skin.
 - Moisturizing balms  
 
 These provide long‑lasting comfort and prevent moisture loss overnight.
-
----
 
 ### **7. Consider Additional Benefits**
 
@@ -200,8 +184,6 @@ Depending on your needs, look for creams that offer:
   - Occlusive balms  
   - Sleeping masks  
 
----
-
 ### **8. Always Patch Test First**
 
 Before applying a new product to your entire face:
@@ -211,8 +193,6 @@ Before applying a new product to your entire face:
 - Check for redness, bumps, or irritation.
 
 This is especially important for dry, sensitive skin.
-
----
 
 ## **Examples of Face Cream Types for Dry Skin**
 
@@ -239,8 +219,6 @@ This is especially important for dry, sensitive skin.
 - Seals in hydration  
 - Boosts softness by morning  
 - Works well over serums  
-
----
 
 ## **Conclusion**
 
