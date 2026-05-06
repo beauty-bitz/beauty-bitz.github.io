@@ -221,7 +221,7 @@ Before applying a new product to your entire face always perform a patch test fi
 Managing dry skin starts with choosing the right face cream — one that hydrates deeply, supports the skin barrier, and prevents moisture loss.  
 **Fragrance‑free formulas are especially important**, since fragrance is a common irritant that can worsen dryness and sensitivity.
 
-### Remember:
+### Final Thoughts:
 
 - Everyone’s skin is unique.  
 - Climate, sensitivity, and personal preferences matter.  
