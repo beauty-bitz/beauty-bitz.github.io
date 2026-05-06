@@ -166,23 +166,27 @@ Gel moisturizers are usually too lightweight for dry skin.
 - Overnight masks  
 - Moisturizing balms  
 
-These provide long‑lasting comfort and prevent moisture loss overnight.
+These provide long‑lasting comfort and prevent moisture loss overnight. 
 
 ### **7. Consider Additional Benefits**
 
 Depending on your needs, look for creams that offer:
 
-- **Anti‑aging support:**  
-  - Peptides  
-  - Bakuchiol  
-  - CoQ10  
-- **Soothing ingredients:**  
-  - Aloe vera  
-  - Panthenol (B5)  
-  - Allantoin  
-- **Overnight repair:**  
-  - Occlusive balms  
-  - Sleeping masks  
+#### **Anti‑Aging Support**
+- **Peptides:** Help stimulate collagen production, improving firmness and reducing fine lines.  
+- **Bakuchiol:** A gentle, plant‑based retinol alternative that smooths texture and boosts elasticity without irritation — ideal for dry or sensitive skin.  Refer to <a href='https://beautyblurbs.com/bakuchiol-a-proven-retinol-alternative/' style='color:#b76e79; text-decoration: underline;'>Bakuchiol: A Gentle, Science-Backed Alternative for Smoother, Younger-Looking Skin</a> for additional details.
+- **CoQ10:** Provides antioxidant protection and energizes skin cells, helping maintain a youthful glow.  
+
+#### **Soothing Ingredients**
+- **Aloe Vera:** Calms redness and delivers lightweight hydration for instant comfort.  
+- **Panthenol (Vitamin B5):** Strengthens the skin barrier and helps retain moisture, leaving skin supple and smooth.  
+- **Allantoin:** Softens rough patches and promotes healing, making skin feel soothed and cared for.  
+
+#### **Overnight Repair**
+- **Occlusive Balms:** Seal in moisture and protect the skin barrier while you sleep, preventing water loss.  
+- **Sleeping Masks:** Provide deep hydration and nourishment overnight, so you wake up with plumper, more radiant skin.  
+
+Would you like me to add this updated section directly into your full blog post so it flows seamlessly with the rest?
 
 ### **8. Always Patch Test First**
 
