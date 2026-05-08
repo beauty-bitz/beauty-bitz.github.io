@@ -1,4 +1,16 @@
+---
+layout: post
+title: "The Complete Guide to Bath & Shower Care"
+categories: ["Skin Care"]
+image: "/assets/images/Skin/best-face-creams-for-dry-skin.webp"
+tags: [dry skin face cream, best moisturizer for dry skin, fragrance‑free skincare, barrier repair cream, hydrating ingredients, ceramides and squalane, sensitive skin routine]
+description: "Discover how to choose the perfect face cream for dry skin. This guide explains which ingredients deeply hydrate, repair the skin barrier, and why fragrance‑free formulas are essential for preventing irritation and maintaining long‑lasting comfort."
+---
 
+<figure>
+  <img src="/assets/images/Skin/best-face-creams-for-dry-skin.webp" alt="Best Face Creams for Dry Skin: How to Choose the Right One" />
+  <figcaption></figcaption>
+</figure>
 
 
 # **The Complete Guide to Bath & Shower Care**
