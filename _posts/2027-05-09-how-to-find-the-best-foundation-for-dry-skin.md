@@ -2,13 +2,13 @@
 layout: post
 title: "How To Find The Best Foundation for Oily Skin"
 categories: ["Cosmetics"]
-image: "/assets/images/Cosmetics/foundation-oily-skin.webp"
-tags: [foundation, dry skin, cosmetics, makeup]
-description: "A guide on how to find the best foundation for oil skin."
+image: "/assets/images/Cosmetics/Foundation-for-oily-skin.webp"
+tags: [foundation, oily skin, cosmetics, makeup]
+description: "A guide on how to find the best foundation for oily skin."
 ---
 
 <figure>
-  <img src="/assets/images/Cosmetics/foundation-oily-skin.webp" alt="Foundation for oily skin" />
+  <img src="/assets/images/Cosmetics/Foundation-for-oily-skin.webp" alt="Foundation for oily skin" />
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
