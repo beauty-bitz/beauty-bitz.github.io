@@ -113,12 +113,12 @@ Use alone or layer over lotion for long‑lasting softness.
 - Not rinsing thoroughly  
 
 
-## **FAQ”**
+## **FAQ**
 
-### **Do I need to moisturize after every shower**  
+### **Do I need to moisturize after every shower?**  
 Yes — moisturizing after every shower is one of the most effective ways to keep your skin healthy. Warm water and cleansing (even with gentle products) remove some of your skin’s natural oils. Applying moisturizer while your skin is still slightly damp helps lock in hydration, strengthens your skin barrier, reduces tightness, and prevents long‑term dryness or flaking. If you have dry or sensitive skin, this step is especially important for maintaining comfort and preventing irritation.
 
-### **What’s better: body wash or bar soap**  
+### **What’s better: body wash or bar soap?**  
 Both can be excellent options — the best choice depends on your skin type, your preferences, and the formula itself.
 
 - **Body washes** tend to be more hydrating and often contain added moisturizers, making them ideal for dry, sensitive, or mature skin. They’re also less likely to leave a tight or squeaky feeling.  
@@ -126,14 +126,15 @@ Both can be excellent options — the best choice depends on your skin type, you
 
 If your skin feels tight after cleansing, switch to a hydrating body wash or a moisturizing bar soap labeled for dry or sensitive skin.
 
-### **Can I exfoliate with a loofah daily**  
+### **Can I exfoliate with a loofah daily?**  
 No — daily exfoliation with a loofah is too harsh for most skin types. Loofahs provide **physical exfoliation**, which can easily lead to over‑exfoliation, redness, micro‑tears, or increased sensitivity when used too often.
 
-A safer guideline is:  
+#### A safer guideline is:  
 - **1–3 times per week** depending on your skin type  
 - **Once weekly** if you have sensitive, dry, or easily irritated skin  
 - **Avoid altogether** if your skin is actively irritated, sunburned, or experiencing eczema flare‑ups
 
-Also remember: loofahs need to be replaced regularly and kept clean, as they can harbor bacteria when left damp.
+#### Also remember:
+Loofahs need to be replaced regularly and kept clean, as they can harbor bacteria when left damp.
 
 
