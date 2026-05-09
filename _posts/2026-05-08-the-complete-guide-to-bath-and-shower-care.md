@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Complete Guide to Bath & Shower Care"
-categories: ["Skin Care"]
+categories: ["Bath and Shower"]
 image: "/assets/images/Skin/the-complete-guide-to-bath-and-shower-care.webp"
 tags: [bath and shower care, body wash vs bar soap, exfoliating tips for smooth skin, moisturizing after shower, bath salts and oils, skincare routine for dry skin, gentle cleansers for sensitive skin]
 description: "Discover how to elevate your daily bath and shower routine into a soothing, skin‑nourishing ritual. This complete guide covers cleansers, exfoliation, bath add‑ins, and post‑shower care to help you achieve soft, healthy, hydrated skin every day."
