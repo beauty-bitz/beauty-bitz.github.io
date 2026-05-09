@@ -140,6 +140,3 @@ This creates a custom tinted moisturizer effect.
 Finding the best foundation for dry skin is all about choosing formulas that nourish, hydrate, and enhance your natural glow. With the right ingredients, texture, and application techniques, you can achieve a smooth, radiant complexion that lasts all day — without settling, flaking, or feeling tight.
 
 Whether you love a sheer, skin‑tint look or prefer medium coverage with a luminous finish, there’s a perfect foundation out there waiting for you. Explore different formulas, pay attention to how your skin feels, and enjoy the process of discovering your ideal match.
-
-
-Just tell me what you want next.
