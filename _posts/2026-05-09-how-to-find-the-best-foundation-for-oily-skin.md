@@ -164,5 +164,3 @@ This keeps your makeup fresh without looking heavy.
 Finding the best foundation for oily skin is all about choosing formulas that control shine, stay put, and keep your complexion looking smooth and balanced. With the right ingredients, finish, and application techniques, you can achieve a long‑lasting, flawless base that holds up beautifully — even on your oiliest days.
 
 Whether you prefer a lightweight matte tint or a full‑coverage long‑wear formula, there’s a perfect foundation out there for your skin type. Experiment with different textures, prep methods, and finishes until you discover the one that makes your skin look its best.
-
-Just tell me what you want next.
