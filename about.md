@@ -19,48 +19,96 @@ permalink: /about/
 
 <br /><br />
 
-<p>
-Welcome to <span>Beauty Blurbs</span> — your go-to destination for smart, honest, and beautifully curated beauty care advice.
-</p>
 
-<p>
-Whether you're refreshing your skincare routine, exploring new hair care rituals, or hunting for the perfect cosmetic pick-me-up, 
-<span>Beauty Blips</span> offers bite-sized recommendations and deeper dives to help you glow with confidence. Every post is crafted with care, 
-blending practical tips, product insights, and a touch of indulgence.
-</p>
 
-<h2>✨ What You'll Find Here</h2>
+      <p>
+        Welcome to <strong>Beauty Blurbs</strong> — your everyday guide to skincare, hair care, makeup, 
+        and the simple beauty habits that make you feel good in your own skin.
+      </p>
 
-<p><strong>Skin Care:</strong> From hydration hacks to ingredient breakdowns, we help you build routines that work for your skin type and lifestyle.</p>
+      <p>
+        This is a space built for real people with real routines. No overwhelm, no 20-step regimens, 
+        no confusing jargon. Just <strong>quick, practical insights</strong> on the products, ingredients, 
+        and techniques that actually make a difference.
+      </p>
 
-<p><strong>Bath and Shower:</strong> Elevate your daily rituals with soothing soaks, invigorating scrubs, and shower essentials that turn self-care into a spa moment.</p>
+      <p>
+        Whether you’re refreshing your skincare routine, learning how to care for your hair type, 
+        or figuring out which makeup formulas work best for your skin, Beauty Blurbs helps you cut 
+        through the noise and get straight to what works.
+      </p>
+    </section>
 
-<p><strong>Cosmetics:</strong> Discover makeup that enhances your natural beauty — with tutorials, trend breakdowns, and product spotlights for every mood and occasion.</p>
+    <section>
+      <h2>What You’ll Find Here</h2>
 
-<p><strong>Hair Care:</strong> Whether you're taming frizz, boosting volume, or embracing your natural texture, our hair care tips are tailored to real-life needs.</p>
+      <h3>Skincare Made Simple</h3>
+      <p>
+        Ingredient breakdowns, routine tips, and product guidance that help you understand your skin — 
+        not fight it.
+      </p>
 
-<h2>🌸 Why <span>Beauty Blurbs</span>?</h2>
+      <h3>Hair Care for Real Life</h3>
+      <p>
+        From frizz control to scalp care to styling basics, you’ll find advice that fits your texture, 
+        your lifestyle, and your goals.
+      </p>
 
-<p>
-<span>Beauty Blurbs</span> is more than a blog — it's a curated space for beauty lovers who value clarity, quality, and a touch of fun. 
-We believe beauty care should feel empowering, not overwhelming. That’s why every post is designed to be easy to follow, 
-evidence-informed, and refreshingly real.
-</p>
+      <h3>Makeup That Enhances, Not Complicates</h3>
+      <p>
+        Easy tutorials, product recommendations, and technique tips that help you create looks you love 
+        without the stress.
+      </p>
 
-<h2>💬 Note from the Creator</h2>
+      <h3>Everyday Beauty Routines</h3>
+      <p>
+        Small habits, smart swaps, and approachable rituals that make beauty feel like self-care, 
+        not a chore.
+      </p>
+    </section>
 
-<p>
-Hi, I'm Margaret — the voice behind <span>Beauty Blurbs</span>. I started this blog to share my love for beauty care in a way that’s approachable, 
-practical, and empowering. Over the years, I’ve tested routines, decoded ingredient lists, and curated product picks that actually make a difference. 
-<span>Beauty Blurbs</span> is my way of passing along what works — not just what’s trending.
-</p>
+    <section>
+      <h2>Why Beauty Blurbs Exists</h2>
 
-<p>
-I believe beauty care should feel like self-care, not a chore. Whether you're a minimalist or a product junkie, there's space here for your style, 
-your questions, and your glow-up journey. Thanks for stopping by — I’m so glad you’re here.
-</p>
+      <p>
+        Beauty shouldn’t feel overwhelming. It shouldn’t require a chemistry degree or a massive budget. 
+        It should feel <strong>clear, doable, and personal</strong>.
+      </p>
 
-</div>
+      <p>
+        Beauty Blurbs was created to bring clarity to the world of beauty care — to help you understand 
+        what you’re using, why it works, and how to build routines that support your skin, hair, 
+        and confidence.
+      </p>
+
+      <p>Every post is written with intention:</p>
+      <ul>
+        <li><strong>Evidence-informed</strong></li>
+        <li><strong>Beginner-friendly</strong></li>
+        <li><strong>Honest and practical</strong></li>
+        <li><strong>Focused on real results, not trends</strong></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>A Note From the Creator</h2>
+
+      <p>
+        Hi, I’m Caroline — the voice behind <strong>Beauty Blurbs</strong>.
+      </p>
+
+      <p>
+        I started this blog because I believe beauty care should feel empowering, not confusing. 
+        Over the years, I’ve tested routines, researched ingredients, and learned how to build simple, 
+        effective habits that actually help your skin and hair thrive. Beauty Blurbs is my way of sharing 
+        what I’ve learned — clearly, honestly, and without the fluff.
+      </p>
+
+      <p>
+        Whether you’re a minimalist, a product lover, or someone just starting to explore beauty care, 
+        there’s space here for you. I’m so glad you’re here.
+      </p>
+ </section>
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
