@@ -20,7 +20,7 @@ permalink: /about/
 <br /><br />
 
 
-
+  <section>
       <p>
         Welcome to <strong>Beauty Blurbs</strong> — your everyday guide to skincare, hair care, makeup, 
         and the simple beauty habits that make you feel good in your own skin.
@@ -94,7 +94,7 @@ permalink: /about/
       <h2>A Note From the Creator</h2>
 
       <p>
-        Hi, I’m Caroline — the voice behind <strong>Beauty Blurbs</strong>.
+        Hi, I’m Margaret — the voice behind <strong>Beauty Blurbs</strong>.
       </p>
 
       <p>
