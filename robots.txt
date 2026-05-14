@@ -1,5 +1,5 @@
 # Allow all crawlers to access the site
 User-agent: *
-Allow: /
+Disallow: /feed.xml
 
 Sitemap: https://beautyblurbs.com/sitemap.xml
