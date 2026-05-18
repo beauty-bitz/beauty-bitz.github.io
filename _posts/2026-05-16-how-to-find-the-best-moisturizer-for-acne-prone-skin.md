@@ -53,7 +53,7 @@ Ingredients with anti-inflammatory properties can help calm irritated skin and r
 Some moisturizers come with added benefits beyond hydration. For instance, products containing salicylic acid or benzoyl peroxide can help manage acne while moisturizing. Just be cautious with these ingredients, as they can be drying. It’s essential to find a balance that keeps your skin hydrated without causing further irritation.
 
 ### 6. Patch Test New Products
-Before incorporating a new moisturizer into your routine, always perform a patch test. Apply a small amount of the product to a discreet area of your skin, such as behind your ear or on your wrist, and monitor for any adverse reactions over 24 to 48 hours. This simple step can help you avoid potential breakouts or irritations.
+Before incorporating a new moisturizer into your routine, always perform a <a href='https://beautyblurbs.com/how-to-safely-patch-test-new-skincare-products/' style='color:#b76e79; text-decoration: underline;'>patch test</a> before using new products. This simple step can help you avoid potential breakouts or irritations.
 
 ## Conclusion
 
