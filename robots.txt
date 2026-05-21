@@ -1,5 +1,10 @@
-# Allow all crawlers to access the site
 User-agent: *
+Allow: /
 Disallow: /feed.xml
+Disallow: /icons.html
+Sitemap: https://www.beautyblurbs.com/sitemap.xml
 
-Sitemap: https://beautyblurbs.com/sitemap.xml
+# Notes:
+# - Allow all crawlers to index your content.
+# - Disallow feed.xml and icons.html (non‑content pages).
+# - Sitemap points to your canonical domain, not GitHub Pages.
