@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bakuchiol: A Gentle, Science-Backed Alternative for Smoother, Younger-Looking Skin"
+title: "Bakuchiol: A Gentle Alternative for Smoother, Younger-Looking Skin"
 categories: ["Skin Care"]
 image: "/assets/images/Skin/bakuchiol flower700.webp"
 tags: [moisturizer, dry skin, bakuchiol, face oil, retinol alternative, bakuchiol retinol alternative]
