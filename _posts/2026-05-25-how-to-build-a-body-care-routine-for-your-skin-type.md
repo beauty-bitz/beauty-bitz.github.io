@@ -160,7 +160,7 @@ These optional steps help boost your routine without overwhelming your skin.
   - Milk baths for softening  
 
 
-## **FAQs**
+## **FAQ**
 
 ### **Can I use face products on my body?**
 Sometimes — but body skin is thicker and often needs different formulations.  
