@@ -18,7 +18,6 @@ Your body deserves the same thoughtful care you give your face. While facial ski
 
 This guide breaks down how to identify your body skin type and build a routine that actually works for *your* skin.
 
----
 
 ## **1. Identify Your Body Skin Type**
 
@@ -58,13 +57,11 @@ Common signs:
 
 Sensitive skin thrives with fragrance‑free, soothing, minimal‑ingredient formulas.
 
----
 
 ## **2. Build Your Routine Based on Your Skin Type**
 
 Below are simple, effective AM/PM routines tailored to each skin type — plus the ingredients that work best.
 
----
 
 ### ⭐ **Routine for Dry Skin**
 
@@ -86,7 +83,6 @@ Below are simple, effective AM/PM routines tailored to each skin type — plus t
 
 This “moisture sandwich” keeps skin soft all day.
 
----
 
 ### ⭐ **Routine for Oily or Acne‑Prone Skin**
 
@@ -107,7 +103,6 @@ This “moisture sandwich” keeps skin soft all day.
 3. **Oil‑free moisturizer**  
    Hydration keeps skin balanced and reduces overproduction of oil.
 
----
 
 ### ⭐ **Routine for Sensitive Skin**
 
@@ -128,7 +123,6 @@ This “moisture sandwich” keeps skin soft all day.
 
 **Avoid:** scrubs, loofahs, hot showers, strong fragrances, and harsh exfoliants.
 
----
 
 ### ⭐ **Routine for Combination Skin**
 
@@ -145,7 +139,6 @@ This “moisture sandwich” keeps skin soft all day.
 2. **Cream on dry areas only**  
    Keep oily zones light to prevent congestion.
 
----
 
 ## **3. Weekly Add‑Ons**
 
@@ -166,7 +159,6 @@ These optional steps help boost your routine without overwhelming your skin.
   - Epsom salts for muscle relief  
   - Milk baths for softening  
 
----
 
 ## **FAQs**
 
@@ -183,11 +175,3 @@ Face products can be used on the body, but body products are usually too strong 
 ### **Is body oil enough on its own?**
 It can be, but **layering oil over lotion** gives the best long‑lasting hydration.
 
----
-
-If you want, I can also create:
-- a matching **Pinterest‑optimized infographic**,  
-- a **short meta description + SEO keywords**,  
-- or a **companion post** on exfoliating safely for your body.
-
-Just tell me what you’d like next.
