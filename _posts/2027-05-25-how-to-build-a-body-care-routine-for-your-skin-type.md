@@ -8,7 +8,7 @@ description: "Build a body care routine tailored to your skin type. Learn the be
 ---
 
 <figure>
-  <img src="/assets/images/Skin/how-to-build-a-body-care-routine-for-your-skin-type.webp" alt="How to Build a Body Care Routine for Your Skin Type" />
+  <img src="/assets/images/Bath/how-to-build-a-body-care-routine-for-your-skin-type.webp" alt="How to Build a Body Care Routine for Your Skin Type" />
   <figcaption></figcaption>
 </figure>
 
