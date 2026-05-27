@@ -102,7 +102,7 @@ Most moisturizers contain a mix of all three.
 - Seal with an oil if needed  
 
 
-## **FAQs**
+## **FAQ**
 
 ### **Do I need a different moisturizer for day and night?**  
 Not always — but night creams are usually richer.
