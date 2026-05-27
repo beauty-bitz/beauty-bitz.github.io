@@ -1,6 +1,18 @@
+---
+layout: post
+title: "How to Build a Body Care Routine for Your Skin Type"
+categories: ["Bath and Shower"]
+image: "/assets/images/Bath/how-to-build-a-body-care-routine-for-your-skin-type.webp"
+tags: [body care routine, body skincare for your skin type, dry vs oily body skin, sensitive skin body care, body acne routine, best ingredients for body care, AM PM body routine]
+description: "Build a body care routine tailored to your skin type. Learn the best ingredients, AM/PM steps, and weekly add‑ons for dry, oily, sensitive, or combination skin."
+---
 
+<figure>
+  <img src="/assets/images/Skin/how-to-build-a-body-care-routine-for-your-skin-type.webp" alt="How to Build a Body Care Routine for Your Skin Type" />
+  <figcaption></figcaption>
+</figure>
 
-# **How to Build a Body Care Routine for Your Skin Type**
+## **Introduction**
 
 Your body deserves the same thoughtful care you give your face. While facial skincare gets all the attention, the skin on your body has its own needs, challenges, and sensitivities. Building a routine based on your body skin type helps you stay soft, smooth, and comfortable year‑round — whether you’re dealing with dryness, sensitivity, or body acne.
 
