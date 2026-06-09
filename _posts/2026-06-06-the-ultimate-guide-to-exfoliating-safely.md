@@ -12,7 +12,7 @@ description: "A complete 2026 guide to exfoliating safely. Learn how to choose t
   <figcaption></figcaption>
 </figure>
 
-## *How to smooth, brighten, and renew your skin — without damaging your barrier*
+## Introduction
 
 Exfoliating is one of the most effective ways to achieve soft, glowing, even‑textured skin. But here’s the truth: **most people over‑exfoliate without realizing it**. When done correctly, exfoliation boosts radiance, prevents ingrown hairs, and helps your skincare products work better. When done incorrectly, it leads to redness, irritation, breakouts, and long‑term barrier damage.
 
