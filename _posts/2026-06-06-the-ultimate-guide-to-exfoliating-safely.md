@@ -143,7 +143,7 @@ Avoid these to protect your skin barrier:
 - Using exfoliants right before or after shaving  
 
 
-# **FAQs (With Reasons)**
+## **FAQ**
 
 ### **Can I exfoliate before shaving?**  
 **Yes — exfoliating before shaving helps prevent ingrown hairs** because it removes dead skin and buildup that can trap hair beneath the surface. It also allows the razor to glide more smoothly, reducing tugging and irritation.
